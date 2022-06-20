@@ -6,14 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Presto.it | {{$title ?? ''}}</title>
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
+    @livewireStyles
 </head>
 <body>
 
     <x-navbar/>
-    {{$slot}}
+        {{$slot}}
 
     <x-footer/>
 
     <script src="{{asset('js/app.js')}}"></script>
+    @livewireScripts
 </body>
 </html>

@@ -10,7 +10,7 @@
           <a class="nav-link active" aria-current="page" href="{{route('welcome')}}">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Annunci</a>
+          <a class="nav-link" href="{{route('allAnnouncements')}}">Annunci</a>
         </li>
         @guest
         <li class="nav-item">
@@ -30,7 +30,7 @@
           @csrf
         </form>
         <li class="nav-item">
-          <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Aggiungi annuncio</a>
+          <a class="nav-link " href="{{route('createAnnouncement')}}" tabindex="-1" aria-disabled="true">Aggiungi annuncio</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">I tuoi annunci</a>

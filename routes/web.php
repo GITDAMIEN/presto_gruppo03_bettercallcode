@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\AnnouncementController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PublicController;
+use App\Models\Announcement;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,5 +16,10 @@ use App\Http\Controllers\PublicController;
 |
 */
 
+// PublicController routes
 Route::get('/',[PublicController::class,"getHome"])->name('welcome');
+
+// AnnouncementController routes
+Route::get('/createAnnouncement', [AnnouncementController::class,"createAnnouncement"])->name('createAnnouncement');
+Route::get('/allAnnouncements',[AnnouncementController::class,"allAnnouncements"])->name('allAnnouncements');
 
