@@ -1,6 +1,14 @@
 <div>
     {{-- Knowing others is intelligence; knowing yourself is true wisdom. --}}
 
+    @if ($errors->any())        
+        <ul class="alert alert-danger">
+            @foreach($errors->all() as $error)
+                <li>{{$error}}</li>
+            @endforeach
+        </ul>
+    @endif
+
     <form wire:submit.prevent="createAnnouncement">
         <div class="form-floating mb-3">
             <input wire:model="title" type="text" class="form-control" id="floatingTitle" placeholder="Title">

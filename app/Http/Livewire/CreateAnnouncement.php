@@ -31,7 +31,7 @@ class CreateAnnouncement extends Component
             'price'=>$this->price
         ]);
 
-        return redirect()->route('allAnnouncements');
+        return redirect()->route('allAnnouncements')->with('message', 'Annuncio inserito correttamente');
     }
 
     public function render()
