@@ -20,6 +20,6 @@ use App\Models\Announcement;
 Route::get('/',[PublicController::class,"getHome"])->name('welcome');
 
 // AnnouncementController routes
-Route::get('/createAnnouncement', [AnnouncementController::class,"createAnnouncement"])->name('createAnnouncement');
+Route::get('/createAnnouncement', [AnnouncementController::class,"createAnnouncement"])->middleware('auth')->name('createAnnouncement');
 Route::get('/allAnnouncements',[AnnouncementController::class,"allAnnouncements"])->name('allAnnouncements');
 
