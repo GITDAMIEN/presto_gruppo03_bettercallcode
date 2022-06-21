@@ -23,5 +23,5 @@ Route::get('/',[PublicController::class,"getHome"])->name('welcome');
 Route::get('/createAnnouncement', [AnnouncementController::class,"createAnnouncement"])->middleware('auth')->name('createAnnouncement');
 Route::get('/allAnnouncements',[AnnouncementController::class,"allAnnouncements"])->name('allAnnouncements');
 Route::get('/category/{category}',[PublicController::class ,"categoryShow"])->name('categoryShow');
-//test con davide.
+Route::get('/details/announce/{announce}',[PublicController::class,"detailsAnnounce"])->name('detailsAnnounce');
 

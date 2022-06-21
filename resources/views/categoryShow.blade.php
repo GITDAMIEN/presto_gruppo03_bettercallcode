@@ -17,8 +17,8 @@
                 </div>
               </div>
           </div>
+          @endforeach
         </div>
-        @endforeach
       </div>
 
 </x-layout>
