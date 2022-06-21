@@ -18,9 +18,13 @@
             <textarea wire:model="description" id="floatingDescription" class="form-control" cols="30" rows="10" placeholder="Description"></textarea>
             <label for="floatingDescription">Descrizione</label>
         </div>
-        <div class="form-floating mb-3">
-            <input wire:model="category" type="text" class="form-control" id="floatingCategory" placeholder="Category">
-            <label for="floatingCategory">Categoria</label>
+        <div class=" mb-3">
+                <select wire:model.defer="category"class="form-control" id="floatingCategory">
+                        <option value="">Scegli la categoria</option>
+                    @foreach ($categories as $category)
+                        <option value="{{$category->id}}">{{$category->name}}</option>
+                    @endforeach
+                </select> 
         </div>
         <div class="form-floating mb-3">
             <input wire:model="price" type="number" class="form-control" id="floatingPrice" placeholder="Price">
