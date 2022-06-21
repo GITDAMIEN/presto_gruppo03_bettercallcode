@@ -1,7 +1,7 @@
 <div class="">
   <div class="row">
     @foreach ($announces as $announce)
-    <div class="col-12 col-lg-4 text-center">
+    <div id="announceCard" class="col-12 col-lg-4 text-center">
       <div class="card" style="width: 18rem;">
           <img src="..." class="card-img-top" alt="...">
           <div class="card-body">

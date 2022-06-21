@@ -18,12 +18,15 @@
             @enderror
         </div>
         <div class=" mb-3">
-                <select wire:model.defer="category"class="form-control" id="floatingCategory">
-                        <option value="">Scegli la categoria</option>
-                    @foreach ($categories as $category)
-                        <option value="{{$category->id}}">{{$category->name}}</option>
-                    @endforeach
-                </select> 
+            <select wire:model.defer="category"class="form-control" id="floatingCategory" @error('description') is-invalid @enderror>
+                <option value="">Scegli la categoria</option>
+                @foreach ($categories as $category)
+                    <option value="{{$category->id}}">{{$category->name}}</option>
+                @endforeach
+            </select> 
+            @error('category')
+                {{$message}}
+            @enderror
         </div>
         <div class="form-floating mb-3">
             <input wire:model="price" type="number" class="form-control" id="floatingPrice" placeholder="Price" @error('price') is-invalid @enderror>
