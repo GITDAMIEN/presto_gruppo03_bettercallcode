@@ -1,22 +1,21 @@
 <div>
     {{-- Knowing others is intelligence; knowing yourself is true wisdom. --}}
 
-    @if ($errors->any())        
-        <ul class="alert alert-danger">
-            @foreach($errors->all() as $error)
-                <li>{{$error}}</li>
-            @endforeach
-        </ul>
-    @endif
-
     <form wire:submit.prevent="createAnnouncement">
+        @csrf
         <div class="form-floating mb-3">
-            <input wire:model="title" type="text" class="form-control" id="floatingTitle" placeholder="Title">
+            <input wire:model="title" type="text" class="form-control" id="floatingTitle" placeholder="Title" @error('title') is-invalid @enderror>
             <label for="floatingTitle">Titolo</label>
+            @error('title')
+                {{$message}}
+            @enderror
         </div>
         <div class="form-floating mb-3">
-            <textarea wire:model="description" id="floatingDescription" class="form-control" cols="30" rows="10" placeholder="Description"></textarea>
+            <textarea wire:model="description" id="floatingDescription" class="form-control" cols="30" rows="10" placeholder="Description" @error('description') is-invalid @enderror></textarea>
             <label for="floatingDescription">Descrizione</label>
+            @error('description')
+                {{$message}}
+            @enderror
         </div>
         <div class=" mb-3">
                 <select wire:model.defer="category"class="form-control" id="floatingCategory">
@@ -27,10 +26,13 @@
                 </select> 
         </div>
         <div class="form-floating mb-3">
-            <input wire:model="price" type="number" class="form-control" id="floatingPrice" placeholder="Price">
+            <input wire:model="price" type="number" class="form-control" id="floatingPrice" placeholder="Price" @error('price') is-invalid @enderror>
             <label for="floatingPrice">Prezzo</label>
+            @error('price')
+                {{$message}}
+            @enderror
         </div>
-        <img src="" alt="Immagine-placeholder">
+        <img src="https://via.placeholder.com/200" alt="Immagine-placeholder">
         <button type="submit" class="btn btn-warning">Pubblica</button>
     </form>
 
