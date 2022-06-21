@@ -2,13 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Announcement;
 use Illuminate\Http\Request;
 
 class AnnouncementController extends Controller
 {
 
     public function allAnnouncements() {
-        return view('allAnnouncements');
+        $announces = Announcement::all();
+        return view('allAnnouncements', compact('announces'));
     }
 
     public function createAnnouncement() {
