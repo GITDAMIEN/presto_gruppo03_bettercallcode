@@ -30,3 +30,7 @@ Route::get('/allAnnouncements',[AnnouncementController::class,"allAnnouncements"
 Route::get('/revisore/home', [RevisorController::class, "index"])->middleware('isRevisorMiddleware')->name('revisor.index');
 Route::patch('/revisore/accetta/annuncio/{announcement}', [RevisorController::class, "acceptAnnouncement"])->middleware('isRevisorMiddleware')->name('revisor.accept_announcement');
 Route::patch('/revisore/rifiuta/annuncio/{announcement}', [RevisorController::class, "refuseAnnouncement"])->middleware('isRevisorMiddleware')->name('revisor.refuse_announcement');
+
+// Revisor request and confirmation via email
+Route::get('/revisore/diventaRevisore', [RevisorController::class, "becomeRevisor"])->middleware('auth')->name('becomeRevisor');
+Route::get('/revisore/confermaRevisore/{user}', [RevisorController::class, "makeRevisor"])->name('makeRevisor');
