@@ -12,17 +12,27 @@
         <li class="nav-item">
           <a class="nav-link" href="{{route('allAnnouncements')}}">Annunci</a>
         </li>
-        @guest
+        @guest   {{-- Se l'utente non è loggato  --}}
         <li class="nav-item">
           <a class="nav-link" href="{{route('register')}}">Registrati</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="{{route('login')}}">Login</a>
         </li>
-        @else
+        @else    {{-- Se l'utente è loggato  --}}
         <li class="nav-item">
           <a class="nav-link" href="">Ciao {{Auth::user()->name}}</a>
         </li class="nav-item">
+        @if(Auth::user()->is_revisor)    {{-- Se l'utente è un revisore  --}}
+        <li class="nav-item">
+          <a class="nav-link position-relative" href="{{route('revisor.index')}}">Zona revisore
+          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+            {{App\Models\Announcement::toBeRevisionedCount()}}
+            <span class="visually-hidden">unread messages</span>
+          </span>
+          </a>
+        </li class="nav-item">
+        @endif
         <a  class="nav-link"  href="/logout" onclick="event.preventDefault(); document.getElementById('frm-logout').submit();">
           Logout
         </a> 

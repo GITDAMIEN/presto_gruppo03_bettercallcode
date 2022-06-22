@@ -10,11 +10,13 @@ class AnnouncementController extends Controller
 {
 
     public function allAnnouncements() {
-        $announces = Announcement::all();
+        $announces = Announcement::where('is_accepted', true);
         return view('allAnnouncements', compact('announces'));
     }
 
     public function createAnnouncement() {
         return view('createAnnouncement');
     }
+
+
 }

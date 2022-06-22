@@ -1,5 +1,17 @@
 <x-layout>
     <x-slot name="title">Homepage</x-slot>
+    
+    @if(session('access.denied'))
+        <div class="alert alert-danger">
+            {{session('access.denied')}}
+        </div>
+        @if(Auth::check())
+            <a href="{{route('allAnnouncements')}}">Diventa revisore!</a>
+        @else
+            <a href="register">Registrati e diventa revisore!</a>
+        @endif
+    @endif
+
     <div class="container-fluid p-0 m-0">
         <div class="row">
             <div class="col-12">
