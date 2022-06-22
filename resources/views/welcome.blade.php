@@ -12,6 +12,12 @@
         @endif
     @endif
 
+    @if(session('message'))
+        <div class="alert alert-success">
+            {{session('message')}}
+        </div>
+    @endif
+
     <div class="container-fluid p-0 m-0">
         <div class="row">
             <div class="col-12">
@@ -39,4 +45,13 @@
             <livewire:last-announcements/>
         </div>
     </div>
+
+    @if(Auth::check() && !Auth::user()->is_revisor)
+        <div class="container">
+            <div class="row text-center my-5">
+                <h5>Diventa revisore per Presto.it!</h5>
+                <a class="btn btn-success" href="{{route('becomeRevisor')}}">Diventa revisore</a>
+            </div>
+        </div>
+    @endif
 </x-layout>
