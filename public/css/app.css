@@ -11302,6 +11302,18 @@ textarea.form-control-lg {
 .panna{
     color: var(--panna);
 }
+
+.pannaBg{
+    background-color: var(--panna);
+}
+
+.bluChiaro{
+    color: var(--celesteChiaro);
+}
+
+.bluChiaroBg{
+    background-color: var(--celesteChiaro);
+}
 .paytone{
     font-family: 'Paytone One', sans-serif;
 }
@@ -11412,6 +11424,38 @@ body{
 
 .customBtnSell:hover::before{
     opacity: 1;
+}
+
+.test {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space:nowrap;
+ }
+ 
+.test2 {
+    display:inline;
+ }
+
+.test::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+.test3{
+    cursor: pointer;
+}
+.test3:active{
+    background-color: yellow;
+}
+.btnPers{
+    border: none;
+    width: 150px;
+    border-radius: 5px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
 }
 
 

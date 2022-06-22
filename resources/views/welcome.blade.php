@@ -20,4 +20,11 @@
             </div>
         </div>
     </div>
+
+    <div class="container-fluid">
+        <p class="text-center fs-2 panna montsterrant mt-5 mb-3">Gli utimi prodotti caricati per categoria</p>
+        <div class="row">
+            <livewire:last-announcements/>
+        </div>
+    </div>
 </x-layout>
