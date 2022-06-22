@@ -14,7 +14,7 @@ class LastAnnouncements extends Component
 
     public function mount(){
     
-        $this->announces = Announcement::all()->sortByDesc('updated_at')->take(3);
+        $this->announces = Announcement::where('is_accepted',true)->latest()->get()->take(3);
         // $this->announces = Announcement::all();
     }
 
@@ -27,7 +27,7 @@ class LastAnnouncements extends Component
     public function testClick($id){
         $this->category = $id;
         // $this->announces=Announcement::where('category_id', $this->category)->get();
-        $this->announces = Announcement::all()->sortByDesc('updated_at')->take(3);
+        $this->announces = Announcement::where('is_accepted',true)->latest()->get()->take(3);
 
         $this->announces = $this->announces->where('category_id', $this->category);
 

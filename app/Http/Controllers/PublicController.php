@@ -9,8 +9,8 @@ use Illuminate\Http\Request;
 class PublicController extends Controller
 {
     public function getHome() {
-        $announcements = Announcement::where('is_accepted', true)->take(6)->get()->sortByDesc('created_at');
-        return view('welcome', compact('announcements'));
+        $announcements = Announcement::all();
+        return view('welcome',compact('announcements'));
     }
 
     public function categoryShow(Category $category){
