@@ -14,7 +14,7 @@ class LastAnnouncements extends Component
 
     public function mount(){
     
-        $this->announces = Announcement::where('is_accepted',true)->latest()->get()->take(3);
+        $this->announces = Announcement::where('is_accepted',true)->latest()->get()->take(6);
         // $this->announces = Announcement::all();
     }
 
