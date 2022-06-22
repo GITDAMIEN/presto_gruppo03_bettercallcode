@@ -1,5 +1,10 @@
-<div class="">
-  <form wire:submit.prevent="searching">
+<div >
+  <div class="row">
+    <div class="col-6 m-auto">
+      <form wire:submit.prevent="searching" class="justify-content-center align-items-center">
+    </div>
+    
+  </div>
 
     <div class="col-3 mt-5">
       <div class="form-floating my-3">
@@ -58,8 +63,12 @@
   </div>
   @endforeach
 </div>
+
+
 </div>
 @else
+
+<p>Non ci sono annunci</p>
 
 @endif
 

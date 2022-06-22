@@ -1,3 +1,132 @@
+:root{
+    --celesteScuro:rgb(137, 176, 174);
+    --celesteChiaro:rgb(190, 227, 219);
+    --obsidianGray:rgb(85, 91, 110);
+    --panna:rgb(250, 249, 249);
+    --orange:rgb(255, 214, 186);
+}
+*{
+  margin: 0px;
+  padding: 0px;  
+  box-sizing: border-box;
+}
+.bluScuro{
+    color: var(--celesteScuro);
+}
+.bluScuroBg{
+    background-color: var(--celesteScuro);
+}
+.panna{
+    color: var(--panna);
+}
+.paytone{
+    font-family: 'Paytone One', sans-serif;
+}
+.montsterrant{
+    font-family: 'Montserrat Alternates', sans-serif;
+}
 body{
     background-color: lightsalmon;
+}
+
+.cover{
+    background-image: url("/media/cover01.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.title{
+    color: var(--panna);
+    font-family: 'Paytone One', sans-serif;
+    font-size: 80px;
+}
+
+.boxTitle{
+    padding-left: 200px;
+    width: 580px;
+    position: relative;
+}
+.customBtnBuy{
+    
+    background-image: linear-gradient(to right, #89B0AE , #BEE3DB);
+    color: rgb(23, 23, 23);
+    font-size: 20px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bolder;
+    width: 18vh;
+    height: 6vh;
+    border-radius: 15px;
+    border-style: none;
+    z-index: 1;
+    position: relative;
+    transition: all 0.5s;
+    box-shadow: 2px 2px 4px var(--obsidianGray);
+    
+}
+
+.customBtnBuy::before{
+    border-radius: 15px;
+    border-style: none;
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to left, var(--celesteScuro) , var(--celesteChiaro));
+    z-index: -1;
+    transition: opacity 0.8s;
+    opacity: 0;
+}
+.customBtnBuy:hover{
+    transform: scale(1.1);
+}
+
+.customBtnBuy:hover::before{
+    opacity: 1;
+}
+
+.customBtnSell{
+    
+    background-image: linear-gradient(to right, #FFD6BA 55% , #FAF9F9);
+    color: rgb(23, 23, 23);
+    font-size: 20px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bolder;
+    width: 18vh;
+    height: 6vh;
+    border-radius: 15px;
+    border-style: none;
+    z-index: 1;
+    position: relative;
+    transition: all 0.5s;
+    box-shadow: 2px 2px 4px var(--obsidianGray);
+    
+}
+
+.customBtnSell::before{
+    border-radius: 15px;
+    border-style: none;
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to left, #FFD6BA 55% , #FAF9F9);
+    z-index: -1;
+    transition: opacity 0.8s;
+    opacity: 0;
+}
+.customBtnSell:hover{
+    transform: scale(1.1);
+}
+
+.customBtnSell:hover::before{
+    opacity: 1;
 }
