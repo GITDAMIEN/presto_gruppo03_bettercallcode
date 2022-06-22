@@ -16,13 +16,13 @@
           <label for="floatingSelect">Scegli la categoria</label>
       </div>
       <div class="form-floating my-3">
-          <select class="form-select" id="orderSelect">
-              <option value="recentToOlder" selected>Dal più recente al più vecchio</option>
-              <option value="olderToRecent">Dal più vecchio al più recente</option>
+          <select wire:model="sort" class="form-select" id="orderSelect">
+              <option value="newest" selected>Dal più recente al più vecchio</option>
+              <option value="oldest">Dal più vecchio al più recente</option>
               <option value="fromCheaper">Dal più economico al più costoso</option>
               <option value="toCheaper">Dal più costoso al più economico</option>
-              <option value="aToZ">Dalla A alla Z</option>
-              <option value="zToA">Dalla Z alla A</option>
+              <option value="AtoZ">Dalla A alla Z</option>
+              <option value="ZtoA">Dalla Z alla A</option>
           </select>
           <label for="orderSelect">Ordina annunci</label>
       </div>
@@ -35,9 +35,6 @@
               <input wire:model="maxPrice" type="number" class="form-control" id="maxInput" placeholder="Max price">
               <label id="priceLabels" for="maxInput">Max price</label>
           </div>
-      </div>
-      <div id="searchFilterBtnCol" class="col-4 m-auto text-center">
-          <button id="searchFilterBtn" class="">Cerca</button>
       </div>
   </div>
   </form>
