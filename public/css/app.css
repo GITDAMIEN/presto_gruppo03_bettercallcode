@@ -11792,11 +11792,15 @@ body {
     font-family:'Montserrat Alternates', sans-serif;
 }
 
+.title-nav:hover{
+    color: var(--panna);
+}
+
 .nav-item {
     font-family: 'Lato', sans-serif;
 }
 
-  
+  /*NAVGENERAL */
 
 .presto-nav-general .nav-link, .presto-nav .nav-link.active{
     color: var(--panna) !important;
@@ -11827,6 +11831,17 @@ body {
 
 .nav-item {
     font-family: 'Lato', sans-serif;
+}
+
+header.presto-nav {
+    width: 100%;
+    position: fixed;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-active {
+    background-color:var(--orange);
+    box-shadow: 5px -1px 12px -5px grey;
 }
 .allCards{
     border-radius: 20px;
@@ -11894,5 +11909,18 @@ body {
         left: 40px;
     }
 }
+.nav-link{
+    color: var(--panna);
+}
 
+.nav-link:hover{
+    color: var(--orange);
+}
+
+h5{
+    color: var(--panna);
+}
+.nav-item {
+    font-family: 'Lato', sans-serif;
+}
 

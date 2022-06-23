@@ -11,5 +11,5 @@
     <div class="container">
         <livewire:announcement-cards/>
     </div>
-    
+    <x-footerGeneral></x-footergeneral>
 </x-layout>

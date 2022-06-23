@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+    {{-- fontawesome --}}
+    <script src="https://kit.fontawesome.com/497d6018c2.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
@@ -24,7 +26,7 @@
     {{-- <x-navbar/> --}}
         {{$slot}}
 
-    <x-footer/>
+    {{-- <x-footer/> --}}
 
     <script src="{{asset('js/app.js')}}"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
