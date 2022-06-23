@@ -1,5 +1,23 @@
 <x-layout>
     <x-slot name="title">Homepage</x-slot>
+    
+    @if(session('access.denied'))
+        <div class="alert alert-danger">
+            {{session('access.denied')}}
+        </div>
+        @if(Auth::check())
+            <a href="{{route('allAnnouncements')}}">Diventa revisore!</a>
+        @else
+            <a href="register">Registrati e diventa revisore!</a>
+        @endif
+    @endif
+
+    @if(session('message'))
+        <div class="alert alert-success">
+            {{session('message')}}
+        </div>
+    @endif
+
     <div class="container-fluid p-0 m-0">
         <div class="row">
             <div class="col-12">
@@ -20,4 +38,20 @@
             </div>
         </div>
     </div>
+
+    <div class="container-fluid">
+        <p class="text-center fs-2 panna montsterrant mt-5 mb-3">Gli utimi prodotti caricati per categoria</p>
+        <div class="row">
+            <livewire:last-announcements/>
+        </div>
+    </div>
+
+    @if(Auth::check() && !Auth::user()->is_revisor)
+        <div class="container">
+            <div class="row text-center my-5">
+                <h5>Diventa revisore per Presto.it!</h5>
+                <a class="btn btn-success" href="{{route('becomeRevisor')}}">Diventa revisore</a>
+            </div>
+        </div>
+    @endif
 </x-layout>

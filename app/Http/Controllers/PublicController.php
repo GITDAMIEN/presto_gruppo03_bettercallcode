@@ -9,7 +9,8 @@ use Illuminate\Http\Request;
 class PublicController extends Controller
 {
     public function getHome() {
-        return view('welcome');
+        $announcements = Announcement::all();
+        return view('welcome',compact('announcements'));
     }
 
     public function categoryShow(Category $category){

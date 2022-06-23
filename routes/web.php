@@ -3,6 +3,7 @@
 use App\Http\Controllers\AnnouncementController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PublicController;
+use App\Http\Controllers\RevisorController;
 use App\Models\Announcement;
 
 /*
@@ -18,10 +19,18 @@ use App\Models\Announcement;
 
 // PublicController routes
 Route::get('/',[PublicController::class,"getHome"])->name('welcome');
+Route::get('/category/{category}',[PublicController::class ,"categoryShow"])->name('categoryShow');
+Route::get('/details/announce/{announce}',[PublicController::class,"detailsAnnounce"])->name('detailsAnnounce');
 
 // AnnouncementController routes
 Route::get('/createAnnouncement', [AnnouncementController::class,"createAnnouncement"])->middleware('auth')->name('createAnnouncement');
 Route::get('/allAnnouncements',[AnnouncementController::class,"allAnnouncements"])->name('allAnnouncements');
-Route::get('/category/{category}',[PublicController::class ,"categoryShow"])->name('categoryShow');
-Route::get('/details/announce/{announce}',[PublicController::class,"detailsAnnounce"])->name('detailsAnnounce');
 
+// RevisorController routes
+Route::get('/revisore/home', [RevisorController::class, "index"])->middleware('isRevisorMiddleware')->name('revisor.index');
+Route::patch('/revisore/accetta/annuncio/{announcement}', [RevisorController::class, "acceptAnnouncement"])->middleware('isRevisorMiddleware')->name('revisor.accept_announcement');
+Route::patch('/revisore/rifiuta/annuncio/{announcement}', [RevisorController::class, "refuseAnnouncement"])->middleware('isRevisorMiddleware')->name('revisor.refuse_announcement');
+
+// Revisor request and confirmation via email
+Route::get('/revisore/diventaRevisore', [RevisorController::class, "becomeRevisor"])->middleware('auth')->name('becomeRevisor');
+Route::get('/revisore/confermaRevisore/{user}', [RevisorController::class, "makeRevisor"])->name('makeRevisor');

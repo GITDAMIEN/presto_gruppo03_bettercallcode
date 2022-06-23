@@ -43,10 +43,10 @@
             <p>Titolo : {{$announce->title}}</p>
         </div>
         <div class="col-12">
-            <p>Decrizione :  {{$announce->description}}</p>
+            <p>Decrizione : {{$announce->description}}</p>
         </div>
         <div class="col-12">
-            <p>Prezzo :  {{$announce->price}}</p>
+            <p>Prezzo : {{$announce->price}}</p>
         </div>
         <div class="col-12">
             <a href="{{route('categoryShow',$announce->category)}}" class="card-text">{{$announce->category->name}}</a>

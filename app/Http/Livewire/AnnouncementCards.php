@@ -23,7 +23,7 @@ class AnnouncementCards extends Component
 
     public function mount(){
     
-        $this->announces = Announcement::all();
+        $this->announces = Announcement::where('is_accepted',true)->get();
     }
 
     public function render()

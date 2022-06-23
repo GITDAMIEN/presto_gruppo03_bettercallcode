@@ -44,7 +44,7 @@ class CreateAnnouncement extends Component
         Auth::user()->announcements()->save($announcement);
         
         $this->cleanForm();
-        return redirect()->route('allAnnouncements')->with('message', 'Annuncio inserito correttamente');
+        return redirect()->route('allAnnouncements')->with('message', 'Annuncio inviato correttamente. Sarà sottoposto a revisione prima di essere visibile su Presto.it');
     }
     
     
