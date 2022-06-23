@@ -24,12 +24,14 @@ class LastAnnouncements extends Component
         return view('livewire.last-announcements');
     }
     
-    public function testClick($id){
-        $this->category = $id;
-        // $this->announces=Announcement::where('category_id', $this->category)->get();
-        $this->announces = Announcement::where('is_accepted',true)->latest()->get()->take(3);
+    // Barra categoria per visualizzare ultimi annunci sulle homepage
 
-        $this->announces = $this->announces->where('category_id', $this->category);
+    // public function testClick($id){
+    //     $this->category = $id;
+    //     $this->announces=Announcement::where('category_id', $this->category)->get();
+    //     $this->announces = Announcement::where('is_accepted',true)->latest()->get()->take(3);
 
-    }
+    //     $this->announces = $this->announces->where('category_id', $this->category);
+
+    // }
 }

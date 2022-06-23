@@ -39,12 +39,35 @@
         </div>
     </div>
 
-    <div class="container-fluid">
-        <p class="text-center fs-2 panna montsterrant mt-5 mb-3">Gli utimi prodotti caricati per categoria</p>
+    <div class="container-fluid customBg">
+            <p class="text-center fs-2 panna ultimiAnnunci mb-5">GLI ULTIMI ANNUNCI INSERITI</p>
         <div class="row">
             <livewire:last-announcements/>
         </div>
     </div>
+
+
+    <section class="container">
+        <p class="text-center fs-2 panna nostreCategorie mb-5">LE NOSTRE CATEGORIE</p>
+        <div class="row justify-content-evenly">
+                @foreach ($categories as $category)
+                    <div class="col-12 col-md-2 mt-4">
+                        <a href="{{route('categoryShow',$category->id)}}"">
+                        <div class="cardCategory d-flex justify-content-center align-items-center">
+                            <div>
+                                <p class="lato bold fs-5 uppercase text-center">{{$category->name}}</p>
+                                <p class="lato counterAnnunci text-center">+100 annunci</p>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    @if($category->id==5)
+                    <div class="row">    
+                    </div>
+                    @endif
+                @endforeach
+        </div>
+    </section>
 
     @if(Auth::check() && !Auth::user()->is_revisor)
         <div class="container">
