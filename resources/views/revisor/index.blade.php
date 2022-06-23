@@ -1,4 +1,5 @@
 <x-layout>
+    <x-navbarGeneral></x-navbarGeneral>
 
     <div class="container">
         <div class="row">
@@ -43,4 +44,5 @@
         </div>
     </div>
     @endif
+    <x-footerGeneral></x-footergeneral>
 </x-layout>

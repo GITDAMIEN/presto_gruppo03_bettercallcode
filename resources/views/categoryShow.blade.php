@@ -21,5 +21,5 @@
           @endforeach
         </div>
       </div>
-
+      <x-footerGeneral></x-footergeneral>
 </x-layout>

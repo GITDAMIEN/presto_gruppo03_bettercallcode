@@ -78,4 +78,5 @@
             </div>
         </div>
     @endif
+<x-footer></x-footer>
 </x-layout>

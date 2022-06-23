@@ -11815,5 +11815,18 @@ body {
         left: 40px;
     }
 }
+.nav-link{
+    color: var(--panna);
+}
 
+.nav-link:hover{
+    color: var(--orange);
+}
+
+h5{
+    color: var(--panna);
+}
+.nav-item {
+    font-family: 'Lato', sans-serif;
+}
 
