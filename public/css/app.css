@@ -11620,5 +11620,71 @@ body {
         font-weight: bolder;
     }
 }
+.allCards{
+    border-radius: 20px;
+    max-width: 1000px;
+    overflow: hidden;
+    transition: all 0.4s;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.433);
+}
+
+.allCards:hover{
+    border-radius: 20px;
+    max-width: 1000px;
+    overflow: hidden;
+    transform: scale(1.03);
+}
+
+
+#infoDiv{
+    position: relative;
+}
+
+@media screen and (min-width: 768px) {
+    
+    .cardH2{
+        font-size: 26px;
+        position: absolute;
+        left: 40px;
+        margin-bottom: 0px;
+    }
+    
+    .descriptionP{
+        position: absolute;
+        left: 40px;
+        top: 80px;
+        margin-bottom: 0px;
+    }
+    
+    .createdSpan{
+        position: absolute;
+        right: 40px;
+        bottom: 6px;
+        font-style: italic;
+        font-size: 14px;
+    }
+    
+    .priceSpan{
+        position: absolute;
+        right: 40px;
+        top: 20px;
+        background-color: var(--orange);
+        border-radius: 8px;
+        padding: 4px 8px;
+        color: white;
+    }
+    
+    .categoryA{
+        position: absolute;
+        left: 40px;
+        top: 50px;
+    }
+    
+    .detailsP{
+        position: absolute;
+        bottom: 0px;
+        left: 40px;
+    }
+}
 
 

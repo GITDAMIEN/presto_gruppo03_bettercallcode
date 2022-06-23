@@ -5,6 +5,7 @@ namespace App\Http\Livewire;
 use Illuminate\Database\Eloquent\Builder;
 use Livewire\Component;
 use App\Models\Announcement;
+use App\Models\User;
 use App\Models\Category;
 use Faker\Core\Number;
 use Mockery\Undefined;
@@ -14,6 +15,7 @@ use function PHPUnit\Framework\isInfinite;
 class AnnouncementCards extends Component
 {
     public $sort='asc';
+    public $user;
     public $announces;
     public $title;
     public $category=null;
@@ -45,10 +47,15 @@ class AnnouncementCards extends Component
     public function updated(){
         $announce = Announcement::with(relations:'category');
 
-
         if(!empty($this->title)){
             $announce = $announce->where('title','like','%'.$this->title.'%')->orWhere('description', 'like', '%'.$this->title.'%') ;
         }
+        // RICERCA PER UTENTE
+        // if(!empty($this->user)){
+        //     $announce = $announce->when($this->user, function($query){
+        //         $query->where('user_id', $this->user);
+        //     });
+        // }
         if($this->sort=='AtoZ'){
             $announce = $announce->orderBy('title',"asc");
         }

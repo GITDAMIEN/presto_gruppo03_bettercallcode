@@ -8,13 +8,7 @@
     @endif
     
     <div class="container">
-        <div class="row">
-            
-            <div class="col-12 mt-5">
-                <livewire:announcement-cards/>
-            </div>
-        </div>
+        <livewire:announcement-cards/>
     </div>
-
     
 </x-layout>
