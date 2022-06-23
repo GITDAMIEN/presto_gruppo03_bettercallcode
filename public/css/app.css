@@ -11621,39 +11621,50 @@ a:hover {
         font-weight: bolder;
     }
 }
-.p-nav{
-    background-color: transparent;
-    position: fixed;
-    top: 0px;
-}
-.test-ul{
-    position: fixed;
-    right: 0px;
+:root{
+    --celesteScuro:rgb(137, 176, 174);
+    --celesteChiaro:rgb(190, 227, 219);
+    --obsidianGray:rgb(85, 91, 110);
+    --panna:rgb(250, 249, 249);
+    --orange:rgb(255, 214, 186);
 }
 
-.btn-log{
-    background-color: var(--celesteScuro);
-    margin-right: 30px;
-}
+.presto-nav{
+    background-color:transparent;
+   
+}    
 
-.btn-reg{
-    background-color: var(--obsidianGray);
-    margin-right: 30px;
-}
-.nav-link{
-    color: var(--panna);
-    font-family:'Montserrat Alternates', sans-serif ;
-}
-
-a{
-    transition: all 0.2s;
-}
-
-a:hover{
-    color: var(--panna);
+.presto-nav .nav-link, .presto-nav .nav-link.active{
+    color: var(--panna) !important;
     transform: scale(1.1);
+}    
+
+.presto-nav .nav-link:hover, .presto-nav .nav-link.active:hover{
+    color: var(--panna) !important;
+   
+}    
+
+.presto-nav{
+    text-align:center;
+}   
+
+.presto-nav ul .dropdown-menu{
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
+.badge-class{
+    right: 2px;
+}
+
+.title-nav{
+    font-size: 50px;
+    font-family:'Montserrat Alternates', sans-serif;
+}
+
+.nav-item {
+    font-family:'Montserrat Alternates', sans-serif; 
+    /* modifica font per nicolo */
+}
 
 
 
