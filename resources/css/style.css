@@ -4,9 +4,9 @@
     --obsidianGray: rgb(85, 91, 110);
     --panna: rgb(250, 249, 249);
     --orange: rgb(255, 130, 81);
+    
 }
-
-* {
+*{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;

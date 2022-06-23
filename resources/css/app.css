@@ -1,2 +1,5 @@
 @import '~bootstrap/dist/css/bootstrap.css';
 @import './style.css';
+@import './style-nav.css';
+
+@import './style3.css';
