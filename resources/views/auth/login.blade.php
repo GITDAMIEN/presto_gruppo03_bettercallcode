@@ -29,7 +29,9 @@
                         <label class="form-label">Ricordati di me</label>
                         <input type="checkbox" class="form-check-input" name="remember"/>
                     </div>
-                    <button type="submit" class="btn btn-primary mb-4">Accedi</button>
+                    <div class="form-outline mb-4 d-flex justify-content-center align-items-center">
+                        <button type="submit" class="btn orangeBg panna mb-4">Accedi</button>
+                    </div>
                 </form>
             </div>
         </div>

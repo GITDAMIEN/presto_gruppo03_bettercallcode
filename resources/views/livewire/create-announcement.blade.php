@@ -36,7 +36,12 @@
             @enderror
         </div>
         <img src="https://via.placeholder.com/200" alt="Immagine-placeholder">
-        <button type="submit" class="btn btn-warning">Pubblica</button>
+        <br>
+        <div class="d-flex justify-content-center align-items-center">
+            <div>
+                <button type="submit" class="btn orangeBg panna mt-3 text-center">Pubblica</button>
+            </div>
+        </div>
     </form>
 
 </div>

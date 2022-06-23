@@ -32,10 +32,13 @@
                         <input type="password" class="form-control" name="password"/>
                     </div> 
                     <div class="form-outline mb-4">
-                        <label class="form-label">Conferma password</label>
-                        <input type="password" name="password_confirmation"/>
+                        <label class="form-label">Conferma la password</label>
+                        <input type="password" class="form-control" name="password_confirmation"/>
+                    </div> 
+                    
+                    <div class="form-outline mb-4 d-flex justify-content-center align-items-center">
+                        <button type="submit" class="btn orangeBg panna mb-4">Registrati</button>
                     </div>
-                    <button type="submit" class="btn btn-primary mb-4">Registrati</button>
                 </form>
             </div>
         </div>
