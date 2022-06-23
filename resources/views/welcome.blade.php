@@ -25,13 +25,17 @@
                 <div class="cover d-flex justify-content-start align-items-center">
                     <div class="boxTitle">
                         <h1 class="title">Presto.it</h1>
-                        <p class="paytone fs-5 panna">Compra e vendi con facilità... Ovunque ti trovi !</p>
+                        <p class="subtitle">Compra e vendi con facilità... Ovunque ti trovi !</p>
                         <div class="row">
                             <div class="col-12 col-md-6">
-                                <button type="button" class="customBtnBuy mt-4">Compra</button>
+                                <a href="{{route('allAnnouncements')}}">
+                                    <button type="button" class="customBtnBuy mt-4">Compra</button>
+                                </a>
                             </div>
                             <div class="col-12 col-md-6">
-                                <button type="button" class="customBtnSell mt-4">Vendi</button>
+                                <a href="{{route('createAnnouncement')}}">
+                                    <button type="button" class="customBtnSell mt-4">Vendi</button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -67,6 +71,25 @@
                     </div>
                     @endif
                 @endforeach
+        </div>
+    </section>
+
+    <section class="container test">
+        <div class="row">
+                <div class="col-12 col-md-3">
+                     <img class="img-fluid" src="media/donna.png" alt="">
+                </div>
+                <div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
+                    <div class="inserisci-annuncio-box">
+                        <p class="title-annuncio-box">Comicia a guadagnare</p>
+                        <p class="subtitle-annuncio-box">Vendi il più presto possibile i prodotti che non usi piu' !</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
+                    <div>
+                        <a href="{{route('createAnnouncement')}}" class="btnP bouncy">Inserisci annuncio</a>
+                    </div>
+                </div>
         </div>
     </section>
 
