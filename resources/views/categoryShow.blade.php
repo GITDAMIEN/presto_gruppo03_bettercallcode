@@ -1,4 +1,5 @@
 <x-layout>
+  <x-navbarGeneral></x-navbarGeneral>
     <h1 class="text-center my-5">Stai visualizzando la categoria {{$category->name}}</h1>
     <div class="container">
         <div class="row">

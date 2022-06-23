@@ -1,4 +1,5 @@
 <x-layout>
+    <x-navbarGeneral></x-navbarGeneral>
     <h1 class="text-center">TUTTI GLI ANNUNCI</h1>
 
     @if (session('message'))

@@ -19,9 +19,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
     @livewireStyles
 </head>
-<body>
+<body class="m-0 p-0">
 
-    <x-navbar/>
+    {{-- <x-navbar/> --}}
         {{$slot}}
 
     <x-footer/>

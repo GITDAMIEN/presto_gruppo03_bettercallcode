@@ -1,12 +1,12 @@
- <div class="container">
+ <div class="container p-0 m-0">
   <header class="d-flex  align-items-center justify-content-center justify-content-md-between mb-4 ps-5 fixed-top presto-nav">
     <a href="{{route('welcome')}}" class=" title-nav panna d-flex align-items-center text-decoration-none">
       Presto
     </a>
 
     <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-      <li><a href="{{route('welcome')}}" class="nav-link px-2 fs-6 montsterrant">Home</a></li>
-      <li><a href="{{route('allAnnouncements')}}" class="nav-link px-2 montsterrant fs-6">Annunci</a></li>
+      <li><a href="{{route('welcome')}}" class="nav-link px-2 fs-6 lato">Home</a></li>
+      <li><a href="{{route('allAnnouncements')}}" class="nav-link px-2 lato fs-6">Annunci</a></li>
       @guest    
       <li class="nav-item">
           <a class="nav-link fs-6" href="{{route('register')}}">Registrati</a>
