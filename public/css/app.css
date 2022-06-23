@@ -11281,6 +11281,11 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+body{
+    background-color: var(--celesteChiaro);
+}
+
+
 :root{
     --celesteScuro:rgb(137, 176, 174);
     --celesteChiaro:rgb(190, 227, 219);
@@ -11307,9 +11312,6 @@ textarea.form-control-lg {
 }
 .montsterrant{
     font-family: 'Montserrat Alternates', sans-serif;
-}
-body{
-    background-color: lightsalmon;
 }
 
 .cover{
@@ -11413,5 +11415,39 @@ body{
 .customBtnSell:hover::before{
     opacity: 1;
 }
+.p-nav{
+    background-color: transparent;
+    position: fixed;
+    top: 0px;
+}
+.test-ul{
+    position: fixed;
+    right: 0px;
+}
+
+.btn-log{
+    background-color: var(--celesteScuro);
+    margin-right: 30px;
+}
+
+.btn-reg{
+    background-color: var(--obsidianGray);
+    margin-right: 30px;
+}
+.nav-link{
+    color: var(--panna);
+    font-family:'Montserrat Alternates', sans-serif ;
+}
+
+a{
+    transition: all 0.2s;
+}
+
+a:hover{
+    color: var(--panna);
+    transform: scale(1.1);
+}
+
+
 
 

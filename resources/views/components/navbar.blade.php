@@ -1,42 +1,48 @@
-<nav class="navbar navbar-expand-md navbar-dark  bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="{{route('welcome')}}">Store</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-      <ul class="navbar-nav ms-auto mb-2 mb-md-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="{{route('welcome')}}">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{{route('allAnnouncements')}}">Annunci</a>
-        </li>
-        @guest
-        <li class="nav-item">
-          <a class="nav-link" href="{{route('register')}}">Registrati</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{{route('login')}}">Login</a>
-        </li>
-        @else
-        <li class="nav-item">
-          <a class="nav-link" href="">Ciao {{Auth::user()->name}}</a>
-        </li class="nav-item">
-        <a  class="nav-link"  href="/logout" onclick="event.preventDefault(); document.getElementById('frm-logout').submit();">
-          Logout
-        </a> 
-        <form id="frm-logout" action="{{ route('logout') }}" method="POST" class="d-none">
-          @csrf
-        </form>
-        <li class="nav-item">
-          <a class="nav-link " href="{{route('createAnnouncement')}}" tabindex="-1" aria-disabled="true">Aggiungi annuncio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">I tuoi annunci</a>
-        </li>
-        @endguest
-      </ul>
-    </div>
-  </div>
-</nav>
+<div class="container">
+  <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 p-nav ">
+    <a class="navbar-brand fs-1 montsterrant panna" href="{{route('welcome')}}">Presto</a>
+
+    <ul class="nav col-12 col-md-auto justify-content-center mb-md-0 test-ul">
+      <li>
+        <a class="nav-link active pt-2 align-items-center" aria-current="page" href="{{route('welcome')}}">Home</a>
+      </li>
+      <li>
+        <a class="nav-link " href="{{route('allAnnouncements')}}">Annunci</a>
+      </li>
+      @guest
+      <li>
+          <a class="nav-link btn btn-reg " href="{{route('register')}}">Registrati</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link btn btn-log " href="{{route('login')}}">Login</a>
+      </li>
+      @else
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-bs-toggle="dropdown" aria-expanded="false">Ciao {{Auth::user()->name}}</a>
+        <ul class="dropdown-menu" aria-labelledby="dropdown03">
+          <li class="nav-item">
+            <a class="nav-link" href="#">I tuoi annunci</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Il tuo profilo</a>
+          </li>
+          <li>
+            <a  class="nav-link"  href="/logout" onclick="event.preventDefault(); document.getElementById('frm-logout').submit();">
+              Logout
+            </a>
+            <form id="frm-logout" action="{{ route('logout') }}" method="POST" class="d-none">
+              @csrf
+            </form>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link btn btn-reg " href="{{route('createAnnouncement')}}" tabindex="-1" aria-disabled="true">Aggiungi annuncio</a>
+      </li>
+      @endguest
+    </ul>
+
+    
+  </header>
+</div>
+
