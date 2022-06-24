@@ -15,18 +15,26 @@ use Illuminate\Support\Facades\Artisan;
 class RevisorController extends Controller
 {
     public function index(){
+
         $announcement_to_check = Announcement::where('is_accepted', null)->first();
-        return view('revisor.index', compact('announcement_to_check'));
+        $announcesOK = Announcement::where('is_accepted', true)->latest($column='updated_at')->get()->take(3);
+        $announcesNO = Announcement::where('is_accepted', false)->latest($column='updated_at')->get()->take(3);
+        $announcesArray = [
+            'announcement_to_check'=> $announcement_to_check,
+            'announcesOK' => $announcesOK,
+            'announcesNO' => $announcesNO
+        ];
+        return view('revisor.index', $announcesArray);
     }
 
     public function acceptAnnouncement(Announcement $announcement){
         $announcement->setAccepted(true);
-        return redirect()->back()->with('message', 'Complimenti, hai accettato l\'annuncio!');
+        return redirect()->back()->with('message', 'Hai accettato l\'annuncio! Grazie per il tuo contributo a Presto.it!');
     }
 
     public function refuseAnnouncement(Announcement $announcement){
         $announcement->setAccepted(false);
-        return redirect()->back()->with('message', 'Complimenti, hai rifiutato l\'annuncio!');
+        return redirect()->back()->with('message', 'Hai rifiutato l\'annuncio! Grazie per il tuo contributo a Presto.it!');
     }
 
     public function becomeRevisor(){

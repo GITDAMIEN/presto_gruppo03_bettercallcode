@@ -64,3 +64,85 @@
         left: 40px;
     }
 }
+
+.rowToCheck{
+    max-width: 600px;
+    border-radius: 20px;
+    height: 200px;
+    position: relative;
+}
+
+.revisorBtns{
+    border-radius: 30px;
+    padding: 10px 20px;
+}
+
+.bellaFoto{
+    border-radius: 50%;
+    border: 3px solid rgb(0, 85, 255);
+}
+
+.imgDiv{
+    height: 200px!important;
+    width: 200px!important;
+    border-radius: 100px;
+}
+
+.revisionBox{
+    border: 2px solid rgb(0, 85, 255);
+    border-radius: 100px;
+    max-width: 800px;
+}
+
+.priceAndCreated{
+    position: absolute;
+    bottom: 16px;
+}
+
+.titleToCheck{
+    transform: translateX(-18px);
+    /* background-color: green; */
+    margin-top: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.descriptionToCheck{
+    transform: translateX(10px);
+    margin-top: 6px;
+}
+
+.priceToCheck{
+    transform: translateX(-4px);
+}
+
+.createdToCheck{
+    transform: translateX(-22px);
+}
+
+.announceCard{
+    border: 1px solid black;
+    border-radius: 30px;
+    height: 112px;
+}
+
+.approvedH2{
+    text-decoration: underline;
+    text-decoration-color: green;
+}
+
+.rejectedH2{
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+
+.titleSpan{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.createdOKNO{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
