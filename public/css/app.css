@@ -11875,6 +11875,10 @@ header.presto-nav {
     background-color:var(--papaya);
     box-shadow: 5px -1px 12px -5px grey;
 }
+
+#generalNavBarUl{
+    transform: translateX(-20px);
+}
 .allCards{
     border-radius: 20px;
     max-width: 1000px;

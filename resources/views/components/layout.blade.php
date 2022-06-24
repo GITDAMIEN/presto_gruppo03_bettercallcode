@@ -24,9 +24,8 @@
 <body class="m-0 p-0">
 
     {{-- <x-navbar/> --}}
-    <div class="min-vh-100">
+   
         {{$slot}}
-    </div>
 
     {{-- <x-footer/> --}}
 

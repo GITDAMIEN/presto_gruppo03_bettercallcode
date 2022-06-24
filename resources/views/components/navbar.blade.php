@@ -1,4 +1,4 @@
- <div class="container p-0 m-0">
+ <div class="container-fluid p-0 m-0">
   <header class="d-flex  align-items-center justify-content-center justify-content-md-between mb-4 ps-5 fixed-top presto-nav ">
     <a href="{{route('welcome')}}" class=" title-nav panna d-flex align-items-center text-decoration-none">
       Presto
@@ -19,7 +19,7 @@
           <a class="nav-link fs-5" href="{{route('createAnnouncement')}}">Nuovo annuncio</a>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle fs-6" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <a class="nav-link dropdown-toggle fs-5 px-4" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Ciao {{Auth::user()->name}}
         </a>
         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
