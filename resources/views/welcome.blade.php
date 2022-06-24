@@ -62,6 +62,7 @@
                             <div>
                                 <p class="lato bold fs-5 uppercase text-center">{{$category->name}}</p>
                                 <p class="lato counterAnnunci text-center">+100 annunci</p>
+                                <img src="{{$category->img}}" alt="">
                             </div>
                         </div>
                         </a>

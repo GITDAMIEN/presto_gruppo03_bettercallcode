@@ -29,9 +29,13 @@ class CreateAnnouncement extends Component
         'max'=>'Il campo :attribute è troppo lungo',
         'numeric'=>"Il prezzo dev'essere un numero"
     ];
+
+    public function testClick($id){
+        $this->category= $id;
+        
+    }
     
     public function createAnnouncement(){
-        
         $this->validate();
         $category = Category::find($this->category);
         $announcement=$category->announcements()->create([

@@ -11618,7 +11618,8 @@ body {
 .cardCategory{
     height: 150px;
     width: 220px;
-    background-color: var(--starry);
+    /* background-color: var(--starry); */
+    background-image: url("https://images.unsplash.com/photo-1569370087950-b02664fad13b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
     box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25), 0 6px 6px rgba(0, 0, 0, 0.22);
     transition: 0.5s;
     border-radius: 10px;
@@ -11724,6 +11725,36 @@ body {
     font-family: 'Lato', sans-serif;
     font-weight: 900;
     color: var(--papaya);
+}
+
+.xxx{
+    border-radius: 10px;
+    background-color: rgba(3, 117, 180, 0.6);
+}
+
+.category-name-cards{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+.main-text-category-cards{
+    color: var(--starry);
+    font-size: 34px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
+
+.super-main-text-category-cards{
+    color: var(--obsidianGray);
+    font-size: 42px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
+
+.btn-category-cards{
+    width: 300px;
+    height: 45px;
+    background-color: var(--starry);
+    color: var(--panna);
 }
 
 
