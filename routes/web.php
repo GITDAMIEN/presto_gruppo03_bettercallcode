@@ -33,4 +33,4 @@ Route::patch('/revisore/rifiuta/annuncio/{announcement}', [RevisorController::cl
 
 // Revisor request and confirmation via email
 Route::get('/revisore/diventaRevisore', [RevisorController::class, "becomeRevisor"])->middleware('auth')->name('becomeRevisor');
-Route::get('/revisore/confermaRevisore/{user}', [RevisorController::class, "makeRevisor"])->name('makeRevisor');
+Route::get('/revisore/confermaRevisore/{user}', [RevisorController::class, "makeRevisor"])->middleware('auth')->name('makeRevisor');

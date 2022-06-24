@@ -1,5 +1,10 @@
 <x-layout>
   <x-navbarGeneral></x-navbarGeneral>
+  
+  <x-slot name="title">
+    Dettagli {{$announce->title}}
+  </x-slot>
+
     <div class="container-fluid">
         <div class="row">
             <div class="col-12">

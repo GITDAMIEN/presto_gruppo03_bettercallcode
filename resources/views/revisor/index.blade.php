@@ -1,6 +1,10 @@
 <x-layout>
     <x-navbarGeneral></x-navbarGeneral>
     
+    <x-slot name="title">
+        Zona revisore
+    </x-slot>
+
     <div class="container">
         <div class="row">
             <h2 class="col-12 text-center my-3">

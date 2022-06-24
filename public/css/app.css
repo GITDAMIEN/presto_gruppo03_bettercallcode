@@ -12060,6 +12060,12 @@ header.presto-nav {
     bottom: 0px;
     right: 0px;
 }
+
+.deniedAccess, .welcomePageMessage{
+    position: absolute;
+    top: 75px;
+    width: 100%;
+}
 .nav-link{
     color: var(--panna);
 }

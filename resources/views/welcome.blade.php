@@ -3,18 +3,22 @@
     <x-slot name="title">Homepage</x-slot>
     
     @if(session('access.denied'))
-        <div class="alert alert-danger">
+        <div class="deniedAccess alert alert-danger text-center">
             {{session('access.denied')}}
+            @if(Auth::check())
+            <div class="text-center mt-2">
+                <a href="/#becomeRevisorDiv" class="btn btn-warning">Diventa revisore!</a>
+            </div>
+            @else
+            <div class="text-center mt-2">
+                <a href="register" class="btn btn-warning">Registrati e diventa revisore!</a>
+            </div>
+            @endif
         </div>
-        @if(Auth::check())
-            <a href="{{route('allAnnouncements')}}">Diventa revisore!</a>
-        @else
-            <a href="register">Registrati e diventa revisore!</a>
-        @endif
     @endif
 
     @if(session('message'))
-        <div class="alert alert-success">
+        <div class="alert alert-success text-center welcomePageMessage">
             {{session('message')}}
         </div>
     @endif
@@ -95,7 +99,7 @@
     </section>
 
     @if(Auth::check() && !Auth::user()->is_revisor)
-        <div class="container">
+        <div id="becomeRevisorDiv" class="container">
             <div class="row text-center my-5">
                 <h5>Diventa revisore per Presto.it!</h5>
                 <a class="btn btn-success" href="{{route('becomeRevisor')}}">Diventa revisore</a>
