@@ -5,18 +5,18 @@
     </a>
 
     <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-      <li><a href="{{route('welcome')}}" class="nav-link px-2 fs-6 lato">Home</a></li>
-      <li><a href="{{route('allAnnouncements')}}" class="nav-link px-2 lato fs-6">Annunci</a></li>
+      <li><a href="{{route('welcome')}}" class="nav-link px-4 fs-5 lato">Home</a></li>
+      <li><a href="{{route('allAnnouncements')}}" class="nav-link px-4 lato fs-5">Annunci</a></li>
       @guest    
       <li class="nav-item">
-          <a class="nav-link fs-6" href="{{route('register')}}">Registrati</a>
+          <a class="nav-link fs-5 px-4" href="{{route('register')}}">Registrati</a>
       </li>
       <li class="nav-item">
-          <a class="nav-link fs-6" href="{{route('login')}}">Log-in</a>
+          <a class="nav-link fs-5 px-4" href="{{route('login')}}">Log-in</a>
       </li>
       @else
       <li class="nav-item">
-          <a class="nav-link fs-6" href="{{route('createAnnouncement')}}">Nuovo annuncio</a>
+          <a class="nav-link fs-5" href="{{route('createAnnouncement')}}">Nuovo annuncio</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle fs-6" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">

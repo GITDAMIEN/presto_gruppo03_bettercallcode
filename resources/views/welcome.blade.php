@@ -53,7 +53,7 @@
 
 
     <section class="container">
-        <p class="text-center fs-2 panna nostreCategorie mb-5">LE NOSTRE CATEGORIE</p>
+        <p class="text-center fs-2 nostreCategorie mb-5">LE NOSTRE CATEGORIE</p>
         <div class="row justify-content-evenly">
                 @foreach ($categories as $category)
                     <div class="col-12 col-md-2 mt-4">

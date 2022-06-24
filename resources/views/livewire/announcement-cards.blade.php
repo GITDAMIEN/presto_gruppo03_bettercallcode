@@ -6,8 +6,8 @@
         <input wire:model="title" type="search" class="form-control" id="searchByTextInput" placeholder="Cerca per parola">
         <label for="searchByTextInput">Cerca per parola</label>
       </div>
-      {{-- RICERCA PER UTENTE
-      <div class="form-floating my-3">
+      {{-- RICERCA PER UTENTE --}}
+      {{-- <div class="form-floating my-3">
         <input wire:model="user" type="search" class="form-control" id="searchByUserInput" placeholder="Cerca per utente">
         <label for="searchByUserInput">Cerca per utente</label>
       </div> --}}

@@ -53,9 +53,10 @@ class AnnouncementCards extends Component
         // RICERCA PER UTENTE
         // if(!empty($this->user)){
         //     $announce = $announce->when($this->user, function($query){
-        //         $query->where('user_id', $this->user);
+        //         $query->where('user.user_id', $this->user);
         //     });
         // }
+        
         if($this->sort=='AtoZ'){
             $announce = $announce->orderBy('title',"asc");
         }

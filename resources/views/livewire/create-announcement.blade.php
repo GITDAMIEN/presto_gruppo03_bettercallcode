@@ -39,7 +39,7 @@
         <br>
         <div class="d-flex justify-content-center align-items-center">
             <div>
-                <button type="submit" class="btn orangeBg panna mt-3 text-center">Pubblica</button>
+                <button type="submit" class="btn papayaBg panna mt-3 text-center">Pubblica</button>
             </div>
         </div>
     </form>

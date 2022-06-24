@@ -1,4 +1,4 @@
-<div class="container-fluid presto-foo obsidiangrayBg mt-5 mb-0 ">
+<div class="container-fluid presto-foo mt-5 mb-0 ">
     <footer class="pt-5 mt-5">
       <div class="row">
         <div class="col-2">
@@ -58,7 +58,7 @@
           <div class="d-flex w-100 gap-2">
             <label for="newsletter1" class="visually-hidden">Indirizzo email</label>
             <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-            <button class="btn orangeBg panna" type="button"> <i class="fa-solid fa-paper-plane"></i> </button>
+            <button class="btn papayaBg panna" type="button"> <i class="fa-solid fa-paper-plane"></i> </button>
           </div>
         </form>
       </div>
@@ -68,13 +68,13 @@
       <p class="panna">© 2022 Presto.it</p>
       <ul class="list-unstyled d-flex fs-4">
         <li class="me-3 px-2">
-          <a class="orange p-font" href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a class="panna p-font" href="#"><i class="fa-brands fa-instagram"></i></a>
         </li>
         <li class="me-3 px-2">
-          <a class="orange p-font" href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a class="panna p-font" href="#"><i class="fa-brands fa-twitter"></i></a>
         </li>
         <li class="me-3 px-2">
-          <a class="orange p-font" href="#"><i class="fa-brands fa-tiktok"></i></a>
+          <a class="panna p-font" href="#"><i class="fa-brands fa-tiktok"></i></a>
         </li>
       </ul>
     </div>

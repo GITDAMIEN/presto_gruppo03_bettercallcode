@@ -1,6 +1,6 @@
 <x-layout>
     <x-navbarGeneral></x-navbarGeneral>
-    <h1 class="text-center">TUTTI GLI ANNUNCI</h1>
+    <h1 class="text-center tuttigliannunci py-4">TUTTI GLI ANNUNCI</h1>
 
     @if (session('message'))
         <div class="alert alert-success">

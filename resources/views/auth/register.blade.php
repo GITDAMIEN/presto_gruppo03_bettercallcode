@@ -37,7 +37,7 @@
                     </div> 
                     
                     <div class="form-outline mb-4 d-flex justify-content-center align-items-center">
-                        <button type="submit" class="btn orangeBg panna mb-4">Registrati</button>
+                        <button type="submit" class="btn papayaBg panna mb-4">Registrati</button>
                     </div>
                 </form>
             </div>

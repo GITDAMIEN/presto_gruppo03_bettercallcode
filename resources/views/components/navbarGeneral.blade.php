@@ -1,22 +1,22 @@
 <div class="container-fluid p-0 m-0">
-    <header class="d-flex  align-items-center justify-content-center justify-content-md-between mb-4 ps-5 orangeBg presto-nav-general">
+    <header class="d-flex  align-items-center justify-content-center justify-content-md-between mb-4 ps-5 papayaBg presto-nav-general">
       <a href="{{route('welcome')}}" class=" title-nav panna d-flex align-items-center text-decoration-none">
         Presto
       </a>
   
       <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        <li><a href="{{route('welcome')}}" class="nav-link px-2 fs-6 lato">Home</a></li>
-        <li><a href="{{route('allAnnouncements')}}" class="nav-link px-2 lato fs-6">Annunci</a></li>
+        <li><a href="{{route('welcome')}}" class="nav-link px-4 fs-5 lato">Home</a></li>
+        <li><a href="{{route('allAnnouncements')}}" class="nav-link px-4 lato fs-5">Annunci</a></li>
         @guest    
         <li class="nav-item">
-            <a class="nav-link fs-6" href="{{route('register')}}">Registrati</a>
+            <a class="nav-link px-4 fs-5" href="{{route('register')}}">Registrati</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link fs-6" href="{{route('login')}}">Log-in</a>
+            <a class="nav-link px-4 fs-5" href="{{route('login')}}">Log-in</a>
         </li>
         @else
         <li class="nav-item">
-            <a class="nav-link fs-6" href="{{route('createAnnouncement')}}">Nuovo annuncio</a>
+            <a class="nav-link px-4 fs-5" href="{{route('createAnnouncement')}}">Nuovo annuncio</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle fs-6" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">

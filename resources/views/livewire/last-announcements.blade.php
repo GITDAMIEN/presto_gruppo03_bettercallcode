@@ -22,8 +22,8 @@
             <div class="skill-card mb-4">
                 <header class="skill-card__header"><img class="skill-card__icon" src="https://source.unsplash.com/350x350" alt="Immagine bella"></header>
                 <section class="skill-card__body">
-                    <h2 class="skill-card__title">{{$announce->title}}</h2><a href="{{route('categoryShow',$announce->category)}}" class="skill-card__duration__category">{{$announce->category->name}}</a>
-                    <p class="skill-card__duration lato">{{$announce->price}}€</p>
+                    <h2 class="skill-card__title">{{$announce->title}}</h2><a href="{{route('categoryShow',$announce->category)}}" class="skill-card__duration__category mb-5">{{$announce->category->name}}</a>
+                    <p class="skill-card__duration lato pt-1">{{$announce->price}}€</p>
                     <ul class="skill-card__knowledge p-0">
                         <li class="description">{{$announce->description}}</li>
             

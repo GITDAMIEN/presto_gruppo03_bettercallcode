@@ -3,7 +3,7 @@
 }
 
 .nav-link:hover{
-    color: var(--orange);
+    color: var(--papaya);
 }
 
 h5{
@@ -11,4 +11,15 @@ h5{
 }
 .nav-item {
     font-family: 'Lato', sans-serif;
+}
+
+.presto-foo{
+    background-color: var(--irises);
+}
+
+.p-font:hover{
+    color: var(--papaya);
+}
+.papayaBg:hover{
+    color: var(--panna);
 }

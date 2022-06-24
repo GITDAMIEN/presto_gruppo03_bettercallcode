@@ -30,7 +30,7 @@
                         <input type="checkbox" class="form-check-input" name="remember"/>
                     </div>
                     <div class="form-outline mb-4 d-flex justify-content-center align-items-center">
-                        <button type="submit" class="btn orangeBg panna mb-4">Accedi</button>
+                        <button type="submit" class="btn papayaBg panna mb-4">Accedi</button>
                     </div>
                 </form>
             </div>
