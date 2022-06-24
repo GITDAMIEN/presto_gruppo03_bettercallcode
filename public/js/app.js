@@ -5418,7 +5418,7 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*!********************************!*\
   !*** ./resources/js/script.js ***!
   \********************************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 // const swiper = new Swiper('.swiper', {
 //     // Optional parameters
@@ -5450,7 +5450,8 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //           },
 //         }
 //       });
-// const navbar = document.querySelector('.presto-nav');
+var _require = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js"),
+    xor = _require.xor; // const navbar = document.querySelector('.presto-nav');
 // document.addEventListener('scroll', ()=> {
 //     if(window.scrollY > 50){
 //         navbar.classList.add('orangeBg')
@@ -5458,6 +5459,8 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //       navbar.classList.remove('orangeBg')
 //     }
 // });
+
+
 var navbar = document.querySelector('.presto-nav');
 
 window.onscroll = function () {
