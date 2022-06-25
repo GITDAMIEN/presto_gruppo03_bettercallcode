@@ -11756,6 +11756,10 @@ body {
     background-color: var(--starry);
     color: var(--panna);
 }
+.img-preview{
+    width: 250px;
+    height: 250px;
+}
 
 
 
