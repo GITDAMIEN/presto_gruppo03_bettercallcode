@@ -86,16 +86,6 @@
     height: 112px;
 }
 
-.approvedH2{
-    text-decoration: underline;
-    text-decoration-color: green;
-}
-
-.rejectedH2{
-    text-decoration: underline;
-    text-decoration-color: red;
-}
-
 .titleSpan{
     font-weight: 600;
     font-size: 20px;
@@ -136,26 +126,21 @@ textarea{
 }
 
 @keyframes bounce {
-	0%, 100%, 20%, 50%, 80% {
+    0%, 20%, 40%, 100% {
 		-webkit-transform: translateY(0);
 		-ms-transform:     translateY(0);
 		transform:         translateY(0)
 	}
-	40% {
+	30% {
 		-webkit-transform: translateY(-20px);
 		-ms-transform:     translateY(-20px);
 		transform:         translateY(-20px)
-	}
-	60% {
-		-webkit-transform: translateY(-15px);
-		-ms-transform:     translateY(-15px);
-		transform:         translateY(-15px)
 	}
 }
 
 .bounce_button {
     animation-name: bounce;
-    animation-duration: 1s;
+    animation-duration: 3s;
     animation-iteration-count: infinite;
     -webkit-animation-iteration-count: infinite;
 }
@@ -346,20 +331,15 @@ textarea{
     }
 
     @keyframes bounce {
-        0%, 100%, 20%, 50%, 80% {
+        0%, 20%, 40%, 100% {
             -webkit-transform: translateX(0);
             -ms-transform:     translateX(0);
             transform:         translateX(0)
         }
-        40% {
+        30% {
             -webkit-transform: translateX(-30px);
             -ms-transform:     translateX(-30px);
             transform:         translateX(-30px)
-        }
-        60% {
-            -webkit-transform: translateX(-15px);
-            -ms-transform:     translateX(-15px);
-            transform:         translateX(-15px)
         }
     }
 

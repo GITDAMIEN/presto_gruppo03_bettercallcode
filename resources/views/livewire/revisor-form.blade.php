@@ -2,11 +2,11 @@
 <form id="contactUsFormCard" class="card col-12 col-md-6 customBlack ubuntuFont text-center d-flex align-items-center mx-3 ms-md-0 me-md-4 needs-validation" novalidate wire:submit.prevent="sendForm">
     <h4 id="contactUsH5"><i id="formArrows" class="fa-solid fa-circle-arrow-right me-3 secColor"></i>Compila la richiesta<i id="formArrows" class="fa-solid fa-circle-arrow-left ms-3 secColor"></i></h4>
     <div class="customInput mb-2">
-        <input type="text" class="form-control" id="floatingPassword" placeholder="Username: {{Auth::user()->name}}" readonly>
+        <input type="text" class="form-control" id="floatingPassword" placeholder="{{Auth::user()->name}}" readonly>
         <small class="invalid-feedback ps-3">Questo campo è obbligatorio</small>
     </div>
     <div class="customInput mb-2">
-        <input type="email" class="form-control" id="floatingInput" placeholder="Email: {{Auth::user()->email}}" readonly>
+        <input type="email" class="form-control" id="floatingInput" placeholder="{{Auth::user()->email}}" readonly>
         <small class="invalid-feedback ps-3">Inserisci un indirizzo email corretto</small>
     </div>
     <div class="form-floating">

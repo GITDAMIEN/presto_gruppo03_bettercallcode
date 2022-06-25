@@ -11998,18 +11998,6 @@ header.presto-nav {
     height: 112px;
 }
 
-.approvedH2{
-    text-decoration: underline;
-    -webkit-text-decoration-color: green;
-            text-decoration-color: green;
-}
-
-.rejectedH2{
-    text-decoration: underline;
-    -webkit-text-decoration-color: red;
-            text-decoration-color: red;
-}
-
 .titleSpan{
     font-weight: 600;
     font-size: 20px;
@@ -12050,34 +12038,28 @@ textarea{
 }
 
 @-webkit-keyframes bounce {
-	0%, 100%, 20%, 50%, 80% {
+    0%, 20%, 40%, 100% {
 		transform:         translateY(0)
 	}
-	40% {
+	30% {
 		transform:         translateY(-20px)
-	}
-	60% {
-		transform:         translateY(-15px)
 	}
 }
 
 @keyframes bounce {
-	0%, 100%, 20%, 50%, 80% {
+    0%, 20%, 40%, 100% {
 		transform:         translateY(0)
 	}
-	40% {
+	30% {
 		transform:         translateY(-20px)
-	}
-	60% {
-		transform:         translateY(-15px)
 	}
 }
 
 .bounce_button {
     -webkit-animation-name: bounce;
             animation-name: bounce;
-    -webkit-animation-duration: 1s;
-            animation-duration: 1s;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
     animation-iteration-count: infinite;
     -webkit-animation-iteration-count: infinite;
 }
@@ -12268,26 +12250,20 @@ textarea{
     }
 
     @-webkit-keyframes bounce {
-        0%, 100%, 20%, 50%, 80% {
+        0%, 20%, 40%, 100% {
             transform:         translateX(0)
         }
-        40% {
+        30% {
             transform:         translateX(-30px)
-        }
-        60% {
-            transform:         translateX(-15px)
         }
     }
 
     @keyframes bounce {
-        0%, 100%, 20%, 50%, 80% {
+        0%, 20%, 40%, 100% {
             transform:         translateX(0)
         }
-        40% {
+        30% {
             transform:         translateX(-30px)
-        }
-        60% {
-            transform:         translateX(-15px)
         }
     }
 

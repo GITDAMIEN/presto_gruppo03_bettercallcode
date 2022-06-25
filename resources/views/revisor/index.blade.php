@@ -62,7 +62,7 @@
     {{-- ULTIMI ANNUNCI ACCETTATI --}}
     <div class="container mt-5">
         <div class="row justify-content-center">
-            <h2 class="col-12 text-center my-3 py-2 approvedH2">Gli ultimi annunci accettati</h2>
+            <h2 class="col-12 text-center my-3 py-2">Gli ultimi annunci accettati</h2>
             @if($announcesOK)
             @foreach ($announcesOK as $announceOK)
             <div class="row my-2 py-2 align-items-center announceCard justify-content-between">
@@ -96,7 +96,7 @@
     {{-- ULTIMI ANNUNCI RIFIUTATI --}}
     <div class="container mt-5">
         <div class="row justify-content-center">
-            <h2 class="col-12 text-center my-3 py-2 rejectedH2">Gli ultimi annunci rifiutati</h2>
+            <h2 class="col-12 text-center my-3 py-2">Gli ultimi annunci rifiutati</h2>
             @if($announcesNO)
             @foreach ($announcesNO as $announceNO)
             <div class="row my-2 py-2 align-items-center announceCard justify-content-between">
