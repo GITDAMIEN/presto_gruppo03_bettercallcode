@@ -5469,25 +5469,38 @@ window.onscroll = function () {
   } else {
     navbar.classList.remove('nav-active');
   }
-};
+}; // CAROSELLI NELLA PAGINA DEL REVISORE (ANNUNCI DA REVISIONARE)
 
-var belleFotoDiv = document.querySelectorAll('.bellaFotoDiv');
+
+var belleFoto = document.querySelectorAll('.bellaFoto');
 var carouselControlPrev = document.querySelector('.carousel-control-prev');
-var carouselControlNext = document.querySelector('.carousel-control-next');
+var carouselControlNext = document.querySelector('.carousel-control-next'); // let begliAnnunci = document.querySelectorAll('.bellAnnuncio');
+// let carouselControlPrevMain = document.querySelector('.carousel-control-prev-main');
+// let carouselControlNextMain = document.querySelector('.carousel-control-next-main');
+
 carouselControlPrev.addEventListener('click', function () {
-  belleFotoDiv.forEach(function (foto, i) {
+  belleFoto.forEach(function (foto, i) {
     foto.classList.remove('active');
   });
-  belleFotoDiv[i - 1].classList.add('active');
-  console.log(belleFotoDiv);
+  belleFoto[i - 1].classList.add('active');
 });
 carouselControlNext.addEventListener('click', function () {
-  belleFotoDiv.forEach(function (foto, i) {
+  belleFoto.forEach(function (foto, i) {
     foto.classList.remove('active');
   });
-  belleFotoDiv[i + 1].classList.add('active');
-  console.log(belleFotoDiv);
-});
+  belleFoto[i + 1].classList.add('active');
+}); // carouselControlPrevMain.addEventListener('click', ()=>{
+//     begliAnnunci.forEach((foto,i) => {
+//         foto.classList.remove('active');
+//     });
+//     begliAnnunci[i-1].classList.add('active');
+// })
+// carouselControlNextMain.addEventListener('click', ()=>{
+//     begliAnnunci.forEach((foto,i) => {
+//         foto.classList.remove('active');
+//     });
+//     begliAnnunci[i+1].classList.add('active');
+// })
 
 /***/ }),
 

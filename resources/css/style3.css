@@ -37,9 +37,20 @@
     padding: 10px 20px;
 }
 
-.bellaFoto{
+.divDiv{
     border-radius: 50%;
     border: 3px solid rgb(0, 85, 255);
+    overflow: hidden;
+}
+
+.bellaFotoDiv{
+    width: 200px!important;
+    height: 200px!important;
+}
+
+.bellaFoto{
+    width: 100%;
+    height: 100%;
 }
 
 .imgDiv{

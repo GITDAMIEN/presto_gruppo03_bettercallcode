@@ -53,23 +53,39 @@ window.onscroll = () => {
     }
 };
 
-let belleFotoDiv = document.querySelectorAll('.bellaFotoDiv');
+// CAROSELLI NELLA PAGINA DEL REVISORE (ANNUNCI DA REVISIONARE)
+let belleFoto = document.querySelectorAll('.bellaFoto');
 let carouselControlPrev = document.querySelector('.carousel-control-prev');
 let carouselControlNext = document.querySelector('.carousel-control-next');
+// let begliAnnunci = document.querySelectorAll('.bellAnnuncio');
+// let carouselControlPrevMain = document.querySelector('.carousel-control-prev-main');
+// let carouselControlNextMain = document.querySelector('.carousel-control-next-main');
 
 carouselControlPrev.addEventListener('click', ()=>{
-    belleFotoDiv.forEach((foto,i) => {
+    belleFoto.forEach((foto,i) => {
         foto.classList.remove('active');
     });
-    belleFotoDiv[i-1].classList.add('active');
-    console.log(belleFotoDiv);
+    belleFoto[i-1].classList.add('active');
 })
 
 carouselControlNext.addEventListener('click', ()=>{
-    belleFotoDiv.forEach((foto,i) => {
+    belleFoto.forEach((foto,i) => {
         foto.classList.remove('active');
     });
-    belleFotoDiv[i+1].classList.add('active');
-    console.log(belleFotoDiv);
+    belleFoto[i+1].classList.add('active');
 })
+
+// carouselControlPrevMain.addEventListener('click', ()=>{
+//     begliAnnunci.forEach((foto,i) => {
+//         foto.classList.remove('active');
+//     });
+//     begliAnnunci[i-1].classList.add('active');
+// })
+
+// carouselControlNextMain.addEventListener('click', ()=>{
+//     begliAnnunci.forEach((foto,i) => {
+//         foto.classList.remove('active');
+//     });
+//     begliAnnunci[i+1].classList.add('active');
+// })
 
