@@ -151,7 +151,7 @@ textarea{
 
 .bounce_button {
     animation-name: bounce;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
     -webkit-animation-iteration-count: infinite;
 }
@@ -205,7 +205,7 @@ textarea{
     border: 1px solid var(--sec-color)!important;
 }
 
-.form-floating{
+#contactUsFormCard > .form-floating{
     width: 90%;
 }
 

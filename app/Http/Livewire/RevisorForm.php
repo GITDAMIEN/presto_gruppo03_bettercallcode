@@ -15,13 +15,13 @@ class RevisorForm extends Component
     // public $user;
     // public $email;
     public $messagetxt;
-    // public $cv;
+    public $cv;
 
     protected $rules = [
         // 'user' => 'required',
         // 'email' => 'required',
         'messagetxt' => 'required',
-        // 'cv' => 'required|mimes:pdf|max:1024' // 1MB max
+        'cv' => 'required|mimes:pdf|max:1024' // 1MB max
     ];
 
     protected $messages = [
@@ -36,14 +36,15 @@ class RevisorForm extends Component
             $this->validate(),
             Auth::user()
         ];
-
+        
+        // dd($validated);
         (new EmailContactLeadAction)($validated);
 
         $form = [
             // 'user' => $this->user,
             // 'email' => $this->email,
             'messagetxt' => $this->messagetxt,
-            // 'cv' => $this->cv
+            'cv' => $this->cv
         ];
         // dd($form);
 
