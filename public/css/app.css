@@ -11910,6 +11910,13 @@ header.presto-nav {
 #generalNavBarUl{
     transform: translateX(-20px);
 }
+
+:root{
+    --main-color: #B2EDC5;
+    --sec-color: #FFB800;
+    --custom-black: #000000d5;
+}
+
 .allCards{
     border-radius: 20px;
     max-width: 1000px;
@@ -11928,53 +11935,6 @@ header.presto-nav {
 
 #infoDiv{
     position: relative;
-}
-
-@media screen and (min-width: 768px) {
-    
-    .cardH2{
-        font-size: 26px;
-        position: absolute;
-        left: 40px;
-        margin-bottom: 0px;
-    }
-    
-    .descriptionP{
-        position: absolute;
-        left: 40px;
-        top: 80px;
-        margin-bottom: 0px;
-    }
-    
-    .createdSpan{
-        position: absolute;
-        right: 40px;
-        bottom: 6px;
-        font-style: italic;
-        font-size: 14px;
-    }
-    
-    .priceSpan{
-        position: absolute;
-        right: 40px;
-        top: 20px;
-        background-color: var(--irises);
-        border-radius: 8px;
-        padding: 4px 8px;
-        color: white;
-    }
-    
-    .categoryA{
-        position: absolute;
-        left: 40px;
-        top: 50px;
-    }
-    
-    .detailsP{
-        position: absolute;
-        bottom: 0px;
-        left: 40px;
-    }
 }
 
 .rowToCheck{
@@ -12066,6 +12026,335 @@ header.presto-nav {
     top: 75px;
     width: 100%;
 }
+
+/* Work with us */
+
+h6{
+    font-size: 20px;
+}
+
+textarea{
+    min-height: 100px!important;
+}
+
+#workWithUsContainerFluid{
+    background-image: url(/media/Animated\ Shape\ \(7\).svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 2px solid var(--sec-color);
+}
+
+#contactUsRow{
+    align-items: center;
+    justify-content: center;
+}
+
+@-webkit-keyframes bounce {
+	0%, 100%, 20%, 50%, 80% {
+		transform:         translateY(0)
+	}
+	40% {
+		transform:         translateY(-20px)
+	}
+	60% {
+		transform:         translateY(-15px)
+	}
+}
+
+@keyframes bounce {
+	0%, 100%, 20%, 50%, 80% {
+		transform:         translateY(0)
+	}
+	40% {
+		transform:         translateY(-20px)
+	}
+	60% {
+		transform:         translateY(-15px)
+	}
+}
+
+.bounce_button {
+    -webkit-animation-name: bounce;
+            animation-name: bounce;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+#wannaWorkWithUs{
+    font-size: 22px;
+}
+
+#contactUsFormCard{
+    border-radius: 30px;
+    border: 4px solid var(--sec-color);
+    box-shadow: 1px 1px 10px var(--custom-black);
+    max-width: 400px;
+    position: relative;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+#contactUsFormCard:hover{
+    transform: scale(1.03);
+}
+
+#contactUsLeftPart{
+    text-align: center;
+}
+
+#contactUsWords{
+    background-color: var(--sec-color);
+    border-radius: 30px;
+    padding: 10px 20px;
+    max-width: 270px;
+    margin: auto;
+}
+
+#contactUsH5{
+    font-size: 16px;
+    margin: 30px auto;
+}
+
+.form-control, .form-select{
+    border-radius: 10px;
+    font-size: 0.95rem!important;
+}
+
+.form-floating > label{
+    font-size: 0.95rem!important;
+}
+
+.form-control:focus, .form-select:focus{
+    box-shadow: none!important;
+    border: 1px solid var(--sec-color)!important;
+}
+
+.form-floating{
+    width: 90%;
+}
+
+.customInput{
+    width: 90%;
+    position: relative;
+}
+
+.customInput > .form-control{
+    padding: 1rem 0.75rem;
+    height: calc(3.5rem + 2px);
+    line-height: 1.25;
+}
+
+#revisorFormBtnsDiv{
+    width: 70%;
+}
+
+#inputFileLabel{
+    display: block;
+    text-align: center;
+    line-height: 220%;
+    border: 2px solid var(--sec-color);
+    color: var(--custom-black);
+    background-color: transparent;
+    height: 45px;
+    width: 80%;
+    border-radius: 30px;
+    margin: 30px auto 7px auto;
+    transition: 0.2s;
+    /* padding: 0px 50px; */
+}
+
+#inputFile{
+    display: none;
+}
+
+#okCVIcon{
+    transform: translateX(-2px);
+}
+
+#sendApplicationBtn{
+    border-style: none;
+    color: var(--custom-black);
+    background-color: var(--sec-color);
+    height: 45px;
+    width: 80%;
+    border-radius: 30px;
+    margin: 7px auto 30px auto;
+    transition: 0.2s;
+}
+
+
+#inputFileLabel:hover, #sendApplicationBtn:hover{
+    transform: scale(1.1);
+}
+
+#formArrows{
+    text-shadow: 0px 0px 5px var(--custom-black);
+}
+
+
+
+
+/* Media query */
+
+@media screen and (min-width: 393px){
+
+    #contactUsH5{
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 480px){
+
+    #logoText, #logoText span{
+        font-size: 35px;
+    }
+    
+    #pSpan{
+        font-size: 70px!important;
+    }
+
+    #dotSpan{
+        font-size: 50px;
+    }
+}
+
+
+@media screen and (min-width: 768px){
+    
+    .cardH2{
+        font-size: 26px;
+        position: absolute;
+        left: 40px;
+        margin-bottom: 0px;
+    }
+    
+    .descriptionP{
+        position: absolute;
+        left: 40px;
+        top: 80px;
+        margin-bottom: 0px;
+    }
+    
+    .createdSpan{
+        position: absolute;
+        right: 40px;
+        bottom: 6px;
+        font-style: italic;
+        font-size: 14px;
+    }
+    
+    .priceSpan{
+        position: absolute;
+        right: 40px;
+        top: 20px;
+        background-color: var(--irises);
+        border-radius: 8px;
+        padding: 4px 8px;
+        color: white;
+    }
+    
+    .categoryA{
+        position: absolute;
+        left: 40px;
+        top: 50px;
+    }
+    
+    .detailsP{
+        position: absolute;
+        bottom: 0px;
+        left: 40px;
+    }
+
+    @-webkit-keyframes bounce {
+        0%, 100%, 20%, 50%, 80% {
+            transform:         translateX(0)
+        }
+        40% {
+            transform:         translateX(-30px)
+        }
+        60% {
+            transform:         translateX(-15px)
+        }
+    }
+
+    @keyframes bounce {
+        0%, 100%, 20%, 50%, 80% {
+            transform:         translateX(0)
+        }
+        40% {
+            transform:         translateX(-30px)
+        }
+        60% {
+            transform:         translateX(-15px)
+        }
+    }
+
+    #contactUsWords{
+        transform: scale(0.9);
+    }
+
+    .fa-circle-arrow-down{
+        transform: rotate(270deg);
+    }
+    
+    #contactUsLeftPart{
+        text-align: end;
+    }
+}
+
+@media screen and (min-width: 992px){
+    
+    #contactUsWords{
+        transform: scale(1);
+        margin: 0px 20px 0px 65px;
+    }
+    
+    #workWithUsContainerFluid{
+        background-image: url(/media/Animated\ Shape\ \(6\).svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+}
+
+@media screen and (min-width: 1200px){
+
+    #contactUsWords{
+        margin: 0px 20px 0px 130px;
+    }
+
+    #contactUsFormCard{
+        transform: translateX(-35px)
+    }
+
+    #contactUsFormCard:hover{
+        transform: scale(1.03) translateX(-35px);
+    }
+
+}
+
+@media screen and (min-width: 1400px){
+
+    #contactUsWords{
+        margin: 0px 20px 0px 200px;
+    }
+    
+    #contactUsFormCard{
+        transform: translateX(-60px);
+    }
+    
+    #contactUsFormCard:hover{
+        transform: scale(1.03) translateX(-60px);
+    }
+
+    #contactUsLeftPart{
+        transform: translateX(-40px)
+    }
+
+}
+
 .nav-link{
     color: var(--panna);
 }
