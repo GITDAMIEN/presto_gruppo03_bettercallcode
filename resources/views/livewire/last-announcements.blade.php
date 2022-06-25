@@ -20,7 +20,7 @@
 
             <a href="{{route('detailsAnnounce',$announce)}}">
             <div class="skill-card mb-4">
-                <header class="skill-card__header"><img src="{{!$announce->images()->get()->isEmpty() ? Storage::url($announce->images()->first()->path) : 'https://source.unsplash.com/230x200'}}" alt="Immagine bella" class="skill-card__icon"></header>
+                <header class="skill-card__header"><img src="{{!$announce->images()->get()->isEmpty() ? $announce->images()->first()->getUrl(600,450) : 'https://source.unsplash.com/230x200'}}" alt="Immagine bella" class="skill-card__icon"></header>
                 
                 <section class="skill-card__body">
                     <h2 class="skill-card__title">{{$announce->title}}</h2><a href="{{route('categoryShow',$announce->category)}}" class="skill-card__duration__category mb-5">{{$announce->category->name}}</a>

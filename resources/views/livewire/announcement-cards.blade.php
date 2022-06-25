@@ -51,7 +51,7 @@
         <div class="allCards col-12 card px-0 my-2">
           <div class="row justify-content-between">
             <div class="col-3 ps-2 pe-0">
-              <img src="{{!$announce->images()->get()->isEmpty() ? Storage::url($announce->images()->first()->path) : 'https://source.unsplash.com/230x200'}}" alt="Immagine bella" class="img-fluid">
+              <img src="{{!$announce->images()->get()->isEmpty() ? $announce->images()->first()->getUrl(600,450) : 'https://source.unsplash.com/230x200'}}" alt="Immagine bella" class="hhh">
             </div>
             <div id="infoDiv" class="col-9 pt-3 px-0">
               <p class="cardH2"><a href="{{route('detailsAnnounce',$announce)}}">{{$announce->title}}</a></p>

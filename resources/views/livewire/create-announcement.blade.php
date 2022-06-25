@@ -50,7 +50,7 @@
                         {{$message}}
                     @enderror
                 </div>
-                <div class="col-12 col-md-8 offset-md-2">
+                <div class="col-12 col-md-8 offset-md-2 mt-5">
                     <input wire:model="temporary_images" type="file" accept="image/*" name="images" multiple class="form-control shadow @error('temporary_images.*') is-invalid @enderror" placeholder="Img"/>
                     @error('temporary_images.*')
                         <p class="text-danger mt-3">{{$message}}</p>
@@ -59,13 +59,12 @@
                 @if (!@empty($images))
                 <div class="col-12 col-md-8 offset-md-2">
                     <div class="row">
-                        <div class="col-12">
-                            <p>Preview:</p>
-                            <div class="row border border-4 border-info rounded shadow py-4">
+                        <div class="col-12 px-4 pt-4 pb-2">
+                            <div class="row border py-4 previewbox">
                                 @foreach ($images as $key=>$image)
                                     <div class="col my-3">
-                                        <div class="img-preview mx-auto shadow rounded" style="background-image: url({{$image->temporaryUrl()}}) "></div>
-                                        <button type="button" class="btn btn-danger shadow d-block text-center mt-2 mx-auto" wire:click="removeImage({{$key}})">Cancella</button>
+                                        <div class="img-preview mx-auto" style="background-image: url({{$image->temporaryUrl()}})"></div>
+                                        <button type="button" class="btn btn-danger shadow d-block text-center mt-4 mx-auto" wire:click="removeImage({{$key}})">Cancella</button>
                                     </div>
                                 @endforeach
                             </div>

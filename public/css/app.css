@@ -11759,6 +11759,17 @@ body {
 .img-preview{
     width: 250px;
     height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+.previewbox{
+    border-radius: 10px;
+}
+
+.hhh{
+    height: 100%;
+    width: 100%;
 }
 
 
