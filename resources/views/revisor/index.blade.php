@@ -8,7 +8,7 @@
     <div class="container">
         <div class="row">
             <h2 class="col-12 text-center my-3">
-                {{$announcement_to_check ? "Annuncio da revisionare:" : "Non ci sono annunci da revisionare"}}
+                {{$announcement_to_check ? "Annunci da revisionare:" : "Non ci sono annunci da revisionare"}}
             </h2>
         </div>
     </div>
@@ -24,11 +24,25 @@
     <div class="container mt-5">
         <div class="row justify-content-center">
             <div class="col-8">
-                <div class="row revisionBox justify-content-between">
+                <div class="row revisionBox justify-content-between mx-auto">
                     <div class="col-3 imgDiv px-0 d-flex justify-content-center align-items-center">
-                        @foreach ($announcement_to_check->images as $image)
-                            <img src="{{Storage::url($image->path)}}" class="bellaFoto img-fluid">
-                        @endforeach
+                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+                            <div class="carousel-inner">
+                                @foreach ($announcement_to_check->images as $image)
+                                    <div class="carousel-item {{$loop->index==0 ? 'active' : ''}} bellaFotoDiv">
+                                        <img src="{{Storage::url($image->path)}}" class="bellaFoto img-fluid">
+                                    </div>
+                                @endforeach
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
                     </div>
                     <div class="col-8 rowToCheck ms-2">
                         <h4 class="titleToCheck">Titolo annuncio: {{$announcement_to_check->title}}</h4>

@@ -52,3 +52,24 @@ window.onscroll = () => {
         navbar.classList.remove('nav-active');
     }
 };
+
+let belleFotoDiv = document.querySelectorAll('.bellaFotoDiv');
+let carouselControlPrev = document.querySelector('.carousel-control-prev');
+let carouselControlNext = document.querySelector('.carousel-control-next');
+
+carouselControlPrev.addEventListener('click', ()=>{
+    belleFotoDiv.forEach((foto,i) => {
+        foto.classList.remove('active');
+    });
+    belleFotoDiv[i-1].classList.add('active');
+    console.log(belleFotoDiv);
+})
+
+carouselControlNext.addEventListener('click', ()=>{
+    belleFotoDiv.forEach((foto,i) => {
+        foto.classList.remove('active');
+    });
+    belleFotoDiv[i+1].classList.add('active');
+    console.log(belleFotoDiv);
+})
+

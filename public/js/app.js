@@ -5471,6 +5471,24 @@ window.onscroll = function () {
   }
 };
 
+var belleFotoDiv = document.querySelectorAll('.bellaFotoDiv');
+var carouselControlPrev = document.querySelector('.carousel-control-prev');
+var carouselControlNext = document.querySelector('.carousel-control-next');
+carouselControlPrev.addEventListener('click', function () {
+  belleFotoDiv.forEach(function (foto, i) {
+    foto.classList.remove('active');
+  });
+  belleFotoDiv[i - 1].classList.add('active');
+  console.log(belleFotoDiv);
+});
+carouselControlNext.addEventListener('click', function () {
+  belleFotoDiv.forEach(function (foto, i) {
+    foto.classList.remove('active');
+  });
+  belleFotoDiv[i + 1].classList.add('active');
+  console.log(belleFotoDiv);
+});
+
 /***/ }),
 
 /***/ "./node_modules/bootstrap/dist/js/bootstrap.esm.js":

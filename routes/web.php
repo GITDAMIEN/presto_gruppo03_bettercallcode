@@ -35,7 +35,5 @@ Route::patch('/revisore/rifiuta/annuncio/{announcement}', [RevisorController::cl
 Route::get('/revisore/diventaRevisore/', [RevisorController::class, "becomeRevisor"])->middleware('auth')->name('becomeRevisor');
 Route::get('/revisore/confermaRevisore/{user}', [RevisorController::class, "makeRevisor"])->middleware('auth')->name('makeRevisor');
 
-// prova per form via email
-Route::get('/contact', function () {
-    return view('contact');
-});
+// form via email
+Route::get('/contact', function () {return view('contact');});
