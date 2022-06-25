@@ -13,8 +13,8 @@
         <h5>Nome: {{$user->name}}</h5>
         <p>Email: {{$user->email}}</p>
         <p>Messaggio:</p>
-        {{-- <p>{{$form->messagetxt}}</p>
-        {{$form->cv}} --}}
+        <p>{{$lead->messagetxt}}</p>
+        {{-- {{$form->cv}} --}}
         <p>Clicca qui per renderlo revisore:</p>
         <a href="{{route('makeRevisor', compact('user'))}}">Rendi {{$user->name}} revisore</a>
     </div>

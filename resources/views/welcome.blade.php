@@ -7,7 +7,7 @@
             {{session('access.denied')}}
             @if(Auth::check())
             <div class="text-center mt-2">
-                <a href="/#becomeRevisorDiv" class="btn btn-warning">Diventa revisore!</a>
+                <a href="/#workWithUsContainerFluid" class="btn btn-warning">Diventa revisore!</a>
             </div>
             @else
             <div class="text-center mt-2">
@@ -98,13 +98,33 @@
         </div>
     </section>
 
+    @if(!Auth::check())
+    <div id="becomeRevisorDiv" class="container">
+        <div class="row text-center my-5 card">
+            <h4 class="my-4">Diventa revisore per Presto.it!</h4>
+            <a class="btn btn-success col-4 offset-md-4 mb-4" href="register">Registrati e diventa revisore</a>
+        </div>
+    </div>
+    @endif
+    
+    <!-- Work with us -->
+    
     @if(Auth::check() && !Auth::user()->is_revisor)
-        <div id="becomeRevisorDiv" class="container">
-            <div class="row text-center my-5">
-                <h5>Diventa revisore per Presto.it!</h5>
-                <a class="btn btn-success" href="{{route('becomeRevisor')}}">Diventa revisore</a>
+    <section id="workWithUsContainerFluid" class="container-fluid d-flex justify-content-center px-0">
+        <div class="container my-5 mx-md-0 px-md-0">
+            <div id="contactUsRow" class="row mx-4 mx-md-0">
+                <div id="contactUsLeftPart" class="col-12 col-md-5 customBlack ubuntuFont mx-5 mx-md-3 mt-md-4 mt-lg-5">
+                    <div id="contactUsWords">
+                        <p id="wannaWorkWithUs" class="">Lavora con noi!</p>
+                        <h6 class="bounce_button fw-bold">DIVENTA REVISORE<i class="fa-solid fa-circle-arrow-down ms-2"></i></h6>
+                    </div>
+                    <img src="/media/contactUsOrange.svg" alt="Contact us image" class="w-100 mb-3 mb-md-0">
+                </div>
+                <livewire:revisor-form>
             </div>
         </div>
+    </section>
     @endif
+
 <x-footer></x-footer>
 </x-layout>
