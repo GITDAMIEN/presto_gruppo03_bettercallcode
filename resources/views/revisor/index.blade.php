@@ -26,7 +26,9 @@
             <div class="col-8">
                 <div class="row revisionBox justify-content-between">
                     <div class="col-3 imgDiv px-0 d-flex justify-content-center align-items-center">
-                        <img src="https://source.unsplash.com/240x240" alt="Immagine bella" class="bellaFoto">
+                        @foreach ($announcement_to_check->images as $image)
+                            <img src="{{Storage::url($image->path)}}" class="bellaFoto img-fluid">
+                        @endforeach
                     </div>
                     <div class="col-8 rowToCheck ms-2">
                         <h4 class="titleToCheck">Titolo annuncio: {{$announcement_to_check->title}}</h4>
