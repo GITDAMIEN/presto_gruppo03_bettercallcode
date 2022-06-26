@@ -62,11 +62,11 @@
                 @foreach ($categories as $category)
                     <div class="col-12 col-md-2 mt-4">
                         <a href="{{route('categoryShow',$category->id)}}"">
-                        <div class="cardCategory d-flex justify-content-center align-items-center">
-                            <div>
+                        <div class="cardCategory d-flex justify-content-center align-items-center" style='background-image: url("{{$category->coverImg}}")'>
+                            {{-- <div>
                                 <p class="lato bold fs-5 uppercase text-center">{{$category->name}}</p>
                                 <p class="lato counterAnnunci text-center">+100 annunci</p>
-                            </div>
+                            </div> --}}
                         </div>
                         </a>
                     </div>
