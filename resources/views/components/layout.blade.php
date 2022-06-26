@@ -20,6 +20,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+
+
+    {{-- MDB  --}}
+    @if(Route::currentRouteName()=="detailsAnnounce")
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.2.0/mdb.min.css"
+    rel="stylesheet"
+    />
+    @endif
     
     @livewireStyles
 </head>
@@ -33,6 +42,14 @@
 
     <script src="{{asset('js/app.js')}}"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+     @if(Route::currentRouteName()=="detailsAnnounce")
+    <!-- MDB -->
+    <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.2.0/mdb.min.js"
+    ></script>
+    @endif
     
     @livewireScripts
 </body>
