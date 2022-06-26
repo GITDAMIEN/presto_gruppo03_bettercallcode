@@ -1,3 +1,4 @@
+
 <nav class="navbar navbar-expand-md presto-nav fixed-top">
   <div class="container-fluid">
     <a class="navbar-brand title-nav panna text-decoration-none" href="{{route('welcome')}}">Presto</a>
@@ -6,7 +7,7 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarsExample04">
-      <ul class="navbar-nav ms-auto dropBg mb-2 mb-md-0">
+      <ul class="navbar-nav ms-auto dropBg1 mb-2 mb-md-0">
         <li class="nav-item">
           <a class="nav-link active fs-6 px-4"  href="{{route('welcome')}}">Home</a>
         </li>
@@ -25,9 +26,9 @@
         <a class="nav-link dropdown-toggle fs-6 px-4" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           Ciao {{Auth::user()->name}}
         </a>
-        <ul class="dropdown-menu dropBg text-center panna" aria-labelledby="dropdown04">
+        <ul class="dropdown-menu dropBg mx-auto text-center panna" aria-labelledby="dropdown04">
           <li>
-            <a class="dropdown-item" href="#">Profilo</a>
+            <a class="dropdown-item " href="#">Profilo</a>
           </li>
           <li>
             <a class="dropdown-item" href="#">I tuoi annunci</a>
@@ -35,7 +36,7 @@
           @if (Auth::user()->is_revisor)     {{--  Se l'utente è un revisore  --}}                      
           <li>
             <a class="dropdown-item position-relative" href="{{route('revisor.index')}}">Zona revisore
-          <span class="position-absolute top-50 badge-class translate-middle badge rounded-pill bg-danger">
+          <span class="position-absolute top-50  badge-class translate-middle badge rounded-pill bg-danger">
               {{App\Models\Announcement::toBeRevisionedCount()}}
               <span class="visually-hidden">unread messages</span>
           </span>
@@ -43,7 +44,7 @@
           </li>
           <li><hr class="dropdown-divider"></li>
           @endif
-          <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('frm-logout').submit();">Logout</a>      
+          <a class="dropdown-item " href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('frm-logout').submit();">Logout</a>      
           <form id="frm-logout" action="{{ route('logout') }}" method="POST" class="d-none">
           @csrf
           </form>

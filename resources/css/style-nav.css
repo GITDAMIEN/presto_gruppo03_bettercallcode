@@ -4,7 +4,7 @@
 }    
 
 .presto-nav .nav-link, .presto-nav .nav-link.active{
-    color: var(--panna) !important;
+    color: var(--panna);
     transform: scale(1.1);
 }    
 
@@ -24,11 +24,10 @@
 .dropBg{
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 15px;
-    color: var(--obsidianGray);
-    
+    width: 190px;
 }
 .dropdown-item{
-    color: var(--obsidianGray);
+    color: black;
 }
 .dropdown-menu{
     color: var(--obsidianGray);
@@ -36,12 +35,13 @@
 }
 
 .badge-class{
-    right: 2px;
+    right: 0px;
 }
 
 .title-nav{
     font-size: 50px;
     font-family:'Montserrat Alternates', sans-serif;
+    padding-left: 20px;
 }
 
 .title-nav:hover{
@@ -56,7 +56,7 @@
   /*NAVGENERAL */
 
 .presto-nav-general .nav-link, .presto-nav .nav-link.active{
-    color: var(--panna) !important;
+    color: var(--panna);
     transform: scale(1.1);
 }    
 
@@ -73,14 +73,9 @@
     background-color: rgba(255, 255, 255, 0.5);
 } */
 
-.badge-class{
-    right: 2px;
-}
 
-.title-nav{
-    font-size: 50px;
-    font-family:'Montserrat Alternates', sans-serif;
-}
+
+
 
 .nav-item {
     
@@ -137,13 +132,44 @@ nav.presto-nav {
     transition: all 0.8s;
 }
 
+.dropBg1{
+    background-color:rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+}
+.dropBg1 > li > a, .dropBg1 > a{
+    color: black !important;
+
+}
+
+
 @media screen and (min-width: 768px){
     .dropBg{
-    background-color:transparent;
+        background-color: rgba(255, 255, 255, 0.5);
         color: var(--panna);
+        transform: translateX(-30px);
+        padding: 15px 30px;
+    }
+    .dropBg > li > a, .dropBg > a{
+        color: black;
+
     }
     .dropdown-item{
         color: var(--panna);
     }
+
+    .dropBg1{
+        background-color: transparent;
+    }
     
+    .badge-class{
+        right: -26px;
+    }
+    
+    .dropBg1 > li > a, .dropBg1 > a{
+        color:var(--panna) !important;
+    
+    }
+    .title-nav{
+        padding-left: 60px;
+    }
 }
