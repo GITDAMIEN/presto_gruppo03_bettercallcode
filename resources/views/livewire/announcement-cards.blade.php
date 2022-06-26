@@ -51,13 +51,13 @@
           <div class="allCards col-12 card px-0 mt-4 mobile-center">
             <div class="row">
               <div class="col-12 col-md-3 ps-2 pe-0">
-                <img src="{{!$announce->images()->get()->isEmpty() ? $announce->images()->first()->getUrl(600,450) : 'https://source.unsplash.com/230x200'}}" alt="Immagine bella" class="img-fluid">
+                <img src="{{!$announce->images()->get()->isEmpty() ? $announce->images()->first()->getUrl(600,450) : 'https://source.unsplash.com/220x220'}}" alt="Immagine bella" class="img-fluid">
               </div>
               <div class="col-12 col-md-6 px-4 mt-3">
                 <a class="lato fw-bolder fs-5" href="{{route('detailsAnnounce',$announce)}}">{{$announce->title}}</a>
                 <a href="{{route('categoryShow',$announce->category)}}"><p>{{$announce->category->name}}</p></a>
                 <p> {{$announce->description}}</p>
-                <a href="{{route('detailsAnnounce',$announce)}}" class="panna"> <p class="btn starryBg panna mt-1">Dettagli</a></p>
+                <a href="{{route('detailsAnnounce',$announce)}}" class="panna"> <p class="btn starryBg panna mt-1">Dettagli</p></a>
               </div>
               <div class="col-12 col-md-3 px-4">
                   <p class="lato btn bg-success panna text-end mb-0 mt-3">{{$announce->price}}€</p>

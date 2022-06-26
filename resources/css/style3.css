@@ -23,24 +23,27 @@
 .rowToCheck{
     max-width: 600px;
     border-radius: 20px;
-    height: 200px;
+    height: 150px;
     position: relative;
 }
 
 .revisorBtns{
     border-radius: 30px;
     padding: 10px 20px;
+    width: 230px;
 }
 
 .divDiv{
     border-radius: 50%;
-    border: 3px solid rgb(0, 85, 255);
+    border: 3px solid var(--starry);
     overflow: hidden;
+    z-index: 100;
+    background-color: var(--panna);
 }
 
 .bellaFotoDiv{
-    width: 200px!important;
-    height: 200px!important;
+    width: 220px!important;
+    height: 220px!important;
 }
 
 .bellaFoto{
@@ -55,18 +58,25 @@
 }
 
 .revisionBox{
-    border: 2px solid rgb(0, 85, 255);
-    border-radius: 100px;
-    max-width: 800px;
+    max-width: 900px;
 }
 
-.priceAndCreated{
+.infoBox{
+    padding-top: 100px;
+    border: 3px solid var(--starry);
+    border-radius: 50px;
+    transform: translateY(-110px);
+    background-color: #0493e080;
+    height: 440px;
+}
+
+/* .priceAndCreated{
     position: absolute;
     bottom: 16px;
-}
+} */
 
 .titleToCheck{
-    transform: translateX(-18px);
+    /* transform: translateX(-18px); */
     /* background-color: green; */
     margin-top: 8px;
     padding-top: 8px;
@@ -74,22 +84,38 @@
 }
 
 .descriptionToCheck{
-    transform: translateX(10px);
+    /* transform: translateX(10px); */
     margin-top: 6px;
+    max-width: 90%;
 }
 
-.priceToCheck{
-    transform: translateX(-4px);
+#prevNext{
+    z-index: 120;
 }
 
-.createdToCheck{
-    transform: translateX(-22px);
+.buttonsRow{
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .announceCard{
     border: 1px solid black;
     border-radius: 30px;
     height: 112px;
+}
+
+.revisionLabels{
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+.rowToCheck > h5 > a{
+    text-decoration: none;
+    color: var(--bs-body-color);
+    font-size: 18px;
+    font-weight: 600;
 }
 
 .titleSpan{
@@ -132,7 +158,7 @@ textarea{
 }
 
 @keyframes bounce {
-    0%, 20%, 40%, 100% {
+    0%, 20%, 40%, 60%, 100% {
 		-webkit-transform: translateY(0);
 		-ms-transform:     translateY(0);
 		transform:         translateY(0)
@@ -142,6 +168,11 @@ textarea{
 		-ms-transform:     translateY(-20px);
 		transform:         translateY(-20px)
 	}
+    50% {
+		-webkit-transform: translateY(-10px);
+		-ms-transform:     translateY(-10px);
+		transform:         translateY(-10px)
+    }
 }
 
 .bounce_button {
@@ -346,15 +377,20 @@ textarea{
 
 
     @keyframes bounce {
-        0%, 20%, 40%, 100% {
+        0%, 20%, 40%, 60%, 100% {
             -webkit-transform: translateX(0);
             -ms-transform:     translateX(0);
             transform:         translateX(0)
         }
         30% {
-            -webkit-transform: translateX(-30px);
-            -ms-transform:     translateX(-30px);
-            transform:         translateX(-30px)
+            -webkit-transform: translateX(-20px);
+            -ms-transform:     translateX(-20px);
+            transform:         translateX(-20px)
+        }
+        50% {
+            -webkit-transform: translateX(-10px);
+            -ms-transform:     translateX(-10px);
+            transform:         translateX(-10px)
         }
     }
 
@@ -369,6 +405,7 @@ textarea{
     #contactUsLeftPart{
         text-align: end;
     }
+    
 }
 
 @media screen and (min-width: 992px){
@@ -384,6 +421,73 @@ textarea{
         background-size: cover;
     }
 
+    .titleToCheck{
+        transform: translateX(-13px);
+        font-size: 26px;
+    }
+
+    #categoryToCheckLabel, #descriptionToCheckLabel{
+        padding-top: 7px;
+    }
+
+    #categoryToCheck{
+        transform: translateX(6px);
+    }
+        
+    .descriptionToCheck{
+        transform: translateX(-30px);
+        font-size: 18px;
+    }
+
+    .priceToCheck{
+        transform: translateX(-4px);
+    }
+
+    .createdToCheck{
+        transform: translateX(-22px);
+    }
+
+    .rowToCheck{
+        height: 200px;
+    }
+    
+    .revisionBox{
+        background-color: #0493e080;
+        border-radius: 100px;
+        border: 3px solid var(--starry);
+    }
+
+    .infoBox{
+        border: none;
+        background-color: transparent;
+        height: 200px;
+    }
+    
+    .buttonsRow{
+        bottom: -80px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+        
+    .createdToCheckDiv{
+        position: absolute;
+        bottom: -75px;
+        right: -10px;
+    }
+
+    .priceToCheckDiv{
+        position: absolute;
+        bottom: 25px;
+        right: 5px;
+    }
+
+    #priceLabel{
+        transform: translateX(-18px);
+    }
+
+    #titleToCheckLabel{
+        transform: translateX(-30px);
+    }
 }
 
 @media screen and (min-width: 1200px){

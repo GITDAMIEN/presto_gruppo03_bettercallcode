@@ -11862,7 +11862,7 @@ body {
 }    
 
 .presto-nav .nav-link, .presto-nav .nav-link.active{
-    color: var(--panna) !important;
+    color: var(--panna);
     transform: scale(1.1);
 }    
 
@@ -11882,11 +11882,10 @@ body {
 .dropBg{
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 15px;
-    color: var(--obsidianGray);
-    
+    width: 190px;
 }
 .dropdown-item{
-    color: var(--obsidianGray);
+    color: black;
 }
 .dropdown-menu{
     color: var(--obsidianGray);
@@ -11894,12 +11893,13 @@ body {
 }
 
 .badge-class{
-    right: 2px;
+    right: 0px;
 }
 
 .title-nav{
     font-size: 50px;
     font-family:'Montserrat Alternates', sans-serif;
+    padding-left: 20px;
 }
 
 .title-nav:hover{
@@ -11914,7 +11914,7 @@ body {
   /*NAVGENERAL */
 
 .presto-nav-general .nav-link, .presto-nav .nav-link.active{
-    color: var(--panna) !important;
+    color: var(--panna);
     transform: scale(1.1);
 }    
 
@@ -11927,18 +11927,13 @@ body {
     text-align:center;
 }   
 
-.presto-nav-general ul .dropdown-menu{
+/* .presto-nav-general ul .dropdown-menu{
     background-color: rgba(255, 255, 255, 0.5);
-}
+} */
 
-.badge-class{
-    right: 2px;
-}
 
-.title-nav{
-    font-size: 50px;
-    font-family:'Montserrat Alternates', sans-serif;
-}
+
+
 
 .nav-item {
     
@@ -11995,6 +11990,48 @@ nav.presto-nav {
     transition: all 0.8s;
 }
 
+.dropBg1{
+    background-color:rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+}
+.dropBg1 > li > a, .dropBg1 > a{
+    color: black !important;
+
+}
+
+
+@media screen and (min-width: 768px){
+    .dropBg{
+        background-color: rgba(255, 255, 255, 0.5);
+        color: var(--panna);
+        transform: translateX(-30px);
+        padding: 15px 30px;
+    }
+    .dropBg > li > a, .dropBg > a{
+        color: black;
+
+    }
+    .dropdown-item{
+        color: var(--panna);
+    }
+
+    .dropBg1{
+        background-color: transparent;
+    }
+    
+    .badge-class{
+        right: -26px;
+    }
+    
+    .dropBg1 > li > a, .dropBg1 > a{
+        color:var(--panna) !important;
+    
+    }
+    .title-nav{
+        padding-left: 60px;
+    }
+}
+
 :root{
     --main-color: #B2EDC5;
     --sec-color: #FFB800;
@@ -12019,24 +12056,27 @@ nav.presto-nav {
 .rowToCheck{
     max-width: 600px;
     border-radius: 20px;
-    height: 200px;
+    height: 150px;
     position: relative;
 }
 
 .revisorBtns{
     border-radius: 30px;
     padding: 10px 20px;
+    width: 230px;
 }
 
 .divDiv{
     border-radius: 50%;
-    border: 3px solid rgb(0, 85, 255);
+    border: 3px solid var(--starry);
     overflow: hidden;
+    z-index: 100;
+    background-color: var(--panna);
 }
 
 .bellaFotoDiv{
-    width: 200px!important;
-    height: 200px!important;
+    width: 220px!important;
+    height: 220px!important;
 }
 
 .bellaFoto{
@@ -12051,18 +12091,25 @@ nav.presto-nav {
 }
 
 .revisionBox{
-    border: 2px solid rgb(0, 85, 255);
-    border-radius: 100px;
-    max-width: 800px;
+    max-width: 900px;
 }
 
-.priceAndCreated{
+.infoBox{
+    padding-top: 100px;
+    border: 3px solid var(--starry);
+    border-radius: 50px;
+    transform: translateY(-110px);
+    background-color: #0493e080;
+    height: 440px;
+}
+
+/* .priceAndCreated{
     position: absolute;
     bottom: 16px;
-}
+} */
 
 .titleToCheck{
-    transform: translateX(-18px);
+    /* transform: translateX(-18px); */
     /* background-color: green; */
     margin-top: 8px;
     padding-top: 8px;
@@ -12070,22 +12117,38 @@ nav.presto-nav {
 }
 
 .descriptionToCheck{
-    transform: translateX(10px);
+    /* transform: translateX(10px); */
     margin-top: 6px;
+    max-width: 90%;
 }
 
-.priceToCheck{
-    transform: translateX(-4px);
+#prevNext{
+    z-index: 120;
 }
 
-.createdToCheck{
-    transform: translateX(-22px);
+.buttonsRow{
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .announceCard{
     border: 1px solid black;
     border-radius: 30px;
     height: 112px;
+}
+
+.revisionLabels{
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+.rowToCheck > h5 > a{
+    text-decoration: none;
+    color: var(--bs-body-color);
+    font-size: 18px;
+    font-weight: 600;
 }
 
 .titleSpan{
@@ -12128,21 +12191,27 @@ textarea{
 }
 
 @-webkit-keyframes bounce {
-    0%, 20%, 40%, 100% {
+    0%, 20%, 40%, 60%, 100% {
 		transform:         translateY(0)
 	}
 	30% {
 		transform:         translateY(-20px)
 	}
+    50% {
+		transform:         translateY(-10px)
+    }
 }
 
 @keyframes bounce {
-    0%, 20%, 40%, 100% {
+    0%, 20%, 40%, 60%, 100% {
 		transform:         translateY(0)
 	}
 	30% {
 		transform:         translateY(-20px)
 	}
+    50% {
+		transform:         translateY(-10px)
+    }
 }
 
 .bounce_button {
@@ -12349,22 +12418,28 @@ textarea{
 
 
     @-webkit-keyframes bounce {
-        0%, 20%, 40%, 100% {
+        0%, 20%, 40%, 60%, 100% {
             transform:         translateX(0)
         }
         30% {
-            transform:         translateX(-30px)
+            transform:         translateX(-20px)
+        }
+        50% {
+            transform:         translateX(-10px)
         }
     }
     
 
 
     @keyframes bounce {
-        0%, 20%, 40%, 100% {
+        0%, 20%, 40%, 60%, 100% {
             transform:         translateX(0)
         }
         30% {
-            transform:         translateX(-30px)
+            transform:         translateX(-20px)
+        }
+        50% {
+            transform:         translateX(-10px)
         }
     }
 
@@ -12379,6 +12454,7 @@ textarea{
     #contactUsLeftPart{
         text-align: end;
     }
+    
 }
 
 @media screen and (min-width: 992px){
@@ -12394,6 +12470,73 @@ textarea{
         background-size: cover;
     }
 
+    .titleToCheck{
+        transform: translateX(-13px);
+        font-size: 26px;
+    }
+
+    #categoryToCheckLabel, #descriptionToCheckLabel{
+        padding-top: 7px;
+    }
+
+    #categoryToCheck{
+        transform: translateX(6px);
+    }
+        
+    .descriptionToCheck{
+        transform: translateX(-30px);
+        font-size: 18px;
+    }
+
+    .priceToCheck{
+        transform: translateX(-4px);
+    }
+
+    .createdToCheck{
+        transform: translateX(-22px);
+    }
+
+    .rowToCheck{
+        height: 200px;
+    }
+    
+    .revisionBox{
+        background-color: #0493e080;
+        border-radius: 100px;
+        border: 3px solid var(--starry);
+    }
+
+    .infoBox{
+        border: none;
+        background-color: transparent;
+        height: 200px;
+    }
+    
+    .buttonsRow{
+        bottom: -80px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+        
+    .createdToCheckDiv{
+        position: absolute;
+        bottom: -75px;
+        right: -10px;
+    }
+
+    .priceToCheckDiv{
+        position: absolute;
+        bottom: 25px;
+        right: 5px;
+    }
+
+    #priceLabel{
+        transform: translateX(-18px);
+    }
+
+    #titleToCheckLabel{
+        transform: translateX(-30px);
+    }
 }
 
 @media screen and (min-width: 1200px){
@@ -12440,7 +12583,7 @@ textarea{
     color: var(--papaya);
 }
 
-h5{
+#footerH5{
     color: var(--panna);
 }
 .nav-item {
