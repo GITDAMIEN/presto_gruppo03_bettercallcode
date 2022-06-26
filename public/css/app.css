@@ -11627,7 +11627,10 @@ body {
     height: 150px;
     width: 220px;
     /* background-color: var(--starry); */
-    background-image: url("https://images.unsplash.com/photo-1569370087950-b02664fad13b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background-image: url("https://img.freepik.com/free-photo/female-driver-driving-green-neon-color-motorcycle-road_114579-5032.jpg?t=st=1656249870~exp=1656250470~hmac=7957edba1419e64ebd505600d1c841d4c321ead83436c69bce0c9c4541d673e7&w=1380");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25), 0 6px 6px rgba(0, 0, 0, 0.22);
     transition: 0.5s;
     border-radius: 10px;
@@ -11775,6 +11778,18 @@ body {
     border-radius: 10px;
 }
 
+.titleDetails{
+    font-size: 38px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
+.paddingdetails{
+    padding-bottom: 70px;
+}
+
+.roundd{
+    border-radius: 10px;
+}
 
 
 
@@ -11860,12 +11875,22 @@ body {
     text-align:center;
 }   
 
-
+.nav-link{
+    color: var(--obsidianGray);
+}
 
 .dropBg{
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 15px;
+    color: var(--obsidianGray);
     
+}
+.dropdown-item{
+    color: var(--obsidianGray);
+}
+.dropdown-menu{
+    color: var(--obsidianGray);
+    border-color: var(--panna);
 }
 
 .badge-class{
@@ -11883,6 +11908,7 @@ body {
 
 .nav-item {
     font-family: 'Lato', sans-serif;
+    color: var(--obsidianGray);
 }
 
   /*NAVGENERAL */
@@ -11901,9 +11927,9 @@ body {
     text-align:center;
 }   
 
-.presto-nav-general ul .dropdown-menu{
+/* .presto-nav-general ul .dropdown-menu{
     background-color: rgba(255, 255, 255, 0.5);
-}
+} */
 
 .badge-class{
     right: 2px;
@@ -11919,14 +11945,14 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-header.presto-nav {
+nav.presto-nav {
     width: 100%;
     position: fixed;
     transition: 0.3s ease-in-out;
 }
 
 .nav-active {
-    background-color:var(--papaya);
+    background-color: #0375B4;
     box-shadow: 5px -1px 12px -5px grey;
 }
 
@@ -11969,6 +11995,17 @@ header.presto-nav {
     transition: all 0.8s;
 }
 
+@media screen and (min-width: 768px){
+    .dropBg{
+    background-color:transparent;
+        color: var(--panna);
+    }
+    .dropdown-item{
+        color: var(--panna);
+    }
+    
+}
+
 :root{
     --main-color: #B2EDC5;
     --sec-color: #FFB800;
@@ -12005,7 +12042,7 @@ header.presto-nav {
 
 .divDiv{
     border-radius: 50%;
-    border: 3px solid var(--papaya);
+    border: 3px solid var(--starry);
     overflow: hidden;
     z-index: 100;
     background-color: var(--panna);
@@ -12033,10 +12070,10 @@ header.presto-nav {
 
 .infoBox{
     padding-top: 100px;
-    border: 2px solid #dd3324cd;
+    border: 3px solid var(--starry);
     border-radius: 50px;
     transform: translateY(-110px);
-    background-color: #dd3324cd;
+    background-color: #0493e080;
     height: 440px;
 }
 
@@ -12408,16 +12445,16 @@ textarea{
     }
 
     .titleToCheck{
-        transform: translateX(-18px);
+        transform: translateX(-13px);
         font-size: 26px;
     }
 
     #categoryToCheckLabel, #descriptionToCheckLabel{
-        padding-top: 6px;
+        padding-top: 7px;
     }
 
     #categoryToCheck{
-        transform: translateX(8px);
+        transform: translateX(6px);
     }
         
     .descriptionToCheck{
@@ -12438,8 +12475,9 @@ textarea{
     }
     
     .revisionBox{
-        background-color: #dd3324cd;
+        background-color: #0493e080;
         border-radius: 100px;
+        border: 3px solid var(--starry);
     }
 
     .infoBox{
@@ -12457,13 +12495,13 @@ textarea{
     .createdToCheckDiv{
         position: absolute;
         bottom: -75px;
-        right: 40px;
+        right: -10px;
     }
 
     .priceToCheckDiv{
         position: absolute;
         bottom: 25px;
-        right: 60px;
+        right: 5px;
     }
 
     #priceLabel{
@@ -12536,5 +12574,9 @@ textarea{
 .papayaBg:hover{
     color: var(--panna);
 }
-
+.thumb{
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+}
 

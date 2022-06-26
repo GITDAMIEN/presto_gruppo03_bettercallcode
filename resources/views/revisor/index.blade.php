@@ -24,7 +24,7 @@
     <div class="container mt-4 position-relative">
         <div class="row justify-content-center">
             <div class="col-10">
-                <div class="row revisionBox justify-content-center justify-content-lg-between mx-auto">
+                <div class="row revisionBox justify-content-center justify-content-lg-start mx-auto">
                     <div class="col-12 col-lg-3 imgDiv mx-lg-0 px-0 d-flex justify-content-center align-items-center">
                         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
                             <div class="carousel-inner divDiv">

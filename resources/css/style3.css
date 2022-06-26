@@ -35,7 +35,7 @@
 
 .divDiv{
     border-radius: 50%;
-    border: 3px solid var(--papaya);
+    border: 3px solid var(--starry);
     overflow: hidden;
     z-index: 100;
     background-color: var(--panna);
@@ -63,10 +63,10 @@
 
 .infoBox{
     padding-top: 100px;
-    border: 2px solid #dd3324cd;
+    border: 3px solid var(--starry);
     border-radius: 50px;
     transform: translateY(-110px);
-    background-color: #dd3324cd;
+    background-color: #0493e080;
     height: 440px;
 }
 
@@ -422,16 +422,16 @@ textarea{
     }
 
     .titleToCheck{
-        transform: translateX(-18px);
+        transform: translateX(-13px);
         font-size: 26px;
     }
 
     #categoryToCheckLabel, #descriptionToCheckLabel{
-        padding-top: 6px;
+        padding-top: 7px;
     }
 
     #categoryToCheck{
-        transform: translateX(8px);
+        transform: translateX(6px);
     }
         
     .descriptionToCheck{
@@ -452,8 +452,9 @@ textarea{
     }
     
     .revisionBox{
-        background-color: #dd3324cd;
+        background-color: #0493e080;
         border-radius: 100px;
+        border: 3px solid var(--starry);
     }
 
     .infoBox{
@@ -471,13 +472,13 @@ textarea{
     .createdToCheckDiv{
         position: absolute;
         bottom: -75px;
-        right: 40px;
+        right: -10px;
     }
 
     .priceToCheckDiv{
         position: absolute;
         bottom: 25px;
-        right: 60px;
+        right: 5px;
     }
 
     #priceLabel{

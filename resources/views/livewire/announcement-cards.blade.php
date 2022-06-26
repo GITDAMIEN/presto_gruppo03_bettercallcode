@@ -57,7 +57,7 @@
                 <a class="lato fw-bolder fs-5" href="{{route('detailsAnnounce',$announce)}}">{{$announce->title}}</a>
                 <a href="{{route('categoryShow',$announce->category)}}"><p>{{$announce->category->name}}</p></a>
                 <p> {{$announce->description}}</p>
-                <p><a href="{{route('detailsAnnounce',$announce)}}" class="btn starryBg panna mt-1">Dettagli</a></p>
+                <a href="{{route('detailsAnnounce',$announce)}}" class="panna"> <p class="btn starryBg panna mt-1">Dettagli</p></a>
               </div>
               <div class="col-12 col-md-3 px-4">
                   <p class="lato btn bg-success panna text-end mb-0 mt-3">{{$announce->price}}€</p>

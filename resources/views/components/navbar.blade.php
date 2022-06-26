@@ -25,7 +25,7 @@
         <a class="nav-link dropdown-toggle fs-6 px-4" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           Ciao {{Auth::user()->name}}
         </a>
-        <ul class="dropdown-menu dropBg" aria-labelledby="dropdown04">
+        <ul class="dropdown-menu dropBg text-center panna" aria-labelledby="dropdown04">
           <li>
             <a class="dropdown-item" href="#">Profilo</a>
           </li>
