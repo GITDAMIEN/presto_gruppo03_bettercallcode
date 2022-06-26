@@ -11810,8 +11810,12 @@ body {
     text-align:center;
 }   
 
-.presto-nav ul .dropdown-menu{
+
+
+.dropBg{
     background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    
 }
 
 .badge-class{
@@ -11878,6 +11882,41 @@ header.presto-nav {
 
 #generalNavBarUl{
     transform: translateX(-20px);
+}
+
+
+.presto-nav .navbar-toggler{
+    color: var(--orange);
+    border: transparent;
+    transition: all 0.5s;
+    border: none;
+    font-size: 30px;
+}
+.presto-nav .navbar-toggler:focus{
+    box-shadow: none;
+}
+
+.presto-nav .navbar-toggler.collapsed{
+    border: transparent;
+    transform: rotate(90deg);
+    transition: all 0.8s;
+}
+
+.presto-nav-general .navbar-toggler{
+    color: var(--orange);
+    border: transparent;
+    transition: all 0.5s;
+    border: none;
+    font-size: 30px;
+}
+.presto-nav-general .navbar-toggler:focus{
+    box-shadow: none;
+}
+
+.presto-nav-general .navbar-toggler.collapsed{
+    border: transparent;
+    transform: rotate(90deg);
+    transition: all 0.8s;
 }
 .allCards{
     border-radius: 20px;
