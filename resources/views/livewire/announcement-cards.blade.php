@@ -1,4 +1,4 @@
-<div class="row" >
+<div class="row">
   
   <div class="col-12 col-lg-3 mt-5">
     <form wire:submit.prevent="searching" class="justify-content-center align-items-center">
@@ -44,32 +44,40 @@
     </form>
   </div>
   
-  <div class="col-12 col-lg-9 mt-5">
     @if(count($announces)>0)
-      <div class="row my-1 mx-3">
-        @foreach ($announces as $announce)
-        <div class="allCards col-12 card px-0 my-2">
-          <div class="row justify-content-between">
-            <div class="col-3 ps-2 pe-0">
-              <img src="{{!$announce->images()->get()->isEmpty() ? $announce->images()->first()->getUrl(600,450) : 'https://source.unsplash.com/230x200'}}" alt="Immagine bella" class="hhh">
-            </div>
-            <div id="infoDiv" class="col-9 pt-3 px-0">
-              <p class="cardH2"><a href="{{route('detailsAnnounce',$announce)}}">{{$announce->title}}</a></p>
-              <span class="priceSpan">{{$announce->price}}€</span>
-              <a href="{{route('categoryShow',$announce->category)}}" class="d-block categoryA">{{$announce->category->name}}</a>
-              <p class="descriptionP">{{$announce->description}}</p>
-              <p class="detailsP"><a href="{{route('detailsAnnounce',$announce)}}" class="btn btnPersonalizzato">Dettagli</a></p>
-              <span class="my-3 createdSpan">Creato da {{$announce->user->name}} il {{$announce->created_at->format('d/m/Y')}}</span>
+    <div class="col-12 col-lg-9 mt-5">
+        <div class="row">
+          @foreach ($announces as $announce)
+          <div class="allCards col-12 card px-0 mt-4 mobile-center">
+            <div class="row">
+              <div class="col-12 col-md-3 ps-2 pe-0">
+                <img src="{{!$announce->images()->get()->isEmpty() ? $announce->images()->first()->getUrl(600,450) : 'https://source.unsplash.com/230x200'}}" alt="Immagine bella" class="img-fluid">
+              </div>
+              <div class="col-12 col-md-6 px-4 mt-3">
+                <a class="lato fw-bolder fs-5" href="{{route('detailsAnnounce',$announce)}}">{{$announce->title}}</a>
+                <a href="{{route('categoryShow',$announce->category)}}"><p>{{$announce->category->name}}</p></a>
+                <p> {{$announce->description}}</p>
+                <p <a href="{{route('detailsAnnounce',$announce)}}" class="btn starryBg panna mt-1">Dettagli</a></p>
+              </div>
+              <div class="col-12 col-md-3 px-4">
+                  <p class="lato btn bg-success panna text-end mb-0 mt-3">{{$announce->price}}€</p>
+                  <div class="row">
+                    <div class="col-12">
+                      <p class=" lato fs-pers mt-pers mb-0">Creato da {{$announce->user->name}} il {{$announce->created_at->format('d/m/Y')}}</p>
+                    </div>
+                  </div>
+              </div>
             </div>
           </div>
+          @endforeach
         </div>
-        @endforeach
-        {{-- {{$announces->links()}} --}}
-      </div>
+    </div>
+
+
+
     @else
       <p>Non ci sono annunci</p>
     @endif
-  </div>
 </div> 
 
 

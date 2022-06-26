@@ -7,7 +7,6 @@
 
 .allCards{
     border-radius: 20px;
-    max-width: 1000px;
     overflow: hidden;
     transition: all 0.4s;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.433);
@@ -20,10 +19,6 @@
     transform: scale(1.03);
 }
 
-
-#infoDiv{
-    position: relative;
-}
 
 .rowToCheck{
     max-width: 600px;
@@ -220,6 +215,20 @@ textarea{
     line-height: 1.25;
 }
 
+.mt-pers{
+    margin-top: 30px;
+}
+
+.fs-pers{
+    font-size: 13px;
+    font-style: italic;
+}
+
+.mobile-center{
+    margin-top: 70px;
+    text-align: center;
+}
+
 #revisorFormBtnsDiv{
     width: 70%;
 }
@@ -297,19 +306,11 @@ textarea{
 
 @media screen and (min-width: 768px){
     
-    .cardH2{
+    /* .cardH2{
         font-size: 26px;
-        position: absolute;
-        left: 40px;
         margin-bottom: 0px;
     }
     
-    .descriptionP{
-        position: absolute;
-        left: 40px;
-        top: 80px;
-        margin-bottom: 0px;
-    }
     
     .createdSpan{
         position: absolute;
@@ -327,19 +328,22 @@ textarea{
         border-radius: 8px;
         padding: 4px 8px;
         color: white;
+    } */
+    .mobile-center{
+        
+        text-align: start;
+    }
+
+    .mt-pers{
+        margin-top: 100px;
+    }
+
+    .fs-pers{
+        font-size: 13px;
+        font-style: italic;
     }
     
-    .categoryA{
-        position: absolute;
-        left: 40px;
-        top: 50px;
-    }
-    
-    .detailsP{
-        position: absolute;
-        bottom: 0px;
-        left: 40px;
-    }
+
 
     @keyframes bounce {
         0%, 20%, 40%, 100% {

@@ -28,7 +28,7 @@
                     <ul class="skill-card__knowledge p-0">
                         <li class="description">{{$announce->description}}</li>
             
-                        <li><a href="{{route('detailsAnnounce',$announce)}}" class="btn btnPersonalizzato lato">Dettagli</a></li>
+                        <li><a href="{{route('detailsAnnounce',$announce)}}" class="btn starryBg lato panna">Dettagli</a></li>
                         <li class="created pt-4 lato">Creato da {{$announce->user->name}} il {{$announce->created_at->format('d/m/Y')}}</li>
                     </ul>
                 </section>

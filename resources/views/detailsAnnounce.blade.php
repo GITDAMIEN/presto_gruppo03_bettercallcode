@@ -12,8 +12,9 @@
             </div>
         </div>
     </div>
+    
 
-   <div class="container">
+   {{-- <div class="container">
     <div class="row">
         <div class="col-12">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -43,7 +44,54 @@
                 </button>
               </div>
         </div>
-    </div>
+    </div> --}}
+
+
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="carousel slide" data-bs-ride="carousel" id="carouselExampleCaptions">
+              <div class="carousel-inner">
+                <div class="carousel-item active bg-1">
+                  <div class="carousel-caption">
+                    <h5>Best In <span class="text-warning">Tourism</span></h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, culpa.</p><a class="bg-warning text-white" href="#">Learn More</a>
+                  </div>
+                </div>
+                <div class="carousel-item bg-2">
+                  <div class="carousel-caption">
+                    <h5>Worldwide <span class="text-warning">Recognition</span></h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, culpa.</p><a class="bg-warning text-white" href="#">Learn More</a>
+                  </div>
+                </div>
+                <div class="carousel-item bg-3">
+                  <div class="carousel-caption">
+                    <h5>Effordable <span class="text-warning">Budget</span></h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, culpa.</p><a class="bg-warning text-white" href="#">Learn More</a>
+                  </div>
+                </div>
+              </div><button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleCaptions" type="button"><span aria-hidden="true" class="carousel-control-prev-icon"></span> <span class="visually-hidden">Previous</span></button> <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleCaptions" type="button"><span aria-hidden="true" class="carousel-control-next-icon"></span> <span class="visually-hidden">Next</span></button> <!--thumbnails-->
+              <div class="carousel-indicators d-flex justify-content-center align-items-center">
+                <div class="col-12">
+                  <button aria-label="Slide 1" class="active" data-bs-slide-to="0" data-bs-target="#carouselExampleCaptions" type="button"><img class="img-fluid" src="https://picsum.photos/200"></button>
+                  <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carouselExampleCaptions" type="button"><img class="img-fluid" src="https://picsum.photos/200"></button>
+                  <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselExampleCaptions" type="button"><img class="img-fluid" src="https://picsum.photos/200"></button>
+                  <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselExampleCaptions" type="button"><img class="img-fluid" src="https://picsum.photos/200"></button>
+                  <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselExampleCaptions" type="button"><img class="img-fluid" src="https://picsum.photos/200"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+
+
+
+
+
+
     <div class="row mt-5">
         <div class="col-12">
             <p>Titolo : {{$announce->title}}</p>

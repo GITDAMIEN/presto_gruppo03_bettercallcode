@@ -1,5 +1,5 @@
 <div class="container-fluid p-0 m-0">
-    <header class="d-flex  align-items-center justify-content-center justify-content-md-between mb-4 ps-5 papayaBg presto-nav-general">
+    <header class="d-flex  align-items-center justify-content-center justify-content-md-between mb-4 ps-5 starryBg presto-nav-general">
       <a href="{{route('welcome')}}" class=" title-nav panna d-flex align-items-center text-decoration-none">
         Presto
       </a>
