@@ -2,7 +2,7 @@
     <footer class="pt-5 mt-5">
       <div class="row">
         <div class="col-2">
-          <h5 class="px-3">Supporto clienti</h5>
+          <h5 id="footerH5" class="px-3">Supporto clienti</h5>
           <ul class="nav flex-column px-3">
             <li class="nav-item mb-2">
               <a href="{{route('welcome')}}" class="nav-link p-0 ">Home</a>
@@ -20,7 +20,7 @@
         </div>
         
         <div class="col-2">
-          <h5 class="px-3">Termini d'uso</h5>
+          <h5 id="footerH5" class="px-3">Termini d'uso</h5>
           <ul class="nav flex-column px-3">
             <li class="nav-item mb-2">
               <a href="#" class="nav-link p-0 ">Termini e condizioni</a>
@@ -38,7 +38,7 @@
         </div>
         
         <div class="col-2">
-          <h5>Presto.it</h5>
+          <h5 id="footerH5">Presto.it</h5>
           <ul class="nav flex-column">
             <li class="nav-item mb-2">
               <a href="#" class="nav-link p-0 ">Chi siamo</a>
@@ -54,7 +54,7 @@
       
       <div class="col-4 offset-1">
         <form>
-          <h5>Newsletter</h5>
+          <h5 id="footerH5">Newsletter</h5>
           <div class="d-flex w-100 gap-2">
             <label for="newsletter1" class="visually-hidden">Indirizzo email</label>
             <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
