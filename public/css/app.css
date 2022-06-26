@@ -11627,7 +11627,10 @@ body {
     height: 150px;
     width: 220px;
     /* background-color: var(--starry); */
-    background-image: url("https://images.unsplash.com/photo-1569370087950-b02664fad13b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background-image: url("https://img.freepik.com/free-photo/female-driver-driving-green-neon-color-motorcycle-road_114579-5032.jpg?t=st=1656249870~exp=1656250470~hmac=7957edba1419e64ebd505600d1c841d4c321ead83436c69bce0c9c4541d673e7&w=1380");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25), 0 6px 6px rgba(0, 0, 0, 0.22);
     transition: 0.5s;
     border-radius: 10px;
@@ -11780,7 +11783,13 @@ body {
     font-family: 'Lato', sans-serif;
     font-weight: 900;
 }
+.paddingdetails{
+    padding-bottom: 70px;
+}
 
+.roundd{
+    border-radius: 10px;
+}
 
 
 

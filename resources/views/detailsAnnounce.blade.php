@@ -7,8 +7,8 @@
 
    
 <div class="container mt-5 min-vh-100">
-  <div class="row">
-    <div class="col-12 col-md-6">
+  <div class="row shadow pt-4 roundd">
+    <div class="col-12 col-md-6 paddingdetails">
       <!-- Carousel wrapper -->
      <div id="carouselMDExample" class="carousel slide carousel-fade" data-mdb-ride="carousel">
        <!-- Slides -->
