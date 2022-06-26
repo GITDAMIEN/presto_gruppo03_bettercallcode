@@ -18,15 +18,15 @@
         <small class="invalid-feedback ps-3">Questo campo è obbligatorio</small>
     </div>
     <div id="revisorFormBtnsDiv" class="text-center">
-        {{-- <label id="inputFileLabel" for="inputFile">Carica il tuo curriculum
+        <label id="inputFileLabel" for="inputFile">Carica il tuo curriculum
             @if ($cv)
                 <i id="okCVIcon" class="ms-2 fa-solid fa-circle-check"></i>
             @endif
-            <input type="file" id="inputFile" accept="application/pdf">
-        </label> --}}
-        {{-- @error('cv')
+            <input wire:model="cv" type="file" id="inputFile" accept="application/pdf">
+        </label>
+        @error('cv')
             {{$message}}
-        @enderror --}}
+        @enderror
         <button type="submit" id="sendApplicationBtn" class="btn btn-main">Invia richiesta</button>
     </div>
 </form>

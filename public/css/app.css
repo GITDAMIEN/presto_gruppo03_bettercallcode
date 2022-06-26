@@ -12083,8 +12083,8 @@ textarea{
 .bounce_button {
     -webkit-animation-name: bounce;
             animation-name: bounce;
-    -webkit-animation-duration: 3s;
-            animation-duration: 3s;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
     animation-iteration-count: infinite;
     -webkit-animation-iteration-count: infinite;
 }
@@ -12138,7 +12138,7 @@ textarea{
     border: 1px solid var(--sec-color)!important;
 }
 
-.form-floating{
+#contactUsFormCard > .form-floating{
     width: 90%;
 }
 
