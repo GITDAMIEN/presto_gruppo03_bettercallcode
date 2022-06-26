@@ -1,5 +1,6 @@
-<div class="row">
+<div class="row min-vh-100">
   
+  @if(count($announces)>0)
   <div class="col-12 col-lg-3 mt-5">
     <form wire:submit.prevent="searching" class="justify-content-center align-items-center">
       <div class="form-floating my-3">
@@ -44,7 +45,6 @@
     </form>
   </div>
   
-    @if(count($announces)>0)
     <div class="col-12 col-lg-9 mt-5">
         <div class="row">
           @foreach ($announces as $announce)
@@ -76,7 +76,15 @@
 
 
     @else
-      <p>Non ci sono annunci</p>
+    <div class="container mt-5 py-5">
+      <div class="row">
+          <div class="col-12 d-flex justify-content-center align-items-center">
+              <div class="aa ps-5">
+                  <a href="{{route('createAnnouncement')}}" class="btnPd">Inserisci tu il primo annuncio</a>
+              </div>
+          </div>
+      </div>
+  </div>
     @endif
 </div> 
 

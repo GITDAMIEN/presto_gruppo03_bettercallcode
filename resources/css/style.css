@@ -420,6 +420,28 @@ body {
     box-shadow: -1px -1px 33px 1px var(--obsidianGray);
 }
 
+.btnPd{
+    background-color: var(--papaya);
+    color: var(--panna);
+    font-size: 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    border-radius: 10px;
+    padding: 18px;
+    border-style: none;
+    transition: 0.5s;
+    box-shadow: -1px -1px 33px 1px var(--obsidianGray);
+}
+
+.btnPd:hover{
+    color: #1b1b1b;
+}
+
+.aa{
+    width: 450px;
+    height: 200px;
+}
+
 .btnP:hover{
     background-color: var(--panna);
     color: var(--irises);

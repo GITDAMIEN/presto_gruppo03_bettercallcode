@@ -13,10 +13,10 @@
     </form> --}}
     
     @if(count($announces)>0)
-    <div class="container">
+    <div class="container mb-5">
         <div class="row">
         @foreach ($announces as $announce)
-        <div class="col-12 col-lg-4 text-center" id=>
+        <div class="col-12 col-lg-4 text-center py-3">
 
             <a href="{{route('detailsAnnounce',$announce)}}">
             <div class="skill-card mb-4">
@@ -38,12 +38,19 @@
         </div>
         @endforeach
         </div>
+    </div>
         
         
         @else
-        
-        <p>Non ci sono annunci</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center align-items-center">
+                    <div class="aa ps-5">
+                        <a href="{{route('createAnnouncement')}}" class="btnPd">Inserisci tu il primo annuncio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
         
         @endif
-    </div>
 </div>

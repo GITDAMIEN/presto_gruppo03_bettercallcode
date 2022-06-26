@@ -427,7 +427,15 @@ textarea{
     }
 
     #categoryToCheckLabel, #descriptionToCheckLabel{
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
         padding-top: 7px;
+    }
+    .categoryToCheck{
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
     }
 
     #categoryToCheck{
@@ -436,7 +444,9 @@ textarea{
         
     .descriptionToCheck{
         transform: translateX(-30px);
-        font-size: 18px;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
     }
 
     .priceToCheck{

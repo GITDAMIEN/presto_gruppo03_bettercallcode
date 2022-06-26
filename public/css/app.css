@@ -11627,7 +11627,7 @@ body {
     height: 150px;
     width: 220px;
     /* background-color: var(--starry); */
-    background-image: url("https://img.freepik.com/free-photo/female-driver-driving-green-neon-color-motorcycle-road_114579-5032.jpg?t=st=1656249870~exp=1656250470~hmac=7957edba1419e64ebd505600d1c841d4c321ead83436c69bce0c9c4541d673e7&w=1380");
+    /* background-image: url("https://img.freepik.com/free-photo/female-driver-driving-green-neon-color-motorcycle-road_114579-5032.jpg?t=st=1656249870~exp=1656250470~hmac=7957edba1419e64ebd505600d1c841d4c321ead83436c69bce0c9c4541d673e7&w=1380"); */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -11712,6 +11712,28 @@ body {
     border-style: none;
     transition: 0.5s;
     box-shadow: -1px -1px 33px 1px var(--obsidianGray);
+}
+
+.btnPd{
+    background-color: var(--papaya);
+    color: var(--panna);
+    font-size: 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    border-radius: 10px;
+    padding: 18px;
+    border-style: none;
+    transition: 0.5s;
+    box-shadow: -1px -1px 33px 1px var(--obsidianGray);
+}
+
+.btnPd:hover{
+    color: #1b1b1b;
+}
+
+.aa{
+    width: 450px;
+    height: 200px;
 }
 
 .btnP:hover{
@@ -12476,7 +12498,15 @@ textarea{
     }
 
     #categoryToCheckLabel, #descriptionToCheckLabel{
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
         padding-top: 7px;
+    }
+    .categoryToCheck{
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
     }
 
     #categoryToCheck{
@@ -12485,7 +12515,9 @@ textarea{
         
     .descriptionToCheck{
         transform: translateX(-30px);
-        font-size: 18px;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
     }
 
     .priceToCheck{
