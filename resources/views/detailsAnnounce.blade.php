@@ -1,5 +1,10 @@
 <x-layout>
   <x-navbarGeneral></x-navbarGeneral>
+  
+  <x-slot name="title">
+    Dettagli {{$announce->title}}
+  </x-slot>
+
     <div class="container-fluid">
         <div class="row">
             <div class="col-12">
@@ -7,8 +12,9 @@
             </div>
         </div>
     </div>
+    
 
-   <div class="container">
+   {{-- <div class="container">
     <div class="row">
         <div class="col-12">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -38,7 +44,45 @@
                 </button>
               </div>
         </div>
+    </div> --}}
+
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            {{-- <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div> --}}
+            <div class="carousel-inner">
+
+              @foreach ($announce->images as $image)
+
+                <div class="carousel-item @if($loop->first)active @endif">
+                    <img src="{{!$announce->images()->get()->isEmpty() ? $image->getUrl(600,450) : 'https://source.unsplash.com/230x200'}}" alt="Immagine bella" class="bellaFoto img-fluid">
+                </div>
+              @endforeach
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
+    
+
+
+
+
+
+
+
     <div class="row mt-5">
         <div class="col-12">
             <p>Titolo : {{$announce->title}}</p>

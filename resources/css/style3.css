@@ -1,6 +1,12 @@
+
+:root{
+    --main-color: #B2EDC5;
+    --sec-color: #FFB800;
+    --custom-black: #000000d5;
+}
+
 .allCards{
     border-radius: 20px;
-    max-width: 1000px;
     overflow: hidden;
     transition: all 0.4s;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.433);
@@ -14,25 +20,297 @@
 }
 
 
-#infoDiv{
+.rowToCheck{
+    max-width: 600px;
+    border-radius: 20px;
+    height: 200px;
     position: relative;
 }
 
-@media screen and (min-width: 768px) {
+.revisorBtns{
+    border-radius: 30px;
+    padding: 10px 20px;
+}
+
+.divDiv{
+    border-radius: 50%;
+    border: 3px solid rgb(0, 85, 255);
+    overflow: hidden;
+}
+
+.bellaFotoDiv{
+    width: 200px!important;
+    height: 200px!important;
+}
+
+.bellaFoto{
+    width: 100%;
+    height: 100%;
+}
+
+.imgDiv{
+    height: 200px!important;
+    width: 200px!important;
+    border-radius: 100px;
+}
+
+.revisionBox{
+    border: 2px solid rgb(0, 85, 255);
+    border-radius: 100px;
+    max-width: 800px;
+}
+
+.priceAndCreated{
+    position: absolute;
+    bottom: 16px;
+}
+
+.titleToCheck{
+    transform: translateX(-18px);
+    /* background-color: green; */
+    margin-top: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.descriptionToCheck{
+    transform: translateX(10px);
+    margin-top: 6px;
+}
+
+.priceToCheck{
+    transform: translateX(-4px);
+}
+
+.createdToCheck{
+    transform: translateX(-22px);
+}
+
+.announceCard{
+    border: 1px solid black;
+    border-radius: 30px;
+    height: 112px;
+}
+
+.titleSpan{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.createdOKNO{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.deniedAccess, .welcomePageMessage{
+    position: absolute;
+    top: 75px;
+    width: 100%;
+}
+
+/* Work with us */
+
+h6{
+    font-size: 20px;
+}
+
+textarea{
+    min-height: 100px!important;
+}
+
+#workWithUsContainerFluid{
+    background-image: url(/media/Animated\ Shape\ \(7\).svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 2px solid var(--sec-color);
+}
+
+#contactUsRow{
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes bounce {
+    0%, 20%, 40%, 100% {
+		-webkit-transform: translateY(0);
+		-ms-transform:     translateY(0);
+		transform:         translateY(0)
+	}
+	30% {
+		-webkit-transform: translateY(-20px);
+		-ms-transform:     translateY(-20px);
+		transform:         translateY(-20px)
+	}
+}
+
+.bounce_button {
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+#wannaWorkWithUs{
+    font-size: 22px;
+}
+
+#contactUsFormCard{
+    border-radius: 30px;
+    border: 4px solid var(--sec-color);
+    box-shadow: 1px 1px 10px var(--custom-black);
+    max-width: 400px;
+    position: relative;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+#contactUsFormCard:hover{
+    transform: scale(1.03);
+}
+
+#contactUsLeftPart{
+    text-align: center;
+}
+
+#contactUsWords{
+    background-color: var(--sec-color);
+    border-radius: 30px;
+    padding: 10px 20px;
+    max-width: 270px;
+    margin: auto;
+}
+
+#contactUsH5{
+    font-size: 16px;
+    margin: 30px auto;
+}
+
+.form-control, .form-select{
+    border-radius: 10px;
+    font-size: 0.95rem!important;
+}
+
+.form-floating > label{
+    font-size: 0.95rem!important;
+}
+
+.form-control:focus, .form-select:focus{
+    box-shadow: none!important;
+    border: 1px solid var(--sec-color)!important;
+}
+
+#contactUsFormCard > .form-floating{
+    width: 90%;
+}
+
+.customInput{
+    width: 90%;
+    position: relative;
+}
+
+.customInput > .form-control{
+    padding: 1rem 0.75rem;
+    height: calc(3.5rem + 2px);
+    line-height: 1.25;
+}
+
+.mt-pers{
+    margin-top: 30px;
+}
+
+.fs-pers{
+    font-size: 13px;
+    font-style: italic;
+}
+
+.mobile-center{
+    margin-top: 70px;
+    text-align: center;
+}
+
+#revisorFormBtnsDiv{
+    width: 70%;
+}
+
+#inputFileLabel{
+    display: block;
+    text-align: center;
+    line-height: 220%;
+    border: 2px solid var(--sec-color);
+    color: var(--custom-black);
+    background-color: transparent;
+    height: 45px;
+    width: 80%;
+    border-radius: 30px;
+    margin: 30px auto 7px auto;
+    transition: 0.2s;
+    /* padding: 0px 50px; */
+}
+
+#inputFile{
+    display: none;
+}
+
+#okCVIcon{
+    transform: translateX(-2px);
+}
+
+#sendApplicationBtn{
+    border-style: none;
+    color: var(--custom-black);
+    background-color: var(--sec-color);
+    height: 45px;
+    width: 80%;
+    border-radius: 30px;
+    margin: 7px auto 30px auto;
+    transition: 0.2s;
+}
+
+
+#inputFileLabel:hover, #sendApplicationBtn:hover{
+    transform: scale(1.1);
+}
+
+#formArrows{
+    text-shadow: 0px 0px 5px var(--custom-black);
+}
+
+
+
+
+/* Media query */
+
+@media screen and (min-width: 393px){
+
+    #contactUsH5{
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 480px){
+
+    #logoText, #logoText span{
+        font-size: 35px;
+    }
     
-    .cardH2{
+    #pSpan{
+        font-size: 70px!important;
+    }
+
+    #dotSpan{
+        font-size: 50px;
+    }
+}
+
+
+@media screen and (min-width: 768px){
+    
+    /* .cardH2{
         font-size: 26px;
-        position: absolute;
-        left: 40px;
         margin-bottom: 0px;
     }
     
-    .descriptionP{
-        position: absolute;
-        left: 40px;
-        top: 80px;
-        margin-bottom: 0px;
-    }
     
     .createdSpan{
         position: absolute;
@@ -50,17 +328,96 @@
         border-radius: 8px;
         padding: 4px 8px;
         color: white;
+    } */
+    .mobile-center{
+        
+        text-align: start;
+    }
+
+    .mt-pers{
+        margin-top: 100px;
+    }
+
+    .fs-pers{
+        font-size: 13px;
+        font-style: italic;
     }
     
-    .categoryA{
-        position: absolute;
-        left: 40px;
-        top: 50px;
+
+
+    @keyframes bounce {
+        0%, 20%, 40%, 100% {
+            -webkit-transform: translateX(0);
+            -ms-transform:     translateX(0);
+            transform:         translateX(0)
+        }
+        30% {
+            -webkit-transform: translateX(-30px);
+            -ms-transform:     translateX(-30px);
+            transform:         translateX(-30px)
+        }
+    }
+
+    #contactUsWords{
+        transform: scale(0.9);
+    }
+
+    .fa-circle-arrow-down{
+        transform: rotate(270deg);
     }
     
-    .detailsP{
-        position: absolute;
-        bottom: 0px;
-        left: 40px;
+    #contactUsLeftPart{
+        text-align: end;
     }
+}
+
+@media screen and (min-width: 992px){
+    
+    #contactUsWords{
+        transform: scale(1);
+        margin: 0px 20px 0px 65px;
+    }
+    
+    #workWithUsContainerFluid{
+        background-image: url(/media/Animated\ Shape\ \(6\).svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+}
+
+@media screen and (min-width: 1200px){
+
+    #contactUsWords{
+        margin: 0px 20px 0px 130px;
+    }
+
+    #contactUsFormCard{
+        transform: translateX(-35px)
+    }
+
+    #contactUsFormCard:hover{
+        transform: scale(1.03) translateX(-35px);
+    }
+
+}
+
+@media screen and (min-width: 1400px){
+
+    #contactUsWords{
+        margin: 0px 20px 0px 200px;
+    }
+    
+    #contactUsFormCard{
+        transform: translateX(-60px);
+    }
+    
+    #contactUsFormCard:hover{
+        transform: scale(1.03) translateX(-60px);
+    }
+
+    #contactUsLeftPart{
+        transform: translateX(-40px)
+    }
+
 }

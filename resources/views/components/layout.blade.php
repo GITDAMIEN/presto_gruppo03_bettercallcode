@@ -19,6 +19,8 @@
     {{-- Lato Font --}}
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    
     @livewireStyles
 </head>
 <body class="m-0 p-0">
@@ -31,6 +33,7 @@
 
     <script src="{{asset('js/app.js')}}"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    
     @livewireScripts
 </body>
 </html>

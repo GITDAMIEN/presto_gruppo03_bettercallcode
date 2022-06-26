@@ -12,6 +12,9 @@
         <h4>Ecco i suoi dati:</h4>
         <h5>Nome: {{$user->name}}</h5>
         <p>Email: {{$user->email}}</p>
+        <p>Messaggio:</p>
+        <p>{{$lead->messagetxt}}</p>
+        <p>Vedi il curriculum in allegato</p>
         <p>Clicca qui per renderlo revisore:</p>
         <a href="{{route('makeRevisor', compact('user'))}}">Rendi {{$user->name}} revisore</a>
     </div>

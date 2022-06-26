@@ -5372,6 +5372,8 @@ __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap
 
 __webpack_require__(/*! ./script */ "./resources/js/script.js");
 
+__webpack_require__(/*! ./scriptcarosellodetails */ "./resources/js/scriptcarosellodetails.js");
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":
@@ -5418,7 +5420,7 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*!********************************!*\
   !*** ./resources/js/script.js ***!
   \********************************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 // const swiper = new Swiper('.swiper', {
 //     // Optional parameters
@@ -5450,7 +5452,8 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //           },
 //         }
 //       });
-// const navbar = document.querySelector('.presto-nav');
+var _require = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js"),
+    xor = _require.xor; // const navbar = document.querySelector('.presto-nav');
 // document.addEventListener('scroll', ()=> {
 //     if(window.scrollY > 50){
 //         navbar.classList.add('orangeBg')
@@ -5458,6 +5461,8 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //       navbar.classList.remove('orangeBg')
 //     }
 // });
+
+
 var navbar = document.querySelector('.presto-nav');
 
 window.onscroll = function () {
@@ -5466,7 +5471,48 @@ window.onscroll = function () {
   } else {
     navbar.classList.remove('nav-active');
   }
-};
+}; // CAROSELLI NELLA PAGINA DEL REVISORE (ANNUNCI DA REVISIONARE)
+
+
+var belleFoto = document.querySelectorAll('.bellaFoto');
+var carouselControlPrev = document.querySelector('.carousel-control-prev');
+var carouselControlNext = document.querySelector('.carousel-control-next'); // let begliAnnunci = document.querySelectorAll('.bellAnnuncio');
+// let carouselControlPrevMain = document.querySelector('.carousel-control-prev-main');
+// let carouselControlNextMain = document.querySelector('.carousel-control-next-main');
+
+carouselControlPrev.addEventListener('click', function () {
+  belleFoto.forEach(function (foto, i) {
+    foto.classList.remove('active');
+  });
+  belleFoto[i - 1].classList.add('active');
+});
+carouselControlNext.addEventListener('click', function () {
+  belleFoto.forEach(function (foto, i) {
+    foto.classList.remove('active');
+  });
+  belleFoto[i + 1].classList.add('active');
+}); // carouselControlPrevMain.addEventListener('click', ()=>{
+//     begliAnnunci.forEach((foto,i) => {
+//         foto.classList.remove('active');
+//     });
+//     begliAnnunci[i-1].classList.add('active');
+// })
+// carouselControlNextMain.addEventListener('click', ()=>{
+//     begliAnnunci.forEach((foto,i) => {
+//         foto.classList.remove('active');
+//     });
+//     begliAnnunci[i+1].classList.add('active');
+// })
+
+/***/ }),
+
+/***/ "./resources/js/scriptcarosellodetails.js":
+/*!************************************************!*\
+  !*** ./resources/js/scriptcarosellodetails.js ***!
+  \************************************************/
+/***/ (() => {
+
+
 
 /***/ }),
 
