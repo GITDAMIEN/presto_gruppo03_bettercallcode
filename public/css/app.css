@@ -11860,12 +11860,22 @@ body {
     text-align:center;
 }   
 
-
+.nav-link{
+    color: var(--obsidianGray);
+}
 
 .dropBg{
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 15px;
+    color: var(--obsidianGray);
     
+}
+.dropdown-item{
+    color: var(--obsidianGray);
+}
+.dropdown-menu{
+    color: var(--obsidianGray);
+    border-color: var(--panna);
 }
 
 .badge-class{
@@ -11883,6 +11893,7 @@ body {
 
 .nav-item {
     font-family: 'Lato', sans-serif;
+    color: var(--obsidianGray);
 }
 
   /*NAVGENERAL */
@@ -11919,14 +11930,14 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-header.presto-nav {
+nav.presto-nav {
     width: 100%;
     position: fixed;
     transition: 0.3s ease-in-out;
 }
 
 .nav-active {
-    background-color:var(--papaya);
+    background-color: #0375B4;
     box-shadow: 5px -1px 12px -5px grey;
 }
 
@@ -11968,6 +11979,18 @@ header.presto-nav {
     transform: rotate(90deg);
     transition: all 0.8s;
 }
+
+@media screen and (min-width: 768px){
+    .dropBg{
+    background-color:transparent;
+        color: var(--panna);
+    }
+    .dropdown-item{
+        color: var(--panna);
+    }
+    
+}
+
 :root{
     --main-color: #B2EDC5;
     --sec-color: #FFB800;

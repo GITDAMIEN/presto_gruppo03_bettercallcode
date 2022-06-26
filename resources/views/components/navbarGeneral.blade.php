@@ -1,6 +1,6 @@
-  <nav class="navbar navbar-expand-md presto-nav-general papayaBg">
+  <nav class="navbar navbar-expand-md presto-nav-general starryBg py-1 ">
     <div class="container-fluid">
-      <a class="navbar-brand title-nav panna text-decoration-none" href="{{route('welcome')}}">Presto</a>
+      <a class="navbar-brand title-nav panna text-decoration-none fs-2" href="{{route('welcome')}}">Presto</a>
       <button class="navbar-toggler orange" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fa-solid fa-ellipsis-vertical"></i>
       </button>
@@ -25,7 +25,7 @@
           <a class="nav-link dropdown-toggle fs-6 px-4" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Ciao {{Auth::user()->name}}
           </a>
-          <ul class="dropdown-menu" aria-labelledby="dropdown04">
+          <ul class="dropdown-menu text-center starryBg" aria-labelledby="dropdown04">
             <li>
               <a class="dropdown-item" href="#">Profilo</a>
             </li>
@@ -43,7 +43,7 @@
             </li>
             <li><hr class="dropdown-divider"></li>
             @endif
-            <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('frm-logout').submit();">Logout</a>      
+            <a class="dropdown-item panna" href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('frm-logout').submit();">Logout</a>      
             <form id="frm-logout" action="{{ route('logout') }}" method="POST" class="d-none">
             @csrf
             </form>
