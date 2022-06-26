@@ -30,7 +30,7 @@
                             <div class="carousel-inner divDiv">
                                 @foreach ($announcement_to_check->images as $image)
                                 <div class="carousel-item {{$loop->index==0 ? 'active' : ''}} bellaFotoDiv">
-                                    <img src="{{!$announcement_to_check->images()->get()->isEmpty() ? $announcement_to_check->images()->first()->getUrl(600,450) : 'https://source.unsplash.com/230x200'}}" alt="Immagine bella" class="bellaFoto img-fluid">
+                                    <img src="{{!$announcement_to_check->images()->get()->isEmpty() ?  $image->getUrl(600,450) : 'https://source.unsplash.com/230x200'}}" alt="Immagine bella" class="bellaFoto img-fluid">
                                 </div>
                                 @endforeach
                             </div>
