@@ -11775,6 +11775,12 @@ body {
     border-radius: 10px;
 }
 
+.titleDetails{
+    font-size: 38px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
+
 
 
 
@@ -12431,5 +12437,9 @@ h5{
 .papayaBg:hover{
     color: var(--panna);
 }
-
+.thumb{
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+}
 
