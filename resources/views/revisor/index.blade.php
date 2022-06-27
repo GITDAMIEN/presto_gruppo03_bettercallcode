@@ -102,11 +102,11 @@
                                 <span class="titleSpan me-2">{{$announceOK->title}}</span>
                                 <span>({{$announceOK->category->name}})</span>
                             </div>
-                            <span id="priceSpanRevisor" class="text-end">Prezzo: {{$announceOK->price}}€</span>
+                            <span id="priceSpanRevisor" class="text-end">{{__('ui.price')}}: {{$announceOK->price}}€</span>
                         </div>
                         <div class="row position-relative">
                             <div class="col-12 col-md-8 my-2">{{$announceOK->description}}</div>
-                            <div class="col-12 col-md-4 created createdOKNO text-center text-md-end mt-2">Caricato da {{$announceOK->user->name}} il {{$announceOK->created_at->format('d/m/Y')}}</div>    
+                            <div class="col-12 col-md-4 created createdOKNO text-center text-md-end mt-2">{{__('ui.uploadBy')}} {{$announceOK->user->name}} il {{$announceOK->created_at->format('d/m/Y')}}</div>    
                         </div>   
                     </div>
                     <div class="d-none d-lg-block col-lg-3 text-center mx-lg-0 align-self-lg-center undoLgBtn">
@@ -121,7 +121,7 @@
                     <form method="POST" action="{{route('revisor.refuse_announcement', ['announcement'=>$announceOK])}}">
                         @csrf
                         @method('PATCH')
-                        <button type="submit" class="btn btn-warning revisorBtns">Annulla revisione e rifiuta annuncio</button>
+                        <button type="submit" class="btn btn-warning revisorBtns">{{__('ui.rif-ann-btn')}}</button>
                     </form>
                 </div>
                 @endforeach
@@ -136,7 +136,7 @@
         {{-- ULTIMI ANNUNCI RIFIUTATI --}}
         <div class="container">
             <div class="row justify-content-center">
-                <h2 class="col-12 text-center my-4 mt-lg-5 py-2">Gli ultimi annunci rifiutati</h2>
+                <h2 class="col-12 text-center my-4 mt-lg-5 py-2">{{__('ui.last-ann-rif')}}</h2>
                 @if($announcesNO)
                     <p class="d-none">{{$countNO=0}}</p>
                 @foreach ($announcesNO as $announceNO)
@@ -148,11 +148,11 @@
                                 <span class="titleSpan me-2">{{$announceNO->title}}</span>
                                 <span>({{$announceNO->category->name}})</span>
                             </div>
-                            <span id="priceSpanRevisor" class="text-end">Prezzo: {{$announceNO->price}}€</span>
+                            <span id="priceSpanRevisor" class="text-end">{{__('ui.price')}}: {{$announceNO->price}}€</span>
                         </div>
                         <div class="row position-relative">
                             <div class="col-12 col-md-8 my-2">{{$announceNO->description}}</div>
-                            <div class="col-12 col-md-4 created createdOKNO text-center text-md-end mt-2">Caricato da {{$announceNO->user->name}} il {{$announceNO->created_at->format('d/m/Y')}}</div>    
+                            <div class="col-12 col-md-4 created createdOKNO text-center text-md-end mt-2">{{__('ui.uploadBy')}} {{$announceNO->user->name}} {{__('ui.at')}} {{$announceNO->created_at->format('d/m/Y')}}</div>    
                         </div>   
                     </div>
                     <div class="d-none d-lg-block col-lg-3 text-center mx-lg-0 align-self-lg-center undoLgBtn">
@@ -167,7 +167,7 @@
                     <form method="POST" action="{{route('revisor.accept_announcement', ['announcement'=>$announceNO])}}">
                         @csrf
                         @method('PATCH')
-                        <button type="submit" class="btn btn-warning revisorBtns">Annulla revisione e accetta annuncio</button>
+                        <button type="submit" class="btn btn-warning revisorBtns">{{__('ui.ann-rev-acc-ann')}}</button>
                     </form>
                 </div>
                 @endforeach

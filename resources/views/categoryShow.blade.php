@@ -43,13 +43,13 @@
                   <a class="lato fw-bolder fs-5" href="{{route('detailsAnnounce',$announce)}}">{{$announce->title}}</a>
                   <a href="{{route('categoryShow',$announce->category)}}"><p>{{$announce->category->name}}</p></a>
                   <p> {{$announce->description}}</p>
-                  <a href="{{route('detailsAnnounce',$announce)}}" class="panna"> <p class="btn starryBg panna mt-1">Dettagli</p></a>
+                  <a href="{{route('detailsAnnounce',$announce)}}" class="panna"> <p class="btn starryBg panna mt-1">{{__('ui.details')}}</p></a>
                 </div>
                 <div class="col-12 col-md-3 px-4">
                     <p class="lato btn bg-success panna text-end mb-0 mt-3">{{$announce->price}}€</p>
                     <div class="row">
                       <div class="col-12">
-                        <p class=" lato fs-pers mt-pers mb-0">Creato da {{$announce->user->name}} il {{$announce->created_at->format('d/m/Y')}}</p>
+                        <p class=" lato fs-pers mt-pers mb-0">{{__('ui.create')}} {{$announce->user->name}} {{__('ui.at')}} {{$announce->created_at->format('d/m/Y')}}</p>
                       </div>
                     </div>
                 </div>
@@ -66,7 +66,7 @@
         <div class="row">
             <div class="col-12 d-flex justify-content-center align-items-center">
                 <div class="aa ps-5">
-                    <a href="{{route('createAnnouncement')}}" class="btnPd">Inserisci tu il primo annuncio</a>
+                    <a href="{{route('createAnnouncement')}}" class="btnPd">{{__('ui.add-first-ann')}}</a>
                 </div>
             </div>
         </div>

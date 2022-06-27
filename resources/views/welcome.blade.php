@@ -114,7 +114,7 @@
                 <div id="contactUsLeftPart" class="col-12 col-md-5 customBlack ubuntuFont mx-5 mx-md-3 mt-md-4 mt-lg-5">
                     <div id="contactUsWords">
                         <p id="wannaWorkWithUs" class="">{{__('ui.work-wu')}}</p>
-                        <h6 class="bounce_button fw-bold">{{__('ui-bec-rev-g')}}<i class="fa-solid fa-circle-arrow-down ms-2"></i></h6>
+                        <h6 class="bounce_button fw-bold">{{__('ui.bec-rev-g')}}<i class="fa-solid fa-circle-arrow-down ms-2"></i></h6>
                     </div>
                     <img src="/media/contactUsGialloCiocco.svg" alt="Contact us image" class="w-100 mb-3 mb-md-0">
                 </div>

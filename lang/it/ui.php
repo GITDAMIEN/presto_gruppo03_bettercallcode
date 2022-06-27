@@ -53,6 +53,7 @@ return [
       'rif-ann-no'  => 'Nessun annuncio accettato finora',
       'last-ann-rif'  => 'Gli ultimi annunci rifiutati',
       'acc-ann-no'  => 'Nessun annuncio rifiutato finora',
+      'ann-rev-acc-ann' => 'Annulla revisione e accetta annuncio',
 
       //REVISOR FORM
       'add-req' => 'Compila la richiesta',
@@ -95,26 +96,6 @@ return [
       'bec-rev-presto'=> 'Diventa revisore per Presto.it!',
       'work-wu'=> 'Lavora con noi!',
       'bec-rev-g'=> 'DIVENTA REVISORE',
-      
-
-      
-      
-      
-    
-
-
-
-
-
-
-
-
-
-
-      
-      
-
-      
 
 ];
 

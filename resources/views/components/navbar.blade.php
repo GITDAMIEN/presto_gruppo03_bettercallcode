@@ -48,7 +48,7 @@
           <li><hr class="dropdown-divider"></li>
           @else
           <li>
-            <a class="dropdown-item ps-1" href="/#workWithUsContainerFluid">{{__('ui.bec.rev')}}</a>
+            <a class="dropdown-item ps-1" href="/#workWithUsContainerFluid">{{__('ui.bec-rev')}}</a>
           </li>
           <li><hr class="dropdown-divider"></li>
           @endif
