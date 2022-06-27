@@ -1,13 +1,13 @@
 <x-layout>
     
     <x-slot name="title">
-        Zona revisore
+         {{__('ui.rev-zone')}}
     </x-slot>
     
     <div class="container">
         <div class="row">
             <h2 class="col-12 text-center my-4">
-                {{$announcement_to_check ? "Annuncio da revisionare:" : "Non ci sono annunci da revisionare"}}
+                {{$announcement_to_check ? __('ui.ann-rev') : __('ui.ann-rev-no')}}
             </h2>
         </div>
     </div>
@@ -46,20 +46,20 @@
                     <div class="infoBox col-12 col-lg-8 mx-lg-0 mt-2 mt-lg-0 ms-lg-2 text-center text-lg-start">
                         <div class="row">
                             <div class="col-12 col-lg-8 mt-2 mt-lg-0 rowToCheck ms-lg-2 text-center text-lg-start">
-                                <label id="titleToCheckLabel" for="titleToCheck" class="revisionLabels mt-lg-2">Titolo annuncio:</label>
+                                <label id="titleToCheckLabel" for="titleToCheck" class="revisionLabels mt-lg-2">{{__('ui.title')}}:</label>
                                 <h4 id="titleToCheck" class="titleToCheck my-0 py-0">{{$announcement_to_check->title}}</h4>
-                                <label id="categoryToCheckLabel" for="categoryToCheck" class="revisionLabels">Categoria:</label>
+                                <label id="categoryToCheckLabel" for="categoryToCheck" class="revisionLabels">{{__('ui.cate')}}:</label>
                                 <h5 id="categoryToCheck" class="mb-0 categoryToCheck"><a href="{{route('categoryShow',$announcement_to_check->category)}}">{{$announcement_to_check->category->name}}</a></h5>
-                                <label id="descriptionToCheckLabel" for="descriptionToCheck" class="revisionLabels">Descrizione:</label>
+                                <label id="descriptionToCheckLabel" for="descriptionToCheck" class="revisionLabels">{{__('ui.description')}}:</label>
                                 <h5 id="descriptionToCheck" class="my-0 descriptionToCheck mx-auto">{{$announcement_to_check->description}}</h5>
                             </div>
                             <div class="col-12 col-lg-3 mt-5 pt-4 mt-lg-1 pt-lg-2 priceAndCreated text-center text-lg-end">
                                 <div class="priceToCheckDiv">
-                                    <label id="priceLabel" for="priceToCheck" class="revisionLabels">Prezzo:</label>
+                                    <label id="priceLabel" for="priceToCheck" class="revisionLabels">{{__('ui.price')}}:</label>
                                     <h5 id="priceToCheck" class="mb-0 priceToCheck">{{$announcement_to_check->price}}€</h5>
                                 </div>
                                 <div class="createdToCheckDiv">
-                                    <p class="mb-0 mt-3 created createdToCheck">Caricato da {{$announcement_to_check->user->name}} il {{$announcement_to_check->created_at->format('d/m/Y')}}</p>
+                                    <p class="mb-0 mt-3 created createdToCheck">{{__('ui.uploadBy')}} {{$announcement_to_check->user->name}} {{__('ui.at')}} {{$announcement_to_check->created_at->format('d/m/Y')}}</p>
                                 </div>
                             </div>
                         </div>
@@ -72,14 +72,14 @@
                 <form method="POST" action="{{route('revisor.accept_announcement', ['announcement'=>$announcement_to_check])}}">
                     @csrf
                     @method('PATCH')
-                    <button type="submit" class="btn btn-success revisorBtns fs-5">Accetta annuncio<i class="ms-2 fa-solid fa-circle-check"></i></button>
+                    <button type="submit" class="btn btn-success revisorBtns fs-5">{{__('ui.acc-ann')}}<i class="ms-2 fa-solid fa-circle-check"></i></button>
                 </form>
             </div>
             <div class="col-12 col-lg-6 text-lg-start my-2">
                 <form method="POST" action="{{route('revisor.refuse_announcement', ['announcement'=>$announcement_to_check])}}">
                     @csrf
                     @method('PATCH')
-                    <button type="submit" class="btn btn-danger revisorBtns fs-5">Rifiuta annuncio<i class="ms-2 fa-solid fa-circle-xmark"></i></button>
+                    <button type="submit" class="btn btn-danger revisorBtns fs-5">{{__('ui.rif-ann')}}<i class="ms-2 fa-solid fa-circle-xmark"></i></button>
                 </form>
             </div>
         </div>
@@ -90,7 +90,7 @@
         {{-- ULTIMI ANNUNCI ACCETTATI --}}
         <div class="container mt-5 pt-5">
             <div class="row justify-content-center">
-                <h2 class="col-12 text-center my-4 mt-lg-5 py-2">Gli ultimi annunci accettati</h2>
+                <h2 class="col-12 text-center my-4 mt-lg-5 py-2">{{__('ui.last-ann-acc')}}</h2>
                 @if($announcesOK)
                     <p class="d-none">{{$countOK=0}}</p>
                 @foreach ($announcesOK as $announceOK)
@@ -102,25 +102,25 @@
                                 <span class="titleSpan me-2">{{$announceOK->title}}</span>
                                 <span>({{$announceOK->category->name}})</span>
                             </div>
-                            <span>Prezzo: {{$announceOK->price}}€</span>
+                            <span>{{__('ui.price')}}: {{$announceOK->price}}€</span>
                         </div>
                         <div class="row position-relative">
                             <div class="col-8">{{$announceOK->description}}</div>
-                            <div class="col-4 created createdOKNO text-end">Caricato da {{$announceOK->user->name}} il {{$announceOK->created_at->format('d/m/Y')}}</div>    
+                            <div class="col-4 created createdOKNO text-end">{{__('ui.uploadBy')}} {{$announceOK->user->name}} {{__('ui.at')}} {{$announceOK->created_at->format('d/m/Y')}}</div>    
                         </div>   
                     </div>
                     <div class="col-3 text-end">
                         <form method="POST" action="{{route('revisor.refuse_announcement', ['announcement'=>$announceOK])}}">
                             @csrf
                             @method('PATCH')
-                            <button type="submit" class="btn btn-warning revisorBtns">Annulla revisione e rifiuta annuncio</button>
+                            <button type="submit" class="btn btn-warning revisorBtns">{{__('ui.rif-ann-btn')}}</button>
                         </form>
                     </div>
                 </div>
                 @endforeach
                 @endif
                 @if ($countOK<=0)
-                    <p class="text-center">Nessun annuncio accettato finora</p>                    
+                    <p class="text-center">{{__('ui.rif-ann-no')}}</p>                    
                 @endif
             </div>
         </div>
@@ -129,7 +129,7 @@
         {{-- ULTIMI ANNUNCI RIFIUTATI --}}
         <div class="container mt-5">
             <div class="row justify-content-center">
-                <h2 class="col-12 text-center my-3 py-2">Gli ultimi annunci rifiutati</h2>
+                <h2 class="col-12 text-center my-3 py-2">{{__('ui.last-ann-rif')}}</h2>
                 @if($announcesNO)
                     <p class="d-none">{{$countNO=0}}</p>
                 @foreach ($announcesNO as $announceNO)
@@ -141,25 +141,25 @@
                                 <span class="titleSpan me-2">{{$announceNO->title}}</span>
                                 <span>({{$announceNO->category->name}})</span>
                             </div>
-                            <span>Prezzo: {{$announceNO->price}}€</span>
+                            <span>{{__('ui.price')}}: {{$announceNO->price}}€</span>
                         </div>
                         <div class="row position-relative">
                             <div class="col-8">{{$announceNO->description}}</div>
-                            <div class="col-4 created createdOKNO text-end">Caricato da {{$announceNO->user->name}} il {{$announceNO->created_at->format('d/m/Y')}}</div>    
+                            <div class="col-4 created createdOKNO text-end">{{__('ui.uploadBy')}} {{$announceNO->user->name}} {{__('ui.at')}} {{$announceNO->created_at->format('d/m/Y')}}</div>    
                         </div>   
                     </div>
                     <div class="col-3 text-end">
                         <form method="POST" action="{{route('revisor.accept_announcement', ['announcement'=>$announceNO])}}">
                             @csrf
                             @method('PATCH')
-                            <button type="submit" class="btn btn-warning revisorBtns">Annulla revisione e accetta annuncio</button>
+                            <button type="submit" class="btn btn-warning revisorBtns">{{__('ui.rif-ann-btn')}}</button>
                         </form>
                     </div>
                 </div>
                 @endforeach
                 @endif
                 @if ($countNO<=0)
-                    <p class="text-center">Nessun annuncio rifiutato finora</p>                    
+                    <p class="text-center">{{__('ui.acc-ann-no')}}</p>                    
                 @endif
             </div>
         </div>

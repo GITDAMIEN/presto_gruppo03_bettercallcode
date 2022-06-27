@@ -1,9 +1,9 @@
 <x-layout>
     <x-slot name="title">
-        Tutti gli annunci 
+        {{__('ui.all-ann')}}
      </x-slot>
     
-    <h1 class="text-center tuttigliannunci py-4">TUTTI GLI ANNUNCI</h1>
+    <h1 class="text-center tuttigliannunci py-4">{{__('ui.all-ann-g')}}</h1>
 
     @if (session('message'))
         <div class="alert alert-success text-center">

@@ -1,8 +1,8 @@
 <x-layout>
   <x-slot name="title">
-    Categoria {{$category->name}}
+    {{__('ui.cate')}} {{$category->name}}
   </x-slot>
-    <h1 class="text-center my-5">Stai visualizzando la categoria {{$category->name}}</h1>
+    <h1 class="text-center my-5">{{__('ui.cate-show')}} {{$category->name}}</h1>
     <div class="container">
         <div class="row">
           @foreach ($category->announcements as $announce)
@@ -12,11 +12,11 @@
                 <div class="card-body">
                   <h5 class="card-title">{{$announce->title}}</h5>
                   <p class="card-text">{{$announce->description}}</p>
-                  <span class="card-text">Categoria :</span>
+                  <span class="card-text">{{__('ui.cate')}} :</span>
                   <a href="" class="card-text">{{$announce->category->name}}</a>
                   <p class="card-text mt-2">{{$announce->price}} €</p>
-                  <p class="card-text">Creato da : {{$announce->user->name}}</p>
-                  <p class="card-text">Creato il : {{$announce->created_at->format('d/m/Y')}}</p>
+                  <p class="card-text">{{__('ui.create')}} : {{$announce->user->name}}</p>
+                  <p class="card-text">{{__('ui.creatAt')}} : {{$announce->created_at->format('d/m/Y')}}</p>
                 </div>
               </div>
           </div>

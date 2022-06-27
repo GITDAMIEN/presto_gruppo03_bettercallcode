@@ -28,8 +28,8 @@
                     <ul class="skill-card__knowledge p-0">
                         <li class="description">{{$announce->description}}</li>
             
-                        <li><a href="{{route('detailsAnnounce',$announce)}}" class="btn starryBg lato panna">Dettagli</a></li>
-                        <li class="created pt-4 lato">Creato da {{$announce->user->name}} il {{$announce->created_at->format('d/m/Y')}}</li>
+                        <li><a href="{{route('detailsAnnounce',$announce)}}" class="btn starryBg lato panna">{{__('ui.details')}}</a></li>
+                        <li class="created pt-4 lato">{{__('ui.create')}} {{$announce->user->name}} {{__('ui.at')}} {{$announce->created_at->format('d/m/Y')}}</li>
                     </ul>
                 </section>
             </div>
@@ -46,7 +46,7 @@
             <div class="row">
                 <div class="col-12 d-flex justify-content-center align-items-center">
                     <div class="aa ps-5">
-                        <a href="{{route('createAnnouncement')}}" class="btnPd">Inserisci tu il primo annuncio</a>
+                        <a href="{{route('createAnnouncement')}}" class="btnPd">{{__('ui.add-first-ann')}}</a>
                     </div>
                 </div>
             </div>

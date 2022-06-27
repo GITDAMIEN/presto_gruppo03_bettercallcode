@@ -1,7 +1,7 @@
 <x-layout>
 
     <x-slot name="title">
-        Nuovo annuncio
+        {{__('ui.new-ann')}}
       </x-slot>
 
     <div class="container">

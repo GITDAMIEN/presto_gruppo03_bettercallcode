@@ -15,11 +15,11 @@
           <a class="nav-link active fs-6 px-4"  href="{{route('welcome')}}">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link fs-6 px-4" href="{{route('allAnnouncements')}}">Annunci</a>
+          <a class="nav-link fs-6 px-4" href="{{route('allAnnouncements')}}">{{__('ui.ann')}}</a>
         </li>
         @guest
         <li class="nav-item">
-          <a class="nav-link fs-6 px-4" href="{{route('register')}}">Registrati</a>
+          <a class="nav-link fs-6 px-4" href="{{route('register')}}">{{__('ui.reg')}}</a>
       </li>
       <li class="nav-item">
           <a class="nav-link fs-6 px-4" href="{{route('login')}}">Log-in</a>
@@ -27,18 +27,18 @@
       @else
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle fs-6 px-4" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Ciao {{Auth::user()->name}}
+          {{__('ui.ciao')}} {{Auth::user()->name}}
         </a>
         <ul class="dropdown-menu dropBg mx-auto text-center panna" aria-labelledby="dropdown04">
           <li>
-            <a class="dropdown-item " href="#">Profilo</a>
+            <a class="dropdown-item " href="#">{{__('ui.profilo')}}</a>
           </li>
           <li>
-            <a class="dropdown-item" href="#">I tuoi annunci</a>
+            <a class="dropdown-item" href="#">{{__('ui.your-ann')}}</a>
           </li>
           @if (Auth::user()->is_revisor)     {{--  Se l'utente è un revisore  --}}                      
           <li>
-            <a class="dropdown-item position-relative" href="{{route('revisor.index')}}">Zona revisore
+            <a class="dropdown-item position-relative" href="{{route('revisor.index')}}">{{__('ui.rev-zone')}}
           <span class="position-absolute top-50  badge-class translate-middle badge rounded-pill bg-danger">
               {{App\Models\Announcement::toBeRevisionedCount()}}
               <span class="visually-hidden">unread messages</span>
@@ -48,7 +48,7 @@
           <li><hr class="dropdown-divider"></li>
           @else
           <li>
-            <a class="dropdown-item ps-1" href="/#workWithUsContainerFluid">Diventa revisore</a>
+            <a class="dropdown-item ps-1" href="/#workWithUsContainerFluid">{{__('ui.bec.rev')}}</a>
           </li>
           <li><hr class="dropdown-divider"></li>
           @endif
@@ -59,9 +59,18 @@
         </ul>
       </li>
       <li class="nav-item">
-          <a class="nav-link fs-6 px-4" href="{{route('createAnnouncement')}}">Nuovo annuncio</a>
+          <a class="nav-link fs-6 px-4" href="{{route('createAnnouncement')}}">{{__('ui.new-ann')}}</a>
       </li>
         @endguest
+        <li class="nav-item">
+           <x-_locale lang='it' nation='it'/>
+        </li>
+        <li class="nav-item">
+          <x-_locale lang='en' nation='gb'/>
+       </li>
+       <li class="nav-item">
+        <x-_locale lang='es' nation='es'/>
+     </li>
       </ul>
     </div>
   </div>
