@@ -13,10 +13,16 @@ class LastAnnouncements extends Component
    
 
     public function mount(){
-    
+
         $this->announces = Announcement::where('is_accepted',true)->latest()->get()->take(6);
+        foreach($this->announces as $x){
+            if(strlen($x->description) > 40 ){
+                $x->description = mb_strimwidth($x->description, 0, 40, " (...)");
+            }
+        }
         // $this->announces = Announcement::all();
     }
+
 
     
     public function render()
