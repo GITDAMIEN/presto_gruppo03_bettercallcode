@@ -1,6 +1,7 @@
 .presto-nav{
     background-color:transparent;
-   
+    z-index: 2000;
+    width: 90vw;
 }    
 
 .presto-nav .nav-link, .presto-nav .nav-link.active{
@@ -15,7 +16,12 @@
 
 .presto-nav{
     text-align:center;
+    right:0px;
 }   
+
+#navbarContainerfluid{
+    width: 100%!important;
+}
 
 .nav-link{
     color: var(--obsidianGray);
@@ -84,7 +90,6 @@
 
 nav.presto-nav {
     width: 100%;
-    position: fixed;
     transition: 0.3s ease-in-out;
 }
 
@@ -97,6 +102,9 @@ nav.presto-nav {
     transform: translateX(-20px);
 }
 
+#navbarTogglerIcon{
+    color: var(--panna);
+}
 
 .presto-nav .navbar-toggler{
     color: var(--orange);
@@ -104,18 +112,29 @@ nav.presto-nav {
     transition: all 0.5s;
     border: none;
     font-size: 30px;
+    transform: rotate(0deg);
 }
 .presto-nav .navbar-toggler:focus{
     box-shadow: none;
 }
 
-.presto-nav .navbar-toggler.collapsed{
-    border: transparent;
+.rotateIcon{
     transform: rotate(90deg);
     transition: all 0.8s;
 }
 
-.presto-nav-general .navbar-toggler{
+.rotateIcon2{
+    transform: rotate(0deg);
+    transition: all 0.8s;
+}
+
+/* .presto-nav .collapsed{
+    border: transparent;
+    transition: all 0.8s;
+    transform: rotate(90deg);
+} */
+
+/* .presto-nav-general .navbar-toggler{
     color: var(--orange);
     border: transparent;
     transition: all 0.5s;
@@ -130,7 +149,7 @@ nav.presto-nav {
     border: transparent;
     transform: rotate(90deg);
     transition: all 0.8s;
-}
+} */
 
 .dropBg1{
     background-color:rgba(255, 255, 255, 0.5);

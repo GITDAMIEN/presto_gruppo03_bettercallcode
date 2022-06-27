@@ -5471,38 +5471,15 @@ window.onscroll = function () {
   } else {
     navbar.classList.remove('nav-active');
   }
-}; // CAROSELLI NELLA PAGINA DEL REVISORE (ANNUNCI DA REVISIONARE)
+}; // NAVBAR ICON
 
 
-var belleFoto = document.querySelectorAll('.bellaFoto');
-var carouselControlPrev = document.querySelector('.carousel-control-prev');
-var carouselControlNext = document.querySelector('.carousel-control-next'); // let begliAnnunci = document.querySelectorAll('.bellAnnuncio');
-// let carouselControlPrevMain = document.querySelector('.carousel-control-prev-main');
-// let carouselControlNextMain = document.querySelector('.carousel-control-next-main');
-
-carouselControlPrev.addEventListener('click', function () {
-  belleFoto.forEach(function (foto, i) {
-    foto.classList.remove('active');
-  });
-  belleFoto[i - 1].classList.add('active');
+var navbarTogglerIcon = document.querySelector('#navbarTogglerIcon');
+var navbarTogglerBtn = document.querySelector('#navbarTogglerBtn');
+navbarTogglerBtn.addEventListener('click', function () {
+  navbarTogglerIcon.classList.toggle('rotateIcon');
+  navbarTogglerIcon.classList.toggle('rotateIcon2');
 });
-carouselControlNext.addEventListener('click', function () {
-  belleFoto.forEach(function (foto, i) {
-    foto.classList.remove('active');
-  });
-  belleFoto[i + 1].classList.add('active');
-}); // carouselControlPrevMain.addEventListener('click', ()=>{
-//     begliAnnunci.forEach((foto,i) => {
-//         foto.classList.remove('active');
-//     });
-//     begliAnnunci[i-1].classList.add('active');
-// })
-// carouselControlNextMain.addEventListener('click', ()=>{
-//     begliAnnunci.forEach((foto,i) => {
-//         foto.classList.remove('active');
-//     });
-//     begliAnnunci[i+1].classList.add('active');
-// })
 
 /***/ }),
 

@@ -1,5 +1,4 @@
 <x-layout>
-    <x-navbarGeneral></x-navbarGeneral>
     <x-slot name="title">
        Registrati
     </x-slot>

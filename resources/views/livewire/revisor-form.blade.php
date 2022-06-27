@@ -1,5 +1,6 @@
 {{-- Care about people's approval and you will be their prisoner. --}}
 <form id="contactUsFormCard" class="card col-12 col-md-6 customBlack ubuntuFont text-center d-flex align-items-center mx-3 ms-md-0 me-md-4 needs-validation" novalidate wire:submit.prevent="sendForm">
+    @csrf
     <h4 id="contactUsH5"><i id="formArrows" class="fa-solid fa-circle-arrow-right me-3 secColor"></i>Compila la richiesta<i id="formArrows" class="fa-solid fa-circle-arrow-left ms-3 secColor"></i></h4>
     <div class="customInput mb-2">
         <input type="text" class="form-control" id="floatingPassword" placeholder="{{Auth::user()->name}}" readonly>
