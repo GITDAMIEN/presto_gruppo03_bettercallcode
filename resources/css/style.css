@@ -466,6 +466,12 @@ body {
     color: var(--starry);
 }
 
+.counterannunci{
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    color: var(--starry);
+}
+
 .xxx{
     border-radius: 10px;
     background-color: rgba(3, 117, 180, 0.6);
@@ -519,6 +525,18 @@ body {
     border-radius: 10px;
 }
 
+.allCardsCat{
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.4s;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.433);
+}
+
+.allCardsCat:hover{
+    border-radius: 20px;
+    overflow: hidden;
+    transform: scale(1.03);
+}
 
 
 

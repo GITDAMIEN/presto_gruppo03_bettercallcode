@@ -95,27 +95,34 @@
                     <p class="d-none">{{$countOK=0}}</p>
                 @foreach ($announcesOK as $announceOK)
                 <p class="d-none">{{$countOK++}}</p>
-                <div class="row my-2 py-2 align-items-center announceCard justify-content-between">
-                    <div class="col-9">
+                <div class="row py-2 align-items-start announceCard justify-content-between mb-1 mt-3 my-lg-2">
+                    <div class="col-12 col-lg-9 mt-2 mx-lg-0">
                         <div class="d-flex justify-content-between">
                             <div>
                                 <span class="titleSpan me-2">{{$announceOK->title}}</span>
                                 <span>({{$announceOK->category->name}})</span>
                             </div>
-                            <span>{{__('ui.price')}}: {{$announceOK->price}}€</span>
+                            <span id="priceSpanRevisor" class="text-end">Prezzo: {{$announceOK->price}}€</span>
                         </div>
                         <div class="row position-relative">
-                            <div class="col-8">{{$announceOK->description}}</div>
-                            <div class="col-4 created createdOKNO text-end">{{__('ui.uploadBy')}} {{$announceOK->user->name}} {{__('ui.at')}} {{$announceOK->created_at->format('d/m/Y')}}</div>    
+                            <div class="col-12 col-md-8 my-2">{{$announceOK->description}}</div>
+                            <div class="col-12 col-md-4 created createdOKNO text-center text-md-end mt-2">Caricato da {{$announceOK->user->name}} il {{$announceOK->created_at->format('d/m/Y')}}</div>    
                         </div>   
                     </div>
-                    <div class="col-3 text-end">
+                    <div class="d-none d-lg-block col-lg-3 text-center mx-lg-0 align-self-lg-center undoLgBtn">
                         <form method="POST" action="{{route('revisor.refuse_announcement', ['announcement'=>$announceOK])}}">
                             @csrf
                             @method('PATCH')
                             <button type="submit" class="btn btn-warning revisorBtns">{{__('ui.rif-ann-btn')}}</button>
                         </form>
                     </div>
+                </div>
+                <div class="d-lg-none col-12 text-center">
+                    <form method="POST" action="{{route('revisor.refuse_announcement', ['announcement'=>$announceOK])}}">
+                        @csrf
+                        @method('PATCH')
+                        <button type="submit" class="btn btn-warning revisorBtns">Annulla revisione e rifiuta annuncio</button>
+                    </form>
                 </div>
                 @endforeach
                 @endif
@@ -127,34 +134,41 @@
         
         
         {{-- ULTIMI ANNUNCI RIFIUTATI --}}
-        <div class="container mt-5">
+        <div class="container">
             <div class="row justify-content-center">
-                <h2 class="col-12 text-center my-3 py-2">{{__('ui.last-ann-rif')}}</h2>
+                <h2 class="col-12 text-center my-4 mt-lg-5 py-2">Gli ultimi annunci rifiutati</h2>
                 @if($announcesNO)
                     <p class="d-none">{{$countNO=0}}</p>
                 @foreach ($announcesNO as $announceNO)
                 <p class="d-none">{{$countNO++}}</p>
-                <div class="row my-2 py-2 align-items-center announceCard justify-content-between">
-                    <div class="col-9">
+                <div class="row py-2 align-items-start announceCard justify-content-between mb-1 mt-3 my-lg-2">
+                    <div class="col-12 col-lg-9 mt-2 mx-lg-0">
                         <div class="d-flex justify-content-between">
                             <div>
                                 <span class="titleSpan me-2">{{$announceNO->title}}</span>
                                 <span>({{$announceNO->category->name}})</span>
                             </div>
-                            <span>{{__('ui.price')}}: {{$announceNO->price}}€</span>
+                            <span id="priceSpanRevisor" class="text-end">Prezzo: {{$announceNO->price}}€</span>
                         </div>
                         <div class="row position-relative">
-                            <div class="col-8">{{$announceNO->description}}</div>
-                            <div class="col-4 created createdOKNO text-end">{{__('ui.uploadBy')}} {{$announceNO->user->name}} {{__('ui.at')}} {{$announceNO->created_at->format('d/m/Y')}}</div>    
+                            <div class="col-12 col-md-8 my-2">{{$announceNO->description}}</div>
+                            <div class="col-12 col-md-4 created createdOKNO text-center text-md-end mt-2">Caricato da {{$announceNO->user->name}} il {{$announceNO->created_at->format('d/m/Y')}}</div>    
                         </div>   
                     </div>
-                    <div class="col-3 text-end">
+                    <div class="d-none d-lg-block col-lg-3 text-center mx-lg-0 align-self-lg-center undoLgBtn">
                         <form method="POST" action="{{route('revisor.accept_announcement', ['announcement'=>$announceNO])}}">
                             @csrf
                             @method('PATCH')
                             <button type="submit" class="btn btn-warning revisorBtns">{{__('ui.rif-ann-btn')}}</button>
                         </form>
                     </div>
+                </div>
+                <div class="d-lg-none col-12 text-center">
+                    <form method="POST" action="{{route('revisor.accept_announcement', ['announcement'=>$announceNO])}}">
+                        @csrf
+                        @method('PATCH')
+                        <button type="submit" class="btn btn-warning revisorBtns">Annulla revisione e accetta annuncio</button>
+                    </form>
                 </div>
                 @endforeach
                 @endif
