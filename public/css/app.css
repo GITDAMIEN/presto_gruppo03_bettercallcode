@@ -12153,7 +12153,8 @@ nav.presto-nav {
     border: 3px solid var(--starry);
     border-radius: 50px;
     transform: translateY(-110px);
-    background-color: #0493e080;
+    /* background-color: #53bdf680; */
+    background: radial-gradient(#53bdf680, var(--starry));
     height: 440px;
 }
 
@@ -12190,7 +12191,10 @@ nav.presto-nav {
 .announceCard{
     border: 1px solid black;
     border-radius: 30px;
-    height: 112px;
+    height: 100%;
+    /* display: block; */
+    overflow: auto;
+    width: 90%!important;
 }
 
 .revisionLabels{
@@ -12210,11 +12214,11 @@ nav.presto-nav {
     font-size: 20px;
 }
 
-.createdOKNO{
+/* .createdOKNO{
     position: absolute;
-    bottom: 0px;
+    bottom: -26px;
     right: 0px;
-}
+} */
 
 .deniedAccess, .welcomePageMessage{
     position: absolute;
@@ -12402,8 +12406,6 @@ textarea{
 }
 
 
-
-
 /* Media query */
 
 @media screen and (min-width: 393px){
@@ -12433,6 +12435,15 @@ textarea{
     #dotSpan{
         font-size: 50px;
     }
+}
+
+
+@media screen and (min-width: 576px){
+
+    /* .announceCard{
+        width: 100%!important;
+        height: 112px;
+    } */
 }
 
 
@@ -12571,14 +12582,15 @@ textarea{
     }
     
     .revisionBox{
-        background-color: #0493e080;
+        /* background-color: #53bdf680; */
+        background: radial-gradient(#53bdf680, var(--starry));
         border-radius: 100px;
         border: 3px solid var(--starry);
     }
 
     .infoBox{
         border: none;
-        background-color: transparent;
+        background: transparent;
         height: 200px;
     }
     
@@ -12607,6 +12619,14 @@ textarea{
     #titleToCheckLabel{
         transform: translateX(-30px);
     }
+
+    .announceCard{
+        min-width: 950px!important;
+    }
+
+    .undoLgBtn{
+        padding-left: 4px;
+    }
 }
 
 @media screen and (min-width: 1200px){
@@ -12622,7 +12642,10 @@ textarea{
     #contactUsFormCard:hover{
         transform: scale(1.03) translateX(-35px);
     }
-
+        
+    .createdOKNO{
+        bottom: 0px;
+    }
 }
 
 @media screen and (min-width: 1400px){
@@ -12643,6 +12666,9 @@ textarea{
         transform: translateX(-40px)
     }
 
+    .undoLgBtn{
+        padding: auto;
+    }
 }
 
 .nav-link{
