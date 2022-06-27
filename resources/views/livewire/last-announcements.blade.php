@@ -14,12 +14,12 @@
     
     @if(count($announces)>0)
     <div class="container mb-5">
-        <div class="row">
+        <div class="row justify-content-center">
         @foreach ($announces as $announce)
         <div class="col-12 col-lg-4 text-center py-3">
 
             <a href="{{route('detailsAnnounce',$announce)}}">
-            <div class="skill-card mb-4">
+            <div class="skill-card mb-4 mx-auto">
                 <header class="skill-card__header"><img src="{{!$announce->images()->get()->isEmpty() ? $announce->images()->first()->getUrl(600,450) : 'https://source.unsplash.com/230x200'}}" alt="Immagine bella" class="skill-card__icon"></header>
                 
                 <section class="skill-card__body">

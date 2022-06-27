@@ -53,39 +53,11 @@ window.onscroll = () => {
     }
 };
 
-// CAROSELLI NELLA PAGINA DEL REVISORE (ANNUNCI DA REVISIONARE)
-let belleFoto = document.querySelectorAll('.bellaFoto');
-let carouselControlPrev = document.querySelector('.carousel-control-prev');
-let carouselControlNext = document.querySelector('.carousel-control-next');
-// let begliAnnunci = document.querySelectorAll('.bellAnnuncio');
-// let carouselControlPrevMain = document.querySelector('.carousel-control-prev-main');
-// let carouselControlNextMain = document.querySelector('.carousel-control-next-main');
+// NAVBAR ICON
+const navbarTogglerIcon = document.querySelector('#navbarTogglerIcon');
+const navbarTogglerBtn = document.querySelector('#navbarTogglerBtn');
 
-carouselControlPrev.addEventListener('click', ()=>{
-    belleFoto.forEach((foto,i) => {
-        foto.classList.remove('active');
-    });
-    belleFoto[i-1].classList.add('active');
+navbarTogglerBtn.addEventListener('click', ()=>{
+    navbarTogglerIcon.classList.toggle('rotateIcon');
+    navbarTogglerIcon.classList.toggle('rotateIcon2');
 })
-
-carouselControlNext.addEventListener('click', ()=>{
-    belleFoto.forEach((foto,i) => {
-        foto.classList.remove('active');
-    });
-    belleFoto[i+1].classList.add('active');
-})
-
-// carouselControlPrevMain.addEventListener('click', ()=>{
-//     begliAnnunci.forEach((foto,i) => {
-//         foto.classList.remove('active');
-//     });
-//     begliAnnunci[i-1].classList.add('active');
-// })
-
-// carouselControlNextMain.addEventListener('click', ()=>{
-//     begliAnnunci.forEach((foto,i) => {
-//         foto.classList.remove('active');
-//     });
-//     begliAnnunci[i+1].classList.add('active');
-// })
-

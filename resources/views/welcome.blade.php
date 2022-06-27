@@ -1,5 +1,4 @@
 <x-layout>
-    <x-navbar></x-navbar>
     <x-slot name="title">Homepage</x-slot>
     
     @if(session('access.denied'))
@@ -30,7 +29,7 @@
                     <div class="boxTitle">
                         <h1 class="title">Presto.it</h1>
                         <p class="subtitle">Compra e vendi con facilità... Ovunque ti trovi !</p>
-                        <div class="row">
+                        <div class="row mx-0 px-0">
                             <div class="col-12 col-md-6">
                                 <a href="{{route('allAnnouncements')}}">
                                     <button type="button" class="customBtnBuy mt-4">Compra</button>
@@ -62,7 +61,7 @@
                 @foreach ($categories as $category)
                     <div class="col-12 col-md-2 mt-4">
                         <a href="{{route('categoryShow',$category->id)}}"">
-                        <div class="cardCategory d-flex justify-content-center align-items-center" style='background-image: url("{{$category->coverImg}}")'>
+                        <div class="cardCategory d-flex justify-content-center align-items-center mx-auto" style='background-image: url("{{$category->coverImg}}")'>
                             {{-- <div>
                                 <p class="lato bold fs-5 uppercase text-center">{{$category->name}}</p>
                                 <p class="lato counterAnnunci text-center">+100 annunci</p>

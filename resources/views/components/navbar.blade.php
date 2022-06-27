@@ -1,9 +1,12 @@
-
+@if(Route::currentRouteName()=="welcome")
 <nav class="navbar navbar-expand-md presto-nav fixed-top">
-  <div class="container-fluid">
+@else
+<nav class="navbar navbar-expand-md presto-nav">
+@endif
+  <div id="navbarContainerfluid" class="container-fluid">
     <a class="navbar-brand title-nav panna text-decoration-none" href="{{route('welcome')}}">Presto</a>
-    <button class="navbar-toggler orange" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
-      <i class="fa-solid fa-ellipsis-vertical"></i>
+    <button id="navbarTogglerBtn" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+      <i id="navbarTogglerIcon" class="fa-solid fa-ellipsis-vertical rotateIcon2"></i>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarsExample04">

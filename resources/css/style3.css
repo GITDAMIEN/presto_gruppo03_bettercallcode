@@ -274,7 +274,7 @@ textarea{
 #inputFileLabel{
     display: block;
     text-align: center;
-    line-height: 220%;
+    line-height: 120%;
     border: 2px solid var(--sec-color);
     color: var(--custom-black);
     background-color: transparent;
@@ -323,6 +323,13 @@ textarea{
 
     #contactUsH5{
         font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 401px){
+
+    #inputFileLabel{
+        line-height: 220%;
     }
 }
 
