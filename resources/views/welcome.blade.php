@@ -109,7 +109,7 @@
     <!-- Work with us -->
     
     @if(Auth::check() && !Auth::user()->is_revisor)
-    <section id="workWithUsContainerFluid" class="container-fluid d-flex justify-content-center px-0">
+    <section id="workWithUsContainerFluid" class="container-fluid d-flex justify-content-center px-0 mt-5">
         <div class="container my-5 mx-md-0 px-md-0">
             <div id="contactUsRow" class="row mx-4 mx-md-0">
                 <div id="contactUsLeftPart" class="col-12 col-md-5 customBlack ubuntuFont mx-5 mx-md-3 mt-md-4 mt-lg-5">
@@ -117,7 +117,7 @@
                         <p id="wannaWorkWithUs" class="">Lavora con noi!</p>
                         <h6 class="bounce_button fw-bold">DIVENTA REVISORE<i class="fa-solid fa-circle-arrow-down ms-2"></i></h6>
                     </div>
-                    <img src="/media/contactUsOrange.svg" alt="Contact us image" class="w-100 mb-3 mb-md-0">
+                    <img src="/media/contactUsGialloCiocco.svg" alt="Contact us image" class="w-100 mb-3 mb-md-0">
                 </div>
                 <livewire:revisor-form>
             </div>

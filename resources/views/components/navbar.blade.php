@@ -43,6 +43,11 @@
           </a>
           </li>
           <li><hr class="dropdown-divider"></li>
+          @else
+          <li>
+            <a class="dropdown-item ps-1" href="/#workWithUsContainerFluid">Diventa revisore</a>
+          </li>
+          <li><hr class="dropdown-divider"></li>
           @endif
           <a class="dropdown-item " href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('frm-logout').submit();">Logout</a>      
           <form id="frm-logout" action="{{ route('logout') }}" method="POST" class="d-none">

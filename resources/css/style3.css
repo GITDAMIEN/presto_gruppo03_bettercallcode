@@ -1,8 +1,16 @@
 
 :root{
     --main-color: #B2EDC5;
-    --sec-color: #FFB800;
+    --sec-color: #fee440;
     --custom-black: #000000d5;
+}
+
+.secColor{
+    color: var(--sec-color);
+}
+
+.dropdown-divider{
+    color: black;
 }
 
 .allCards{
@@ -149,7 +157,6 @@ textarea{
     background-image: url(/media/Animated\ Shape\ \(7\).svg);
     background-repeat: no-repeat;
     background-size: cover;
-    border-top: 2px solid var(--sec-color);
 }
 
 #contactUsRow{
@@ -289,7 +296,7 @@ textarea{
 
 #sendApplicationBtn{
     border-style: none;
-    color: var(--custom-black);
+    color: black;
     background-color: var(--sec-color);
     height: 45px;
     width: 80%;
