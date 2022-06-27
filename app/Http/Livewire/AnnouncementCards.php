@@ -26,6 +26,11 @@ class AnnouncementCards extends Component
     public function mount(){
     
         $this->announces = Announcement::where('is_accepted',true)->get();
+        foreach($this->announces as $x){
+            if(strlen($x->description) > 50 ){
+                $x->description = mb_strimwidth($x->description, 0, 50, " (...)");
+            }
+        }
     }
 
     public function render()
