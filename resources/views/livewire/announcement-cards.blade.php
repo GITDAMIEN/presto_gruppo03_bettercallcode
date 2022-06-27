@@ -1,7 +1,9 @@
 <div class="row min-vh-100">
+  <h1 class="text-center tuttigliannunci pt-5"> NAVIGA TRA I NOSTRI ANNUNCI</h1>
+  <p class="text-center pb-1 counterannunci"> {{count($announces)}} annunci disponibili</p>
   
   @if(count($announces)>0)
-  <div class="col-12 col-lg-3 mt-5">
+  <div class="col-12 col-lg-3 mt-1">
     <form wire:submit.prevent="searching" class="justify-content-center align-items-center">
       <div class="form-floating my-3">
         <input wire:model="title" type="search" class="form-control" id="searchByTextInput" placeholder="Cerca per parola">
@@ -45,7 +47,7 @@
     </form>
   </div>
   
-    <div class="col-12 col-lg-9 mt-5">
+    <div class="col-12 col-lg-9 mt-1">
         <div class="row">
           @foreach ($announces as $announce)
           <div class="allCards col-12 card px-0 mt-4 mobile-center">
