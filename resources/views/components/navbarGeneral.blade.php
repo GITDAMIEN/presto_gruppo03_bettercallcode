@@ -35,7 +35,7 @@
             @if (Auth::user()->is_revisor)     {{--  Se l'utente è un revisore  --}}                      
             <li>
               <a class="dropdown-item position-relative" href="{{route('revisor.index')}}">Zona revisore
-            <span class="position-absolute top-50 badge-class translate-middle badge rounded-pill bg-danger">
+            <span class="position-absolute top-50 badge-class-gen translate-middle badge rounded-pill bg-danger">
                 {{App\Models\Announcement::toBeRevisionedCount()}}
                 <span class="visually-hidden">unread messages</span>
             </span>
@@ -53,6 +53,8 @@
             <a class="nav-link fs-6 px-4" href="{{route('createAnnouncement')}}">Nuovo annuncio</a>
         </li>
           @endguest
+        
+
         </ul>
       </div>
     </div>

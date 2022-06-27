@@ -142,6 +142,14 @@ nav.presto-nav {
 }
 
 
+.badge-class-gen{
+    right: 70px;
+}
+/* .dropdown-item-gen{
+    color: black;
+} */
+
+
 @media screen and (min-width: 768px){
     .dropBg{
         background-color: rgba(255, 255, 255, 0.5);
@@ -171,5 +179,8 @@ nav.presto-nav {
     }
     .title-nav{
         padding-left: 60px;
+    }
+    .badge-class-gen{
+        right: -7px;
     }
 }
