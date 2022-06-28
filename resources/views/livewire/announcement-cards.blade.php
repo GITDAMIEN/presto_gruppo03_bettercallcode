@@ -1,6 +1,6 @@
 <div class="row min-vh-100">
-  <h1 class="text-center tuttigliannunci pt-5"> NAVIGA TRA I NOSTRI ANNUNCI</h1>
-  <p class="text-center pb-1 counterannunci"> {{count($announces)}} annunci disponibili</p>
+  <h1 class="text-center tuttigliannunci pt-5"> {{__('ui.all-navigate')}}</h1>
+  <p class="text-center pb-1 counterannunci"> {{count($announces)}} {{__('ui.all-category-number')}}</p>
   
   @if(count($announces)>0)
   <div class="col-12 col-lg-3 mt-1">

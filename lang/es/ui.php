@@ -19,6 +19,7 @@ return [
       'add-ann' => 'Publicar anuncio',
       'add-title' => 'Tìtulo',
       'add-desc' => 'Describa lo que está vendiendo',
+      'placeholder-desc' => 'Descripción',
       'cate' => 'Categoría',
       'price' => 'Precio',
       'add-btn' => 'Publicar',
@@ -35,6 +36,8 @@ return [
       'createAt'  => 'Creado en',
 
       //ALL ANNOUNCEMENT
+      'all-navigate' => 'BUSCA NUESTROS ANUNCIOS',
+      'all-category-number' => 'anuncios disponibles',
       'all-ann' => 'Todos los anuncios',
       'all-ann-g' => 'TODOS LOS ANUNCIOS',
 
