@@ -35,6 +35,8 @@ return [
       'createAt'  => 'Creato il',
 
       //ALL ANNOUNCEMENT
+      'all-navigate' => 'NAVIGA TRA I NOSTRI ANNUNCI',
+      'all-category-number' => 'annunci disponibili',
       'all-ann' => 'Tutti gli annunci',
       'all-ann-g' => 'TUTTI GLI ANNUNCI',
 

@@ -17,7 +17,7 @@
                 </div>
                 <div class="col-12 col-md-8 offset-md-2">
                     <p class="text-center mt-5 main-text-category-cards">{{__('ui.add-desc')}}</p>
-                    <textarea wire:model="description" id="floatingDescription" class="form-control" cols="30" rows="10" placeholder="Descrizione" @error('description') is-invalid @enderror></textarea>
+                    <textarea wire:model="description" id="floatingDescription" class="form-control" cols="30" rows="10" placeholder="{{__('ui.placeholder-desc')}}" @error('description') is-invalid @enderror></textarea>
                     @error('description')
                         {{$message}}
                     @enderror
@@ -32,7 +32,7 @@
                             <div class="col-12 col-md-2 mt-4">
                                 <div class="d-flex justify-content-center align-items-center">
                                     <div wire:click="testClick({{$x->id}})" class="{{$category==$x->id ? 'xxx':''}} p-4">
-                                        <img src="{{$x->img}}" id="{{$x->name}}"></img>
+                                        <img src="{{$x->img}}" id="{{$x->name}}">
                                     </div>
                                 </div>
                                 <p class="m-0 py-1 text-center category-name-cards">{{$x->name}}</p>
