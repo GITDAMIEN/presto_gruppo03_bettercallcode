@@ -9,8 +9,8 @@
                 <a href="/#workWithUsContainerFluid" class="btn btn-warning">{{__('ui.bec-rev')}}!</a>
             </div>
             @else
-            <div class="text-center mt-2">
-                <a href="register" class="btn btn-warning">{{__('ui.reg-bec-rev')}}!</a>
+            <div class="col-12">
+                    <a href="register" class="btn btn-warning">{{__('ui.reg-bec-rev')}}!</a>
             </div>
             @endif
         </div>

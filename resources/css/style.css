@@ -424,7 +424,7 @@ body {
 .btnPd{
     background-color: var(--papaya);
     color: var(--panna);
-    font-size: 25px;
+    font-size: 15px;
     font-family: 'Lato', sans-serif;
     font-weight: 900;
     border-radius: 10px;
@@ -539,7 +539,9 @@ body {
     transform: scale(1.03);
 }
 
-
+.btn{
+    width: 50px;
+}
 
 
 
@@ -564,6 +566,19 @@ body {
         width: 100%;
         margin: 0px;
         padding: 0px;
+    }
+
+    .btnPd{
+        background-color: var(--papaya);
+        color: var(--panna);
+        font-size: 25px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 900;
+        border-radius: 10px;
+        padding: 18px;
+        border-style: none;
+        transition: 0.5s;
+        box-shadow: -1px -1px 33px 1px var(--obsidianGray);
     }
 
     .boxTitle {
