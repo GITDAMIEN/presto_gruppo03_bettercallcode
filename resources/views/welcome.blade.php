@@ -9,8 +9,8 @@
                 <a href="/#workWithUsContainerFluid" class="btn btn-warning">{{__('ui.bec-rev')}}!</a>
             </div>
             @else
-            <div class="text-center mt-2">
-                <a href="register" class="btn btn-warning">{{__('ui.reg-bec-rev')}}!</a>
+            <div class="col-12">
+                    <a href="register" class="btn btn-warning">{{__('ui.reg-bec-rev')}}!</a>
             </div>
             @endif
         </div>
@@ -59,7 +59,7 @@
         <p class="text-center fs-2 nostreCategorie mb-5">{{__('ui.our-cate')}}</p>
         <div class="row justify-content-evenly">
                 @foreach ($categories as $category)
-                    <div class="col-12 col-md-2 mt-4">
+                    <div class="col-12 col-md-4 col-lg-2 mt-4">
                         <a href="{{route('categoryShow',$category->id)}}">
                         <div class="cardCategory d-flex justify-content-center align-items-center mx-auto" style='background-image: url("{{$category->coverImg}}")'>
                             {{-- <div>
@@ -96,6 +96,108 @@
         </div>
     </section>
 
+
+    <div class="container mt-5 mb-5 pt-5">
+    
+        <div class="row g-2">
+            <div class="col-md-4">
+                <div class="card-rating p-3 text-center px-4">
+                    
+                    <div class="user-image">
+                        
+                <img src="https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" class="rounded-circle" width="80"
+                        >
+                        
+                    </div>
+                    
+                    <div class="user-content">
+                        
+                        <h5 class="mb-0">Luca Ferrero</h5>
+                        <span>Venditore su Presto.it</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        
+                    </div>
+                    
+                    <div class="ratings">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                
+                <div class="card-rating p-3 text-center px-4">
+                    
+                    <div class="user-image">
+                        
+                <img src="https://images.unsplash.com/photo-1597223557154-721c1cecc4b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" class="rounded-circle" width="80"
+                        >
+                        
+                    </div>
+                    
+                    <div class="user-content">
+                        
+                        <h5 class="mb-0">Alessia Ambrosini</h5>
+                        <span>Cliente su Presto.it</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        
+                    </div>
+                    
+                    <div class="ratings">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="col-md-4">
+                
+                <div class="card-rating p-3 text-center px-4">
+                    
+                    <div class="user-image">
+                        
+                <img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" class="rounded-circle" width="80"
+                        >
+                        
+                    </div>
+                    
+                    <div class="user-content">
+                        
+                        <h5 class="mb-0">Matteo Spada</h5>
+                        <span>Revisore su Presto.it</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        
+                    </div>
+                    
+                    <div class="ratings">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+            
+        </div>
+        
+    </div>
+
     @if(!Auth::check())
     <div id="becomeRevisorDiv" class="container">
         <div class="row text-center my-5 card">
@@ -113,10 +215,10 @@
             <div id="contactUsRow" class="row mx-4 mx-md-0">
                 <div id="contactUsLeftPart" class="col-12 col-md-5 customBlack ubuntuFont mx-5 mx-md-3 mt-md-4 mt-lg-5">
                     <div id="contactUsWords">
-                        <p id="wannaWorkWithUs" class="">{{__('ui.work-wu')}}</p>
-                        <h6 class="bounce_button fw-bold">{{__('ui.bec-rev-g')}}<i class="fa-solid fa-circle-arrow-down ms-2"></i></h6>
+                        <p id="wannaWorkWithUs" class="panna">{{__('ui.work-wu')}}</p>
+                        <h6 class="bounce_button fw-bold panna">{{__('ui.bec-rev-g')}}<i class="fa-solid fa-circle-arrow-down ms-2 panna"></i></h6>
                     </div>
-                    <img src="/media/contactUsGialloCiocco.svg" alt="Contact us image" class="w-100 mb-3 mb-md-0">
+                    <img src="/media/contactUsStarry.svg" alt="Contact us image" class="w-100 mb-3 mb-md-0">
                 </div>
                 <livewire:revisor-form>
             </div>

@@ -301,8 +301,7 @@ body {
 .skill-card .skill-card__body .skill-card__duration__category {
     font-family: 'Lato', sans-serif;
     font-weight: 200;
-    font-style: italic;
-    color: var(--papaya);
+    color:rgba(0, 0, 0, 0.8);
     transition: all 0.5s;
 }
 .description{
@@ -361,7 +360,7 @@ body {
   
 
   .nostreCategorie{
-    color: var(--irises);
+    color: var(--papaya);
     padding-top: 5rem;
     padding-bottom: 2rem;
    font-family: 'Lato', sans-serif;
@@ -409,7 +408,7 @@ body {
 }
 
 .btnP{
-    background-color: var(--irises);
+    background-color: var(--papaya);
     color: var(--panna);
     font-size: 25px;
     font-family: 'Lato', sans-serif;
@@ -424,7 +423,7 @@ body {
 .btnPd{
     background-color: var(--papaya);
     color: var(--panna);
-    font-size: 25px;
+    font-size: 15px;
     font-family: 'Lato', sans-serif;
     font-weight: 900;
     border-radius: 10px;
@@ -445,7 +444,7 @@ body {
 
 .btnP:hover{
     background-color: var(--panna);
-    color: var(--irises);
+    color: var(--papaya);
 }
 
 
@@ -464,13 +463,13 @@ body {
 .tuttigliannunci{
     font-family: 'Lato', sans-serif;
     font-weight: 900;
-    color: var(--starry);
+    color: var(--papaya);
 }
 
 .counterannunci{
     font-family: 'Lato', sans-serif;
-    font-weight: 900;
-    color: var(--starry);
+    font-weight: 400;
+    color: var(--papaya);
 }
 
 .xxx{
@@ -513,6 +512,11 @@ body {
     border-radius: 10px;
 }
 
+.roundedD{
+    border-radius: 20px;
+    overflow: hidden;
+}
+
 .titleDetails{
     font-size: 38px;
     font-family: 'Lato', sans-serif;
@@ -539,9 +543,97 @@ body {
     transform: scale(1.03);
 }
 
+.newTest{
+    background-color: #f2f2f2;
+}
+
+.card-img-top{
+    height: 100%;
+    width: 100%;
+    padding-top: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 10px;
+    border-radius: 40px;
+    transition: all 0.5s;
+}
+
+.card-img-top:hover{
+    transform: scale(1.16) translateY(-6px);
+    border-radius: 40px 40px 0px 0px;
+}
+
+.Mycard{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0px;
+    box-shadow: 0px 0px 8px -1px rgba(0,0,0,0.6);
+    border-radius: 20px;
+    height: 365px;
+}
+
+.buttonbox{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.ms-pers{
+    position: absolute;
+    left: 60%;    
+}
 
 
 
+.custombtnBg{
+    /* background-color: rgba(3, 117, 180); */
+    border-radius: 10px;
+    background-color:var(--papaya);
+    color: var(--panna);
+    transition: all 0.5s;
+}
+
+.custombtnBg:hover{
+    transform: scale(1.1);
+    /* background-color: rgba(3, 117, 180); */
+    background-color: var(--papaya);
+    color: var(--panna);
+}
+
+.card-body{
+    flex: none;
+    padding: 0px;
+}
+
+.user-content p{
+    margin-top:5px;
+    font-size:12px;
+}
+
+
+.ratings i{
+    color:var(--starry);
+}
+
+.card-rating{
+    border: 0px;
+}
+
+.lead{
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 1.25rem;
+    
+}
+.bg-dabiblu{
+    background-color:rgba(3, 117, 180, 0.2);
+}
 
 
 
@@ -566,13 +658,25 @@ body {
         padding: 0px;
     }
 
+    .btnPd{
+        background-color: var(--papaya);
+        color: var(--panna);
+        font-size: 25px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 900;
+        border-radius: 10px;
+        padding: 18px;
+        border-style: none;
+        transition: 0.5s;
+        box-shadow: -1px -1px 33px 1px var(--obsidianGray);
+    }
+
     .boxTitle {
         padding-top: 0px;
         padding-left: 200px;
         width: 580px;
         position: relative;
     }
-
 
     .title {
         font-size: 80px;

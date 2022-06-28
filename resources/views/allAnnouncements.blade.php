@@ -9,7 +9,7 @@
         </div>
     @endif
     
-    <div class="container">
+    <div class="container-fluid">
         <livewire:announcement-cards/>
     </div>
     <x-footerGeneral></x-footergeneral>

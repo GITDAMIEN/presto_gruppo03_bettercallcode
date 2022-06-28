@@ -5,7 +5,7 @@
 }    
 
 .presto-nav .nav-link, .presto-nav .nav-link.active{
-    color: var(--panna);
+    color: var(--starry);
     transform: scale(1.1);
 }    
 

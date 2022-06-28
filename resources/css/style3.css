@@ -199,7 +199,7 @@ textarea{
 
 #contactUsFormCard{
     border-radius: 30px;
-    border: 4px solid var(--sec-color);
+    border: 4px solid var(--starry);
     box-shadow: 1px 1px 10px var(--custom-black);
     max-width: 400px;
     position: relative;
@@ -216,7 +216,7 @@ textarea{
 }
 
 #contactUsWords{
-    background-color: var(--sec-color);
+    background-color: var(--starry);
     border-radius: 30px;
     padding: 10px 20px;
     max-width: 270px;
@@ -239,7 +239,7 @@ textarea{
 
 .form-control:focus, .form-select:focus{
     box-shadow: none!important;
-    border: 1px solid var(--sec-color)!important;
+    border: 1px solid var(--starry)!important;
 }
 
 #contactUsFormCard > .form-floating{
@@ -279,7 +279,7 @@ textarea{
     display: block;
     text-align: center;
     line-height: 120%;
-    border: 2px solid var(--sec-color);
+    border: 2px solid var(--starry);
     color: var(--custom-black);
     background-color: transparent;
     height: 45px;
@@ -300,8 +300,8 @@ textarea{
 
 #sendApplicationBtn{
     border-style: none;
-    color: black;
-    background-color: var(--sec-color);
+    color: var(--panna);
+    background-color: var(--starry);
     height: 45px;
     width: 80%;
     border-radius: 30px;
