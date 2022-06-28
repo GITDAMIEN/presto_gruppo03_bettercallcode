@@ -32,7 +32,7 @@
           <option value="AtoZ">{{__('ui.AtoZ')}}</option>
           <option value="ZtoA">{{__('ui.ZtoA')}}</option>
         </select>
-        <label for="orderSelect">{{__('ui.ord-ann')}}}}</label>
+        <label for="orderSelect">{{__('ui.ord-ann')}}</label>
       </div>
       <div id="priceSearchRow" class="row mx-auto">
         <div id="minPriceInputDiv" class="form-floating my-2 pe-1 ps-0 w-50">
