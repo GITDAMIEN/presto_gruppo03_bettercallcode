@@ -10,6 +10,7 @@ use App\Models\Announcement;
 use Livewire\WithFileUploads;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Livewire\CreateAnnouncement;
+use App\Jobs\GoogleVisionSafeSearch;
 use Illuminate\Support\Facades\File as FacadesFile;
 
 class CreateAnnouncement extends Component
@@ -83,6 +84,7 @@ class CreateAnnouncement extends Component
                 $newImage =  $announcement->images()->create(['path'=>$image->store($newFileName, 'public')]);
 
                 dispatch(new ResizeImage($newImage->path , 600, 450));
+                dispatch(new GoogleVisionSafeSearch($newImage->id));
             }
 
             // File::deleteDirectory(storage_path('/app/livewire-tmp'));
