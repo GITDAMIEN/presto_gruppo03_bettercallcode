@@ -611,6 +611,30 @@ body {
     padding: 0px;
 }
 
+.user-content p{
+    margin-top:5px;
+    font-size:12px;
+}
+
+
+.ratings i{
+    color:var(--starry);
+}
+
+.card-rating{
+    border: 0px;
+}
+
+.lead{
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 1.25rem;
+    
+}
+.bg-dabiblu{
+    background-color:rgba(3, 117, 180, 0.2);
+}
+
 
 
 @media screen and (min-width:410px) {
