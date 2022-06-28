@@ -1,9 +1,8 @@
 <div class="row min-vh-100">
   <h1 class="text-center tuttigliannunci pt-5"> {{__('ui.all-navigate')}}</h1>
-  <p class="text-center pb-1 counterannunci"> {{count($announces)}} {{__('ui.all-category-number')}}</p>
+  {{-- <p class="text-center pb-1 counterannunci"> {{count($announces)}} {{__('ui.all-category-number')}}</p> --}}
   
-  @if(count($announces)>0)
-  <div class="col-12 col-lg-3 mt-1">
+  <div class="col-12 col-lg-2 ps-3 mt-1 px-md-5 pe-lg-0 ps-lg-3">
     <form wire:submit.prevent="searching" class="justify-content-center align-items-center">
       <div class="form-floating my-3">
         <input wire:model="title" type="search" class="form-control" id="searchByTextInput" placeholder="{{__('ui.search-word')}}">
@@ -47,28 +46,25 @@
     </form>
   </div>
   
-    <div class="col-12 col-lg-9 mt-1">
-        <div class="row">
+  @if(count($announces)>0)
+    <div class="col-12 col-lg-10 mt-1">
+        <div class="row mx-auto">
           @foreach ($announces as $announce)
-          <div class="allCards col-12 card px-0 mt-4 mobile-center">
-            <div class="row">
-              <div class="col-12 col-md-3 ps-2 pe-0">
-                <img src="{{!$announce->images()->get()->isEmpty() ? $announce->images()->first()->getUrl(600,450) : 'https://source.unsplash.com/220x220'}}" alt="Immagine bella" class="img-fluid">
-              </div>
-              <div class="col-12 col-md-6 px-4 mt-3">
-                <a class="lato fw-bolder fs-5" href="{{route('detailsAnnounce',$announce)}}">{{$announce->title}}</a>
-                <a href="{{route('categoryShow',$announce->category)}}"><p>{{$announce->category->name}}</p></a>
-                <p> {{$announce->description}}</p>
-                <a href="{{route('detailsAnnounce',$announce)}}" class="panna"> <p class="btn starryBg panna mt-1">{{__('ui.details')}}</p></a>
-              </div>
-              <div class="col-12 col-md-3 px-4">
-                  <p class="lato btn bg-success panna text-end mb-0 mt-3">{{$announce->price}}€</p>
-                  <div class="row">
-                    <div class="col-12">
-                      <p class=" lato fs-pers mt-pers mb-0">{{__('ui.create')}} {{$announce->user->name}} {{__('ui.at')}} {{$announce->created_at->format('d/m/Y')}}</p>
-                    </div>
+            <div class="col-12 col-md-6 col-lg-3 pt-4">
+              <div class="Mycard mx-auto" style="width: 22rem;">
+                <div class="d-flex justify-content-center align-items-center">
+                    <img src="{{!$announce->images()->get()->isEmpty() ? $announce->images()->first()->getUrl(600,450) : 'https://source.unsplash.com/220x220'}}" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                  <div class="boxtile text-center">
+                    <h6 class="card-title pe-3 pt-1 lato">{{$announce->title}}</h6>
                   </div>
-              </div>
+                  <div class="buttonbox mt-3">
+                    <p class="lato text-start fw-bolder mt-2 ps-4 ms-3 ">{{$announce->price}}€</p>
+                    <a href="{{route('detailsAnnounce',$announce)}}" class="btn custombtnBg panna mb-3 mt-1 ms-pers">{{__('ui.details')}}</a>
+                  </div>
+                </div>
+
             </div>
           </div>
           @endforeach
@@ -78,16 +74,15 @@
 
 
     @else
-    <div class="container mt-5 py-5">
-      <div class="row">
-          <div class="col-12 d-flex justify-content-center align-items-center">
+
+
+          <div class="col-8 d-flex justify-content-center align-items-center">
               <div class="aa ps-5">
                   <a href="{{route('createAnnouncement')}}" class="btnPd">{{__('ui.add-first-ann')}}</a>
               </div>
           </div>
-      </div>
-  </div>
     @endif
+
 </div> 
 
 

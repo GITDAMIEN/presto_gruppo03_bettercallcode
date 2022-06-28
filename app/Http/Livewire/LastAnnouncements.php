@@ -14,7 +14,7 @@ class LastAnnouncements extends Component
 
     public function mount(){
 
-        $this->announces = Announcement::where('is_accepted',true)->latest()->get()->take(6);
+        $this->announces = Announcement::where('is_accepted',true)->latest()->get()->take(8);
         foreach($this->announces as $x){
             if(strlen($x->description) > 40 ){
                 $x->description = mb_strimwidth($x->description, 0, 40, " (...)");

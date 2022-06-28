@@ -59,7 +59,7 @@
         <p class="text-center fs-2 nostreCategorie mb-5">{{__('ui.our-cate')}}</p>
         <div class="row justify-content-evenly">
                 @foreach ($categories as $category)
-                    <div class="col-12 col-md-2 mt-4">
+                    <div class="col-12 col-md-4 col-lg-2 mt-4">
                         <a href="{{route('categoryShow',$category->id)}}"">
                         <div class="cardCategory d-flex justify-content-center align-items-center mx-auto" style='background-image: url("{{$category->coverImg}}")'>
                             {{-- <div>
@@ -113,10 +113,10 @@
             <div id="contactUsRow" class="row mx-4 mx-md-0">
                 <div id="contactUsLeftPart" class="col-12 col-md-5 customBlack ubuntuFont mx-5 mx-md-3 mt-md-4 mt-lg-5">
                     <div id="contactUsWords">
-                        <p id="wannaWorkWithUs" class="">{{__('ui.work-wu')}}</p>
-                        <h6 class="bounce_button fw-bold">{{__('ui.bec-rev-g')}}<i class="fa-solid fa-circle-arrow-down ms-2"></i></h6>
+                        <p id="wannaWorkWithUs" class="panna">{{__('ui.work-wu')}}</p>
+                        <h6 class="bounce_button fw-bold panna">{{__('ui.bec-rev-g')}}<i class="fa-solid fa-circle-arrow-down ms-2 panna"></i></h6>
                     </div>
-                    <img src="/media/contactUsGialloCiocco.svg" alt="Contact us image" class="w-100 mb-3 mb-md-0">
+                    <img src="/media/contactUsStarry.svg" alt="Contact us image" class="w-100 mb-3 mb-md-0">
                 </div>
                 <livewire:revisor-form>
             </div>

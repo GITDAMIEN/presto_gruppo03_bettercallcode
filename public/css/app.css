@@ -11584,8 +11584,7 @@ body {
 .skill-card .skill-card__body .skill-card__duration__category {
     font-family: 'Lato', sans-serif;
     font-weight: 200;
-    font-style: italic;
-    color: var(--papaya);
+    color:rgba(0, 0, 0, 0.8);
     transition: all 0.5s;
 }
 .description{
@@ -11644,7 +11643,7 @@ body {
   
 
   .nostreCategorie{
-    color: var(--irises);
+    color: var(--papaya);
     padding-top: 5rem;
     padding-bottom: 2rem;
    font-family: 'Lato', sans-serif;
@@ -11703,7 +11702,7 @@ body {
 }
 
 .btnP{
-    background-color: var(--irises);
+    background-color: var(--papaya);
     color: var(--panna);
     font-size: 25px;
     font-family: 'Lato', sans-serif;
@@ -11739,7 +11738,7 @@ body {
 
 .btnP:hover{
     background-color: var(--panna);
-    color: var(--irises);
+    color: var(--papaya);
 }
 
 
@@ -11758,13 +11757,13 @@ body {
 .tuttigliannunci{
     font-family: 'Lato', sans-serif;
     font-weight: 900;
-    color: var(--starry);
+    color: var(--papaya);
 }
 
 .counterannunci{
     font-family: 'Lato', sans-serif;
-    font-weight: 900;
-    color: var(--starry);
+    font-weight: 400;
+    color: var(--papaya);
 }
 
 .xxx{
@@ -11807,6 +11806,11 @@ body {
     border-radius: 10px;
 }
 
+.roundedD{
+    border-radius: 20px;
+    overflow: hidden;
+}
+
 .titleDetails{
     font-size: 38px;
     font-family: 'Lato', sans-serif;
@@ -11833,11 +11837,68 @@ body {
     transform: scale(1.03);
 }
 
-.btn{
-    width: 50px;
+.newTest{
+    background-color: #f2f2f2;
 }
 
+.card-img-top{
+    height: 100%;
+    width: 100%;
+    padding-top: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 10px;
+    border-radius: 40px;
+    transition: all 0.5s;
+}
 
+.card-img-top:hover{
+    transform: scale(1.16) translateY(-6px);
+    border-radius: 40px 40px 0px 0px;
+}
+
+.Mycard{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0px;
+    box-shadow: 0px 0px 8px -1px rgba(0,0,0,0.6);
+    border-radius: 20px;
+    height: 365px;
+}
+
+.buttonbox{
+    display: flex;
+    flex-direction: row;
+}
+
+.ms-pers{
+    margin-left: 150px;
+}
+
+.custombtnBg{
+    /* background-color: rgba(3, 117, 180); */
+    border-radius: 10px;
+    background-color:var(--papaya);
+    color: var(--panna);
+    transition: all 0.5s;
+}
+
+.custombtnBg:hover{
+    transform: scale(1.1);
+    /* background-color: rgba(3, 117, 180); */
+    background-color: var(--papaya);
+    color: var(--panna);
+}
+
+.card-body{
+    flex: none;
+    padding: 0px;
+}
 
 
 
@@ -11881,7 +11942,6 @@ body {
         width: 580px;
         position: relative;
     }
-
 
     .title {
         font-size: 80px;
@@ -11943,7 +12003,7 @@ body {
 }    
 
 .presto-nav .nav-link, .presto-nav .nav-link.active{
-    color: var(--panna);
+    color: var(--starry);
     transform: scale(1.1);
 }    
 
@@ -12350,7 +12410,7 @@ textarea{
 
 #contactUsFormCard{
     border-radius: 30px;
-    border: 4px solid var(--sec-color);
+    border: 4px solid var(--starry);
     box-shadow: 1px 1px 10px var(--custom-black);
     max-width: 400px;
     position: relative;
@@ -12367,7 +12427,7 @@ textarea{
 }
 
 #contactUsWords{
-    background-color: var(--sec-color);
+    background-color: var(--starry);
     border-radius: 30px;
     padding: 10px 20px;
     max-width: 270px;
@@ -12390,7 +12450,7 @@ textarea{
 
 .form-control:focus, .form-select:focus{
     box-shadow: none!important;
-    border: 1px solid var(--sec-color)!important;
+    border: 1px solid var(--starry)!important;
 }
 
 #contactUsFormCard > .form-floating{
@@ -12430,7 +12490,7 @@ textarea{
     display: block;
     text-align: center;
     line-height: 120%;
-    border: 2px solid var(--sec-color);
+    border: 2px solid var(--starry);
     color: var(--custom-black);
     background-color: transparent;
     height: 45px;
@@ -12451,8 +12511,8 @@ textarea{
 
 #sendApplicationBtn{
     border-style: none;
-    color: black;
-    background-color: var(--sec-color);
+    color: var(--panna);
+    background-color: var(--starry);
     height: 45px;
     width: 80%;
     border-radius: 30px;

@@ -1,6 +1,6 @@
-  <nav class="navbar navbar-expand-md presto-nav-general starryBg py-1 ">
+  <nav class="navbar navbar-expand-md presto-nav-general newTest py-1 ">
     <div class="container-fluid">
-      <a class="navbar-brand title-nav panna text-decoration-none fs-2" href="{{route('welcome')}}">Presto</a>
+      <a class="navbar-brand title-nav starry text-decoration-none fs-2" href="{{route('welcome')}}">Presto</a>
       <button class="navbar-toggler orange" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fa-solid fa-ellipsis-vertical"></i>
       </button>
