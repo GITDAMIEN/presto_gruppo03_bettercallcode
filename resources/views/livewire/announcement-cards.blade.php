@@ -51,7 +51,7 @@
         <div class="row mx-auto">
           @foreach ($announces as $announce)
             <div class="col-12 col-md-6 col-lg-3 pt-4">
-              <div class="Mycard mx-auto" style="width: 22rem;">
+              <div class="Mycard mx-auto" style="width: 95%;">
                 <div class="d-flex justify-content-center align-items-center">
                     <img src="{{!$announce->images()->get()->isEmpty() ? $announce->images()->first()->getUrl(600,450) : 'https://source.unsplash.com/220x220'}}" class="card-img-top" alt="...">
                 </div>
