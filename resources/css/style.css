@@ -359,12 +359,12 @@ body {
 }
   
 
-  .nostreCategorie{
+.nostreCategorie{
     color: var(--papaya);
     padding-top: 5rem;
     padding-bottom: 2rem;
-   font-family: 'Lato', sans-serif;
-   font-weight: 900;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
 }
 
 .uppercase{

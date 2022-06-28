@@ -7,8 +7,10 @@
 }
 
 #footerH5{
-    color: var(--panna);
+    color: var(--papaya);
+    font-weight: 700;
 }
+
 .nav-item {
     font-family: 'Lato', sans-serif;
 }

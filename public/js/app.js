@@ -5475,10 +5475,13 @@ window.onscroll = function () {
 
 
 var navbarTogglerIcon = document.querySelector('#navbarTogglerIcon');
+var navbarTogglerIcon2 = document.querySelector('#navbarTogglerIcon2');
 var navbarTogglerBtn = document.querySelector('#navbarTogglerBtn');
 navbarTogglerBtn.addEventListener('click', function () {
   navbarTogglerIcon.classList.toggle('rotateIcon');
   navbarTogglerIcon.classList.toggle('rotateIcon2');
+  navbarTogglerIcon2.classList.toggle('rotateIcon');
+  navbarTogglerIcon2.classList.toggle('rotateIcon2');
 });
 
 /***/ }),

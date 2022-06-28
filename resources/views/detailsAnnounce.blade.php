@@ -202,13 +202,4 @@
   </div>
 </section>
 
-
-
-
-
-
-
-    
-
-   <x-footerGeneral></x-footergeneral>
 </x-layout>

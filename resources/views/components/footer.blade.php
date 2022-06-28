@@ -1,4 +1,4 @@
-<footer id="footerContainer" class="container-fluid back-main">
+<footer id="footerContainer" class="container-fluid back-main mt-5">
         <div class="container">
             <div class="row py-4">
                 <div id="footerPart1" class="col-6 col-md-4">
@@ -84,11 +84,11 @@
                         <ul id="footerAppsLinks" class="papaya ubuntuFont px-md-0 mt-3 ps-0">
                             <h6 id="footerAppsLinksTitle" class="fw-bold fs-5 pt-4 pb-2">APPS</h6>
                             <li id="footerAppsLinksItem" class="d-flex align-items-center py-1">
-                                <a id="footerAppsLinksAnchor" href="https://play.google.com/store/apps/details?id=com.jointag.agsm&hl=it&gl=US" target="_blank">Google Play
+                                <a id="footerAppsLinksAnchor" href="https://play.google.com/store/apps/" target="_blank">Google Play
                                 <i id="footerAppsLinksIcon" class="fa-brands fa-google-play ms-2"></i></a>
                             </li>
                             <li id="footerAppsLinksItem" class="d-flex align-items-center py-1">
-                                <a id="footerAppsLinksAnchor" href="https://apps.apple.com/it/app/verona-smartapp/id1178091059?l=en" target="_blank">App Store
+                                <a id="footerAppsLinksAnchor" href="https://apps.apple.com/" target="_blank">App Store
                                 <i id="footerAppsLinksIcon" class="fa-brands fa-app-store ms-2"></i></a>
                             </li>
                         </ul>

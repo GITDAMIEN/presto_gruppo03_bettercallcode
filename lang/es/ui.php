@@ -98,6 +98,7 @@ return [
       'bec-rev-presto'=> 'Conviértete en revisor de Presto.it!',
       'work-wu'=> 'Trabaja con nosotros!',
       'bec-rev-g'=> 'CONVIÉRTETE EN REVISOR',
+      'ratingsTitle'=> 'QUE DICEN DE NOSOTROS',
 
       //  FOOTER
       'footer-explore' => 'EXPLORA',
