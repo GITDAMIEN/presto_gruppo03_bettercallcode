@@ -55,9 +55,12 @@ window.onscroll = () => {
 
 // NAVBAR ICON
 const navbarTogglerIcon = document.querySelector('#navbarTogglerIcon');
+const navbarTogglerIcon2 = document.querySelector('#navbarTogglerIcon2');
 const navbarTogglerBtn = document.querySelector('#navbarTogglerBtn');
 
 navbarTogglerBtn.addEventListener('click', ()=>{
     navbarTogglerIcon.classList.toggle('rotateIcon');
     navbarTogglerIcon.classList.toggle('rotateIcon2');
+    navbarTogglerIcon2.classList.toggle('rotateIcon');
+    navbarTogglerIcon2.classList.toggle('rotateIcon2');
 })

@@ -12,5 +12,4 @@
     <div class="container-fluid">
         <livewire:announcement-cards/>
     </div>
-    <x-footerGeneral></x-footergeneral>
 </x-layout>

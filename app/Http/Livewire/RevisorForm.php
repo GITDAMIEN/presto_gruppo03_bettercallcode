@@ -12,14 +12,10 @@ class RevisorForm extends Component
 
     use WithFileUploads;
 
-    // public $user;
-    // public $email;
     public $messagetxt;
     public $cv;
 
     protected $rules = [
-        // 'user' => 'required',
-        // 'email' => 'required',
         'messagetxt' => 'required',
         'cv' => 'required|mimes:pdf|max:1024' // 1MB max
     ];
@@ -41,8 +37,6 @@ class RevisorForm extends Component
         (new EmailContactLeadAction)($validated);
 
         $form = [
-            // 'user' => $this->user,
-            // 'email' => $this->email,
             'messagetxt' => $this->messagetxt,
             'cv' => $this->cv
         ];

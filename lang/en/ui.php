@@ -97,6 +97,17 @@ return [
      'home-mess'=> 'Sell products you no longer use as soon as possible',
      'bec-rev-presto'=> 'Become a revisor for Presto.it!',
      'work-wu'=> 'Work with us!',
-     'bec-rev-g'=> 'BECAME A REVISOR',
+     'bec-rev-g'=> 'BECOME A REVISOR',
+     'ratingsTitle'=> 'FEEDBACKS ABOUT US',
 
+    //  FOOTER
+    'footer-explore' => 'EXPLORE',
+    'footer-allann' => 'All announcements',
+    'footer-addann' => 'New announcement',
+    'footer-cats' => 'Our categories',
+    'footer-profile' => 'Your profile',
+    'footer-aboutus' => 'About us',
+    'footer-contactus' => 'Contact us',
+    'footer-privacy' => 'Privacy policy',
+    'footer-terms' => 'Terms and conditions'
 ];

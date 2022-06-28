@@ -359,12 +359,12 @@ body {
 }
   
 
-  .nostreCategorie{
+.nostreCategorie{
     color: var(--papaya);
     padding-top: 5rem;
     padding-bottom: 2rem;
-   font-family: 'Lato', sans-serif;
-   font-weight: 900;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
 }
 
 .uppercase{
@@ -609,6 +609,30 @@ body {
 .card-body{
     flex: none;
     padding: 0px;
+}
+
+.user-content p{
+    margin-top:5px;
+    font-size:12px;
+}
+
+
+.ratings i{
+    color:var(--starry);
+}
+
+.card-rating{
+    border: 0px;
+}
+
+.lead{
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 1.25rem;
+    
+}
+.bg-dabiblu{
+    background-color:rgba(3, 117, 180, 0.2);
 }
 
 
