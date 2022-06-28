@@ -88,7 +88,7 @@ return [
       //WELCOME
       'home' => 'Homepage',
       'reg-bec-rev' => 'Registrati e diventa revisore',
-      'home-title' => 'Compra e vendi con facilità... Ovunque ti trovi !',
+      'home-title' => 'Compra e vendi con facilità... Ovunque ti trovi!',
       'buy'=> 'Compra',
       'sell'=> 'Vendi',
       'last-ann'=> 'GLI ULTIMI ANNUNCI INSERITI',
@@ -99,6 +99,16 @@ return [
       'work-wu'=> 'Lavora con noi!',
       'bec-rev-g'=> 'DIVENTA REVISORE',
 
+      //  FOOTER
+      'footer-explore' => 'ESPLORA',
+      'footer-allann' => 'Tutti gli annunci',
+      'footer-addann' => 'Inserisci annuncio',
+      'footer-cats' => 'Le categorie',
+      'footer-profile' => 'Il tuo profilo',
+      'footer-aboutus' => 'Su di noi',
+      'footer-contactus' => 'Contattaci',
+      'footer-privacy' => 'Politica sulla privacy',
+      'footer-terms' => 'Termini e condizioni'
 ];
 
 

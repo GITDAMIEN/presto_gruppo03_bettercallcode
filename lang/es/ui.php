@@ -99,6 +99,16 @@ return [
       'work-wu'=> 'Trabaja con nosotros!',
       'bec-rev-g'=> 'CONVIÉRTETE EN REVISOR',
 
+      //  FOOTER
+      'footer-explore' => 'EXPLORA',
+      'footer-allann' => 'Nuestros anuncios',
+      'footer-addann' => 'Nuevo anuncio',
+      'footer-cats' => 'Nuestras categorias',
+      'footer-profile' => 'Tu perfil',
+      'footer-aboutus' => 'Sobre nosostros',
+      'footer-contactus' => 'Contáctenos',
+      'footer-privacy' => 'Política de privacidad',
+      'footer-terms' => 'Términos y condiciones'
 ];
 
 

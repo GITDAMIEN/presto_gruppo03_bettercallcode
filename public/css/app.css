@@ -12745,6 +12745,63 @@ textarea{
 .papayaBg:hover{
     color: var(--panna);
 }
+
+#footerPrestoLogo{
+    text-align: center;
+}
+
+#newsletterBtn{
+    border-radius: 30px;
+    padding-left: 9px;
+    padding-right: 11px;
+}
+
+#footerContainer{
+    background-color: var(--starry);
+}
+
+#footerInfoListAnchor, #footerCategoriesListAnchor, #footerAppsLinksAnchor, .socialsAnchors, #contactsP{
+    color: var(--panna);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+#footerCategoriesTitle, #footerInfoTitle, #footerAppsLinksTitle, #footerSocialsTitle{
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    font-weight: 900;
+}
+
+#footerLogoText{
+    color: var(--papaya);
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+#footerAppsSection, #footerSocialsSection{
+    padding-left: 32px;
+}
+
+#mottoPDiv > p{
+    padding-left: 14px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+#footerPart1{
+    padding-left: 44px;
+}
+
+.contactsIcons{
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (min-width: 768px) {
+    
+    #footerSocialUl > li{
+        font-size: 20px;
+    }
+}
+
 .thumb{
     width: 100px;
     height: 100px;

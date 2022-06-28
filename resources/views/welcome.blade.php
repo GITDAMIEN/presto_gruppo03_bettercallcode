@@ -60,7 +60,7 @@
         <div class="row justify-content-evenly">
                 @foreach ($categories as $category)
                     <div class="col-12 col-md-2 mt-4">
-                        <a href="{{route('categoryShow',$category->id)}}"">
+                        <a href="{{route('categoryShow',$category->id)}}">
                         <div class="cardCategory d-flex justify-content-center align-items-center mx-auto" style='background-image: url("{{$category->coverImg}}")'>
                             {{-- <div>
                                 <p class="lato bold fs-5 uppercase text-center">{{$category->name}}</p>
