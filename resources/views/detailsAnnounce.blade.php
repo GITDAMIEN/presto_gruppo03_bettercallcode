@@ -1,7 +1,7 @@
 <x-layout>
   
   <x-slot name="title">
-    Dettagli {{$announce->title}}
+    {{__('ui.details')}} {{$announce->title}}
   </x-slot>
 
    
@@ -58,13 +58,13 @@
               <p class="fs-5 lato">{{$announce->description}}</p>
           </div>
           <div class="col-12 lato fs-5">
-              <p>Prezzo : {{$announce->price}} €</p>
+              <p>{{__('ui.price')}} : {{$announce->price}} €</p>
           </div>
           <div class="col-12 lato fs-5">
               <a href="{{route('categoryShow',$announce->category)}}" class="card-text">{{$announce->category->name}}</a>
           </div>
           <div class="col-12 mt-3">
-              <p class="lato fs-6 mt-5 created">Creato da {{$announce->user->name}} il {{$announce->created_at->format('d/m/Y')}}</p>
+              <p class="lato fs-6 mt-5 created">{{__('ui.create')}} {{$announce->user->name}} {{__('ui.at')}} {{$announce->created_at->format('d/m/Y')}}</p>
           </div>
       </div>
     </div>

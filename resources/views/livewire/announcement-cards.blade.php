@@ -1,11 +1,13 @@
 <div class="row min-vh-100">
+  <h1 class="text-center tuttigliannunci pt-5"> NAVIGA TRA I NOSTRI ANNUNCI</h1>
+  <p class="text-center pb-1 counterannunci"> {{count($announces)}} annunci disponibili</p>
   
   @if(count($announces)>0)
-  <div class="col-12 col-lg-3 mt-5">
+  <div class="col-12 col-lg-3 mt-1">
     <form wire:submit.prevent="searching" class="justify-content-center align-items-center">
       <div class="form-floating my-3">
-        <input wire:model="title" type="search" class="form-control" id="searchByTextInput" placeholder="Cerca per parola">
-        <label for="searchByTextInput">Cerca per parola</label>
+        <input wire:model="title" type="search" class="form-control" id="searchByTextInput" placeholder="{{__('ui.search-word')}}">
+        <label for="searchByTextInput">{{__('ui.search-word')}}</label>
       </div>
       {{-- RICERCA PER UTENTE --}}
       {{-- <div class="form-floating my-3">
@@ -14,23 +16,23 @@
       </div> --}}
       <div class="form-floating my-3">
         <select wire:model="category" id="searchByCategoryInput" class="form-select" id="floatingSelect">
-          <option value="all" selected>Tutte le categorie</option>
+          <option value="all" selected>{{__('ui.all-cate')}}</option>
           @foreach ($categories as $category)
           <option value="{{$category->id}}">{{$category->name}}</option>
           @endforeach
         </select>
-        <label for="floatingSelect">Scegli la categoria</label>
+        <label for="floatingSelect">{{__('ui.search-cate')}}</label>
       </div>
       <div class="form-floating my-3">
         <select wire:model="sort" class="form-select" id="orderSelect">
-          <option value="newest" selected>Dal più recente al più vecchio</option>
-          <option value="oldest">Dal più vecchio al più recente</option>
-          <option value="fromCheaper">Dal più economico al più costoso</option>
-          <option value="toCheaper">Dal più costoso al più economico</option>
-          <option value="AtoZ">Dalla A alla Z</option>
-          <option value="ZtoA">Dalla Z alla A</option>
+          <option value="newest" selected>{{__('ui.newToOld')}}</option>
+          <option value="oldest">{{__('ui.oldToNew')}}</option>
+          <option value="fromCheaper">{{__('ui.cheapToHigh')}}</option>
+          <option value="toCheaper">{{__('ui.highToCheap')}}</option>
+          <option value="AtoZ">{{__('ui.AtoZ')}}</option>
+          <option value="ZtoA">{{__('ui.ZtoA')}}</option>
         </select>
-        <label for="orderSelect">Ordina annunci</label>
+        <label for="orderSelect">{{__('ui.ord-ann')}}</label>
       </div>
       <div id="priceSearchRow" class="row mx-auto">
         <div id="minPriceInputDiv" class="form-floating my-2 pe-1 ps-0 w-50">
@@ -45,7 +47,7 @@
     </form>
   </div>
   
-    <div class="col-12 col-lg-9 mt-5">
+    <div class="col-12 col-lg-9 mt-1">
         <div class="row">
           @foreach ($announces as $announce)
           <div class="allCards col-12 card px-0 mt-4 mobile-center">
@@ -57,13 +59,13 @@
                 <a class="lato fw-bolder fs-5" href="{{route('detailsAnnounce',$announce)}}">{{$announce->title}}</a>
                 <a href="{{route('categoryShow',$announce->category)}}"><p>{{$announce->category->name}}</p></a>
                 <p> {{$announce->description}}</p>
-                <a href="{{route('detailsAnnounce',$announce)}}" class="panna"> <p class="btn starryBg panna mt-1">Dettagli</p></a>
+                <a href="{{route('detailsAnnounce',$announce)}}" class="panna"> <p class="btn starryBg panna mt-1">{{__('ui.details')}}</p></a>
               </div>
               <div class="col-12 col-md-3 px-4">
                   <p class="lato btn bg-success panna text-end mb-0 mt-3">{{$announce->price}}€</p>
                   <div class="row">
                     <div class="col-12">
-                      <p class=" lato fs-pers mt-pers mb-0">Creato da {{$announce->user->name}} il {{$announce->created_at->format('d/m/Y')}}</p>
+                      <p class=" lato fs-pers mt-pers mb-0">{{__('ui.create')}} {{$announce->user->name}} {{__('ui.at')}} {{$announce->created_at->format('d/m/Y')}}</p>
                     </div>
                   </div>
               </div>
@@ -80,7 +82,7 @@
       <div class="row">
           <div class="col-12 d-flex justify-content-center align-items-center">
               <div class="aa ps-5">
-                  <a href="{{route('createAnnouncement')}}" class="btnPd">Inserisci tu il primo annuncio</a>
+                  <a href="{{route('createAnnouncement')}}" class="btnPd">{{__('ui.add-first-ann')}}</a>
               </div>
           </div>
       </div>

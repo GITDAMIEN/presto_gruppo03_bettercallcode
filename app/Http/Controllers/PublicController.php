@@ -21,4 +21,9 @@ class PublicController extends Controller
         return view('detailsAnnounce',compact('announce'));
     }
     
+    public function setLanguage($lang){
+        
+        session()->put('locale' ,$lang);
+        return redirect()->back();
+    }
 }

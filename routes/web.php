@@ -37,3 +37,6 @@ Route::get('/revisore/confermaRevisore/{user}', [RevisorController::class, "make
 
 // form via email
 Route::get('/contact', function () {return view('contact');});
+
+//rotta per multilingua//
+Route::post('/lingua/{lang}',[PublicController::class,'setLanguage'])->name('set_language_locale');
