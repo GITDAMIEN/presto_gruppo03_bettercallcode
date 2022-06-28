@@ -8,24 +8,24 @@
     <div class="collapse navbar-collapse" id="navbarsExample04">
       <ul class="navbar-nav ms-auto {{Route::currentRouteName()=="welcome" ? 'dropBgBig1' : 'dropBgBig2'}} mb-2 mb-md-0">
         <li class="nav-item">
-          <a class="nav-link active fs-6 px-4"  href="{{route('welcome')}}">Home</a>
+          <a class="nav-link active fs-6 px-3 px-lg-4"  href="{{route('welcome')}}">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link fs-6 px-4" href="{{route('allAnnouncements')}}">{{__('ui.ann')}}</a>
+          <a class="nav-link fs-6 px-3 px-lg-4" href="{{route('allAnnouncements')}}">{{__('ui.ann')}}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link fs-6 px-4" href="{{route('createAnnouncement')}}">{{__('ui.new-ann')}}</a>
+          <a class="nav-link fs-6 px-3 px-lg-4" href="{{route('createAnnouncement')}}">{{__('ui.new-ann')}}</a>
         </li>
         @guest
         <li class="nav-item">
-          <a class="nav-link fs-6 px-4" href="{{route('register')}}">{{__('ui.reg')}}</a>
+          <a class="nav-link fs-6 px-3 px-lg-4" href="{{route('register')}}">{{__('ui.reg')}}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link fs-6 px-4" href="{{route('login')}}">Log-in</a>
+          <a class="nav-link fs-6 px-3 px-lg-4" href="{{route('login')}}">Log-in</a>
         </li>
         @else
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle fs-6 px-4" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle fs-6 px-3 px-lg-4" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             {{__('ui.ciao')}} {{Auth::user()->name}}
           </a>
           <ul class="dropdown-menu {{Route::currentRouteName()=="welcome" ? 'dropBgSmall1' : 'dropBgSmall2'}} shadow mx-auto text-center panna" aria-labelledby="dropdown04">
@@ -58,14 +58,20 @@
           </ul>
         </li>
         @endguest
-        <li class="nav-item languageBtns">
-          <x-_locale lang='it' nation='it'/>
-        </li>
-        <li class="nav-item languageBtns">
-          <x-_locale lang='en' nation='gb'/>
-        </li>
-        <li class="nav-item languageBtns">
-          <x-_locale lang='es' nation='es'/>
+        <li id="languageLiDropdown" class="dropdown me-md-3 me-lg-5 mx-auto">
+          <div class="d-none">{{$nation='it'}}</div>
+          <a id="dropdownMenuLanguages" class="nav-link dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><span class="fi-{{$nation}} fi"></span></a>
+          <ul id="languagesMenuUl" class="dropdown-menu shadow" aria-labelledby="dropdownMenuButton1">
+            <li>
+              <x-_locale class="dropdown-item" lang='it' nation='it'/>
+            </li>
+            <li>
+              <x-_locale class="dropdown-item" lang='en' nation='gb'/>
+            </li>
+            <li>              
+              <x-_locale class="dropdown-item" lang='es' nation='es'/>
+            </li>
+          </ul>
         </li>
       </ul>
     </div>
