@@ -23,3 +23,7 @@
 .papayaBg:hover{
     color: var(--panna);
 }
+
+#footerPrestoLogo{
+    text-align: center;
+}
