@@ -11919,10 +11919,10 @@ body {
     border: 0px;
 }
 
-.lead{
+.descrizioneTest{
     font-family: 'Lato', sans-serif;
-    font-weight: 100;
-    font-size: 1.25rem;
+    font-weight: 400;
+    font-size: 1.20rem;
     
 }
 .bg-dabiblu{
@@ -12074,7 +12074,7 @@ body {
     width: 190px;
 }
 
-.dropBgSmall1 > li > a, .dropBgSmall1 > a, .dropBgSmall1 .dropdown-divider, .dropBgSmall2 > li > a, .dropBgSmall2 > a, .dropBgSmall2 .dropdown-divider{
+.dropBgSmall1 > div > li > a, .dropBgSmall1 > div > a, .dropBgSmall1 .dropdown-divider, .dropBgSmall2 > div > li > a, .dropBgSmall2 > div> a, .dropBgSmall2 .dropdown-divider{
     color: var(--starry) !important;
 }
 

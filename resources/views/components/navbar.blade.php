@@ -29,32 +29,34 @@
             {{__('ui.ciao')}} {{Auth::user()->name}}
           </a>
           <ul class="dropdown-menu {{Route::currentRouteName()=="welcome" ? 'dropBgSmall1' : 'dropBgSmall2'}} shadow mx-auto text-center panna" aria-labelledby="dropdown04">
-            <li>
-              <a class="dropdown-item " href="#">{{__('ui.profilo')}}</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#">{{__('ui.your-ann')}}</a>
-            </li>
-            @if (Auth::user()->is_revisor)     {{--  Se l'utente è un revisore  --}}                      
-            <li>
-              <a class="dropdown-item position-relative" href="{{route('revisor.index')}}">{{__('ui.rev-zone')}}
-                <span class="position-absolute top-50  badge-class translate-middle badge rounded-pill bg-danger">
-                  {{App\Models\Announcement::toBeRevisionedCount()}}
-                  <span class="visually-hidden">unread messages</span>
-                </span>
-              </a>
-            </li>
-            <li><hr class="dropdown-divider"></li>
-            @else
-            <li>
-              <a class="dropdown-item ps-1" href="/#workWithUsContainerFluid">{{__('ui.bec-rev')}}</a>
-            </li>
-            <li><hr class="dropdown-divider"></li>
-            @endif
-            <a class="dropdown-item " href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('frm-logout').submit();">Logout</a>      
-            <form id="frm-logout" action="{{ route('logout') }}" method="POST" class="d-none">
-              @csrf
-            </form>
+            <div class="">
+              <li>
+                <a class="dropdown-item " href="#">{{__('ui.profilo')}}</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">{{__('ui.your-ann')}}</a>
+              </li>
+              @if (Auth::user()->is_revisor)     {{--  Se l'utente è un revisore  --}}                      
+              <li>
+                <a class="dropdown-item position-relative" href="{{route('revisor.index')}}">{{__('ui.rev-zone')}}
+                  <span class="position-absolute top-50  badge-class translate-middle badge rounded-pill bg-danger">
+                    {{App\Models\Announcement::toBeRevisionedCount()}}
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </a>
+              </li>
+              <li><hr class="dropdown-divider"></li>
+              @else
+              <li>
+                <a class="dropdown-item ps-1" href="/#workWithUsContainerFluid">{{__('ui.bec-rev')}}</a>
+              </li>
+              <li><hr class="dropdown-divider"></li>
+              @endif
+              <a class="dropdown-item " href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('frm-logout').submit();">Logout</a>      
+              <form id="frm-logout" action="{{ route('logout') }}" method="POST" class="d-none">
+                @csrf
+              </form>
+            </div>
           </ul>
         </li>
         @endguest
