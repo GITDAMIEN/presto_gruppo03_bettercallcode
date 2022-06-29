@@ -88,7 +88,7 @@
                     <p class="subtitle-annuncio-box">{{__('ui.home-mess')}} !</p>
                 </div>
             </div>
-            <div class="col-12 col-md-5 d-flex justify-content-center align-items-center mt-4 mt-md-0">
+            <div class="col-12 col-md-5 d-flex justify-content-center align-items-center my-4 my-md-0">
                 <div>
                     <a href="{{route('createAnnouncement')}}" class="btnP bouncy d-block">{{__('ui.add-ann')}} </a>
                 </div>
