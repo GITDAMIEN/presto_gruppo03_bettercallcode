@@ -107,6 +107,12 @@ return [
      'work-wu'=> 'Work with us!',
      'bec-rev-g'=> 'BECOME A REVISOR',
      'ratingsTitle'=> 'FEEDBACKS ABOUT US',
+     'firstrevtitle' => 'Seller on Presto.it',
+     'secondrevtitle' => 'Buyer on Presto.it',
+     'thirdrevtitle' => 'Revisor on Presto.it',
+     'firstrev' => 'I have a lot of things to get rid of and I always use Presto.it to sell them. The portal is fantastic, simple and intuitive and allows me to earn some money easily. Great deals, 5 stars are deserved!',
+     'secondrev' => 'I like to collect vintage items and on Presto.it I always find a lot of opportunities that are right for me. In my pastime I open the site, scroll through the ads and enjoy shopping to expand my collection :)',
+     'thirdrev' => 'I have been registered on Presto.it for a couple of years and about a year ago I applied to become a reviewer. That way I earn some extra money as a second job and I can afford a weekend away from time to time',
 
     //  FOOTER
     'footer-explore' => 'EXPLORE',

@@ -49,6 +49,18 @@
     /* transform: translateY(26px); */
 }
 
+#cominciaAGuadagnareSection, #becomeRevisorDiv{
+    width: 90%!important;
+}
+
+#becomeRevisorDiv2{
+    border-radius: 15px;
+}
+
+.inserisci-annuncio-box{
+    padding-top: 8px;
+}
+
 .revisorBtns{
     border-radius: 30px;
     /* padding: 10px 20px; */

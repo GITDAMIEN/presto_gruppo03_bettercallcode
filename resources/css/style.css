@@ -13,6 +13,7 @@
     --indigo : #30415D;
     --crimson : #CF6766;
     --starry : #0375B4;
+    --cblack : rgb(32, 32, 32);
     
 }
 *{
@@ -673,7 +674,6 @@ body {
 
     .boxTitle {
         padding-top: 0px;
-        padding-left: 200px;
         width: 580px;
         position: relative;
     }
@@ -729,5 +729,13 @@ body {
     .skill-card .skill-card__body .skill-card__duration__category:hover {
         color: var(--celesteChiaro);
         font-weight: bolder;
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+
+    .boxTitle {
+        padding-left: 200px;
     }
 }
