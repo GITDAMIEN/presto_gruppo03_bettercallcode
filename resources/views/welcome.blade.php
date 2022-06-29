@@ -95,6 +95,7 @@
             </div>
         </div>
     </section>
+
     
     
     @if(!Auth::check())
