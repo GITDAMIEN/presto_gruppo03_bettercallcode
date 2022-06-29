@@ -120,11 +120,15 @@ return [
       'footer-allann' => 'Nuestros anuncios',
       'footer-addann' => 'Nuevo anuncio',
       'footer-cats' => 'Nuestras categorias',
-      'footer-profile' => 'Tu perfil',
+      'footer-yourAnnounces' => 'Tus anuncios',
       'footer-aboutus' => 'Sobre nosostros',
       'footer-contactus' => 'Contáctenos',
       'footer-privacy' => 'Política de privacidad',
-      'footer-terms' => 'Términos y condiciones'
+      'footer-terms' => 'Términos y condiciones',
+
+      // YOUR PROFILE
+      'yourAnnouncements' => 'Tus anuncios',
+      'annunciCaricati' => 'Anuncios creados por'
 ];
 
 

@@ -121,11 +121,15 @@ return [
       'footer-allann' => 'Tutti gli annunci',
       'footer-addann' => 'Inserisci annuncio',
       'footer-cats' => 'Le categorie',
-      'footer-profile' => 'Il tuo profilo',
+      'footer-yourAnnounces' => 'I tuoi annunci',
       'footer-aboutus' => 'Su di noi',
       'footer-contactus' => 'Contattaci',
       'footer-privacy' => 'Politica sulla privacy',
-      'footer-terms' => 'Termini e condizioni'
+      'footer-terms' => 'Termini e condizioni',
+
+      // YOUR PROFILE
+      'yourAnnouncements' => 'I tuoi annunci',
+      'annunciCaricati' => 'Annunci creati da'
 ];
 
 

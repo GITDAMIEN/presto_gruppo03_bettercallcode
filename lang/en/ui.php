@@ -120,9 +120,13 @@ return [
     'footer-allann' => 'All announcements',
     'footer-addann' => 'New announcement',
     'footer-cats' => 'Our categories',
-    'footer-profile' => 'Your profile',
+    'footer-yourAnnounces' => 'Your announcements',
     'footer-aboutus' => 'About us',
     'footer-contactus' => 'Contact us',
     'footer-privacy' => 'Privacy policy',
-    'footer-terms' => 'Terms and conditions'
+    'footer-terms' => 'Terms and conditions',
+
+    // YOUR PROFILE
+    'yourAnnouncements' => 'Your announcements',
+    'annunciCaricati' => 'Announcements created by'
 ];

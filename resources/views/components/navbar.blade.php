@@ -35,10 +35,10 @@
               
               {{-- <li>
                 <a class="dropdown-item " href="#">{{__('ui.profilo')}}</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">{{__('ui.your-ann')}}</a>
               </li> --}}
+              <li>
+                <a class="dropdown-item" href="{{route('yourAnnouncements', Auth::user())}}">{{__('ui.your-ann')}}</a>
+              </li>
               
               @if (Auth::user()->is_revisor)     {{--  Se l'utente è un revisore  --}}                      
               <li>
@@ -52,7 +52,7 @@
               <li><hr class="dropdown-divider"></li>
               @else
               <li>
-                <a class="dropdown-item ps-1" href="/#workWithUsContainerFluid">{{__('ui.bec-rev')}}</a>
+                <a class="dropdown-item" href="/#workWithUsContainerFluid">{{__('ui.bec-rev')}}</a>
               </li>
               <li><hr class="dropdown-divider"></li>
               @endif

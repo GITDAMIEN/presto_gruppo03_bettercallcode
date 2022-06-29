@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Announcement;
+use App\Models\User;
 use App\Models\Category;
+use App\Models\Announcement;
 use Illuminate\Http\Request;
 
 class PublicController extends Controller
@@ -26,5 +27,10 @@ class PublicController extends Controller
         
         session()->put('locale' ,$lang);
         return redirect()->back();
+    }
+
+    public function yourAnnouncements(User $user){
+        $announcements = Announcement::where('is_accepted',true)->where('user_id', $user->id)->latest()->get();
+        return view('yourAnnouncements', compact('announcements'));
     }
 }

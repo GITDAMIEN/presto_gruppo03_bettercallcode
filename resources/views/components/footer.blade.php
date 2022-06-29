@@ -41,6 +41,10 @@
                             <i id="footerCategoriesListIcon" class="fa-solid fa-circle-arrow-right ms-2 d-none secColor"></i>
                         </li>
                         <li id="footerCategoriesListItem" class="d-flex align-items-center py-1">
+                            <a id="footerCategoriesListAnchor" href="/#ourCategories">{{__('ui.footer-cats')}}</a>
+                            <i id="footerCategoriesListIcon" class="fa-solid fa-circle-arrow-right ms-2 d-none secColor"></i>
+                        </li>
+                        <li id="footerCategoriesListItem" class="d-flex align-items-center py-1">
                             <a id="footerCategoriesListAnchor" href="{{route('allAnnouncements')}}">{{__('ui.footer-allann')}}</a>
                             <i id="footerCategoriesListIcon" class="fa-solid fa-circle-arrow-right ms-2 d-none secColor"></i>
                         </li>
@@ -48,16 +52,18 @@
                             <a id="footerCategoriesListAnchor" href="{{route('createAnnouncement')}}">{{__('ui.footer-addann')}}</a>
                             <i id="footerCategoriesListIcon" class="fa-solid fa-circle-arrow-right ms-2 d-none secColor"></i>
                         </li>
-                        <li id="footerCategoriesListItem" class="d-flex align-items-center py-1">
-                            <a id="footerCategoriesListAnchor" href="/#ourCategories">{{__('ui.footer-cats')}}</a>
-                            <i id="footerCategoriesListIcon" class="fa-solid fa-circle-arrow-right ms-2 d-none secColor"></i>
-                        </li>
 
                         {{-- Link a 'il tuo profilo' - WIP --}}
-                        {{-- <li id="footerCategoriesListItem" class="d-flex align-items-center py-1">
-                            <a id="footerCategoriesListAnchor" href="#">{{__('ui.footer-profile')}}</a>
+                        <li id="footerCategoriesListItem" class="d-flex align-items-center py-1">
+                            <a id="footerCategoriesListAnchor" 
+                            @if(Auth::check())
+                            href="{{route('yourAnnouncements', Auth::user())}}"
+                            @else
+                            href="{{route('login')}}"
+                            @endif
+                            >{{__('ui.footer-yourAnnounces')}}</a>
                             <i id="footerCategoriesListIcon" class="fa-solid fa-circle-arrow-right ms-2 d-none secColor"></i>
-                        </li> --}}
+                        </li>
                     </ul>
                 </div>
                 <div class="col-6 col-md-3">

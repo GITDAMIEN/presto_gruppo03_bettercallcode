@@ -40,3 +40,6 @@ Route::get('/contact', function () {return view('contact');});
 
 //rotta per multilingua//
 Route::post('/lingua/{lang}',[PublicController::class,'setLanguage'])->name('set_language_locale');
+
+// Your profile
+Route::get('/announcementsBy/{user}', [PublicController::class, 'yourAnnouncements'])->middleware('auth')->name('yourAnnouncements');

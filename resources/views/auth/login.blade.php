@@ -1,6 +1,6 @@
 <x-layout>
     <x-slot name="title">
-       {{__('ui.log-in')}} 
+       Log-in
     </x-slot>
     @if ($errors->any())
     <div class="alert alert-danger">
