@@ -13,6 +13,7 @@ use App\Http\Livewire\CreateAnnouncement;
 use App\Jobs\GoogleVisionLabelImage;
 use App\Jobs\GoogleVisionSafeSearch;
 use App\Jobs\RemoveFaces;
+use App\Jobs\WatermarkLogo;
 use Illuminate\Support\Facades\File as FacadesFile;
 
 class CreateAnnouncement extends Component
@@ -90,8 +91,8 @@ class CreateAnnouncement extends Component
                     
                     new ResizeImage($newImage->path , 600, 450),
                     new GoogleVisionSafeSearch($newImage->id),
-                    new GoogleVisionLabelImage($newImage->id)
-
+                    new GoogleVisionLabelImage($newImage->id),
+                    new WatermarkLogo($newImage->id)
                 ])->dispatch($newImage->id);
             }
 

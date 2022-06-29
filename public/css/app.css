@@ -12328,6 +12328,12 @@ nav.presto-nav, nav.presto-nav2 {
     /* transform: translateY(26px); */
 }
 
+.revisorBtns{
+    border-radius: 30px;
+    /* padding: 10px 20px; */
+    /* width: 250px; */
+}
+
 .divDiv{
     border-radius: 50%;
     border: 3px solid var(--starry);

@@ -43,7 +43,7 @@ return [
 
      //INDEX
      'rev-zone' => 'Revisor area',
-     'ann-rev'  => 'Announcement to be revised:',
+     'ann-rev'  => 'ANNOUNCEMENT TO BE REVISED:',
      'ann-rev-no'  => 'No ads to be revised',
      'description'  => 'Description',
      'uploadBy'  => 'Created by',
