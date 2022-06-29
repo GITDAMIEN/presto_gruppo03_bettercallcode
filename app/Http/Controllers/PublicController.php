@@ -18,7 +18,8 @@ class PublicController extends Controller
     }
 
     public function detailsAnnounce(Announcement $announce){
-        return view('detailsAnnounce',compact('announce'));
+        $announcements = Announcement::where('is_accepted',true)->where('category_id',$announce->category_id)->latest()->get()->take(3);
+        return view('detailsAnnounce',compact('announce','announcements'));
     }
     
     public function setLanguage($lang){
