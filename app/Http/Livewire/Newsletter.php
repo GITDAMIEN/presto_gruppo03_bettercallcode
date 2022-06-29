@@ -2,8 +2,10 @@
 
 namespace App\Http\Livewire;
 
-use Illuminate\Support\Facades\Auth;
+use App\Models\NewsletterEmail;
 use Livewire\Component;
+use App\Models\NewsletterNew;
+use Illuminate\Support\Facades\Auth;
 
 class Newsletter extends Component
 {
@@ -20,6 +22,8 @@ class Newsletter extends Component
 
     public function newsletter(){
         // dd($this->useremail);
+        NewsletterEmail::create(['emailfornewsletter'=>$this->useremail]);
+
         return redirect()->route('welcome')->with('message', 'Grazie per esserti iscritto alla nostra newsletter!');
     }
 
