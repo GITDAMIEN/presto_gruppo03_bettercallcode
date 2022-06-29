@@ -52,10 +52,12 @@
                             <a id="footerCategoriesListAnchor" href="/#ourCategories">{{__('ui.footer-cats')}}</a>
                             <i id="footerCategoriesListIcon" class="fa-solid fa-circle-arrow-right ms-2 d-none secColor"></i>
                         </li>
-                        <li id="footerCategoriesListItem" class="d-flex align-items-center py-1">
+
+                        {{-- Link a 'il tuo profilo' - WIP --}}
+                        {{-- <li id="footerCategoriesListItem" class="d-flex align-items-center py-1">
                             <a id="footerCategoriesListAnchor" href="#">{{__('ui.footer-profile')}}</a>
                             <i id="footerCategoriesListIcon" class="fa-solid fa-circle-arrow-right ms-2 d-none secColor"></i>
-                        </li>
+                        </li> --}}
                     </ul>
                 </div>
                 <div class="col-6 col-md-3">

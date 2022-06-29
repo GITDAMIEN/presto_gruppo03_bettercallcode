@@ -10,7 +10,9 @@
     @endif
     
     <div class="container-fluid">
-                {{-- richiamo di livewire e paginazione --}}
+            {{-- richiamo di livewire e paginazione --}}
+            
+        {{-- <livewire:announcement-cards/> --}}
         @include('livewire.announcement-cards',['announces'=> $announces])
         
     </div>

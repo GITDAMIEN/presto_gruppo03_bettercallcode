@@ -102,7 +102,7 @@
     <div id="becomeRevisorDiv" class="container">
         <div id="becomeRevisorDiv2" class="row text-center my-5 card shadow">
             <h4 class="my-4">{{__('ui.bec-rev-presto')}}</h4>
-            <a class="btn papayaBg panna col-10 offset-1 col-md-4 offset-md-4 mb-4" href="register">{{__('ui.reg-bec-rev')}} </a>
+            <a class="btn papayaBg panna col-10 offset-1 col-md-6 offset-md-3 mb-4 becRevBtn" href="register">{{__('ui.reg-bec-rev')}} </a>
         </div>
     </div>
     @endif

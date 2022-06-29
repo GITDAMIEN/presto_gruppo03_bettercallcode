@@ -83,6 +83,7 @@ return [
       'AtoZ' => 'De la A a la Z',
       'ZtoA' => 'Da la Z a la A',
       'ord-ann' => 'Ordenar anuncios',
+      'searchbtn' => 'Busca',
 
       //NAVBAR
 

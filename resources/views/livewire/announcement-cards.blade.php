@@ -43,6 +43,9 @@
           <label id="priceLabels" for="maxInput">Max price</label>
         </div>
       </div>
+      <div class="row mx-auto mt-3">
+        <button type="submit" class="searchBtn mx-auto">{{__('ui.searchbtn')}}</button>
+      </div>
     </form>
   </div>
   

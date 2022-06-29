@@ -30,12 +30,16 @@
           </a>
           <ul class="dropdown-menu {{Route::currentRouteName()=="welcome" ? 'dropBgSmall1' : 'dropBgSmall2'}} shadow mx-auto text-center panna" aria-labelledby="dropdown04">
             <div class="">
-              <li>
+
+              {{-- Links a 'il tuo profilo' e 'i tuoi annunci' - WIP --}}
+              
+              {{-- <li>
                 <a class="dropdown-item " href="#">{{__('ui.profilo')}}</a>
               </li>
               <li>
                 <a class="dropdown-item" href="#">{{__('ui.your-ann')}}</a>
-              </li>
+              </li> --}}
+              
               @if (Auth::user()->is_revisor)     {{--  Se l'utente è un revisore  --}}                      
               <li>
                 <a class="dropdown-item position-relative" href="{{route('revisor.index')}}">{{__('ui.rev-zone')}}

@@ -83,6 +83,7 @@ return [
      'AtoZ' => 'From A to Z',
      'ZtoA' => 'From Z to A',
      'ord-ann' => 'Order announcements',
+     'searchbtn' => 'Search',
 
      //NAVBAR
 

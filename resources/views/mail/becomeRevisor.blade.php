@@ -7,16 +7,15 @@
     <title>Presto.it</title>
 </head>
 <body>
-    <div>
-        <h2>Un utente ha chiesto di diventare revisore.</h2>
-        <h4>Ecco i suoi dati:</h4>
-        <h5>Nome: {{$user->name}}</h5>
-        <p>Email: {{$user->email}}</p>
-        <p>Messaggio:</p>
-        <p>{{$lead->messagetxt}}</p>
-        <p>Vedi il curriculum in allegato</p>
-        <p>Clicca qui per renderlo revisore:</p>
-        <a href="{{route('makeRevisor', compact('user'))}}">Rendi {{$user->name}} revisore</a>
+    <div style="text-align: center; margin-top: 50px; margin-bottom: 100px">
+        <h2 style="color: #0375B4; font-weight: 600; font-size: 30px">Un utente ha chiesto di diventare revisore per Presto.it</h2>
+        <h3>Ecco i suoi dati:</h3>
+        <h4>Username:</h4><span>{{$user->name}}</span>
+        <h4>Email:</h4><span>{{$user->email}}</span>
+        <h4>Messaggio:</h4><span>{{$lead->messagetxt}}</span>
+        <p style="text-decoration: underline; margin-top: 50px">Vedi il curriculum in allegato</p>
+        <h4 style="font-weight: 600; color: #0375B4; margin-bottom:20px">Clicca qui per renderlo revisore:</h4>
+        <a href="{{route('makeRevisor', compact('user'))}}" style="color:white; background-color: #E24E42; border-radius: 20px; text-decoration: none; padding: 10px">Rendi {{$user->name}} revisore</a>
     </div>
 </body>
 </html>

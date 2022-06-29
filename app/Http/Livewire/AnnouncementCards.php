@@ -49,7 +49,7 @@ class AnnouncementCards extends Component
     //     }
     // }
 
-    public function updated(){
+    public function searching(){
         $announce = Announcement::with(relations:'category');
 
         if(!empty($this->title)){
@@ -61,6 +61,8 @@ class AnnouncementCards extends Component
         //         $query->where('user.user_id', $this->user);
         //     });
         // }
+
+        // dd('awee');
         
         if($this->sort=='AtoZ'){
             $announce = $announce->orderBy('title',"asc");

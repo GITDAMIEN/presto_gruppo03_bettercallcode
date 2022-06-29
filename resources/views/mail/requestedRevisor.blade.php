@@ -7,12 +7,12 @@
     <title>Presto.it</title>
 </head>
 <body>
-    <div>
-        <h2>Grazie {{$user()->name}} per la tua richiesta!</h2>
+    <div style="text-align: center; margin-top: 50px; margin-bottom: 100px">
+        <h2 style="color: #0375B4; font-weight: 600; font-size: 30px">Grazie {{$user()->name}} per la tua richiesta!</h2>
         <p>Hai inviato correttamente la tua richiesta di diventare revisore per Presto.it</p>
         <p>Avrai riscontro sull'esito quanto prima!</p>
-        <p>Continua a trovare i migliori affari su Presto.it!</p>
-        <a href="{{route('/')}}">Vai su Presto.it</a>
+        <h5 style="font-weight: 600; color: #0375B4">Continua a trovare i migliori affari su Presto.it!</h5>
+        <a href="{{route('/')}}" style="color:white; background-color: #E24E42; border-radius: 20px; text-decoration: none; padding: 10px">Vai su Presto.it</a>
     </div>
 </body>
 </html>

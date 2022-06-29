@@ -11592,7 +11592,7 @@ body {
 
 .skill-card .skill-card__body .skill-card__duration__category {
     font-family: 'Lato', sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     color:rgba(19, 19, 19, 0.8);
     transition: all 0.5s;
 }
@@ -11736,18 +11736,38 @@ body {
     box-shadow: -1px -1px 33px 1px var(--obsidianGray);
 }
 
-.btnPd:hover{
-    color: #1b1b1b;
+.becRevBtn{
+    background-color: var(--papaya);
+    color: var(--panna);
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    border-radius: 10px;
+    padding: 12px;
+    border-style: none;
+    transition: 0.5s;
+    box-shadow: -1px -1px 15px 1px var(--obsidianGray);
+}
+
+.searchBtn{
+    background-color: var(--papaya);
+    color: var(--panna);
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    border-radius: 10px;
+    padding: 12px;
+    border-style: none;
+    transition: 0.5s;
+}
+
+.btnPd:hover, .btnP:hover, .searchBtn:hover{
+    color: var(--cblack);
 }
 
 .aa{
     width: 450px;
     height: 200px;
-}
-
-.btnP:hover{
-    background-color: var(--panna);
-    color: var(--papaya);
 }
 
 
