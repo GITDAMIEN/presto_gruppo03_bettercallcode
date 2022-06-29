@@ -11919,10 +11919,10 @@ body {
     border: 0px;
 }
 
-.lead{
+.descrizioneTest{
     font-family: 'Lato', sans-serif;
-    font-weight: 100;
-    font-size: 1.25rem;
+    font-weight: 400;
+    font-size: 1.20rem;
     
 }
 .bg-dabiblu{
@@ -12074,7 +12074,7 @@ body {
     width: 190px;
 }
 
-.dropBgSmall1 > li > a, .dropBgSmall1 > a, .dropBgSmall1 .dropdown-divider, .dropBgSmall2 > li > a, .dropBgSmall2 > a, .dropBgSmall2 .dropdown-divider{
+.dropBgSmall1 > div > li > a, .dropBgSmall1 > div > a, .dropBgSmall1 .dropdown-divider, .dropBgSmall2 > div > li > a, .dropBgSmall2 > div> a, .dropBgSmall2 .dropdown-divider{
     color: var(--starry) !important;
 }
 
@@ -12313,10 +12313,18 @@ nav.presto-nav, nav.presto-nav2 {
     position: relative;
 }
 
-.revisorBtns{
+.revisorBtnRefuse{
     border-radius: 30px;
     padding: 10px 20px;
     width: 230px;
+    /* transform: translateY(-34px); */
+}
+
+.revisorBtnAccept{
+    border-radius: 30px;
+    padding: 10px 20px;
+    width: 230px;
+    /* transform: translateY(26px); */
 }
 
 .divDiv{
@@ -12423,6 +12431,15 @@ nav.presto-nav, nav.presto-nav2 {
     position: absolute;
     top: 75px;
     width: 100%;
+}
+
+.carousel-indicators{
+    margin-bottom: -30px;
+}
+
+#thumbnailsBtns{
+    background-color: transparent;
+    border: none;
 }
 
 /* Work with us */

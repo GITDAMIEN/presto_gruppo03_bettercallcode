@@ -56,6 +56,13 @@ return [
       'last-ann-rif'  => 'Gli ultimi annunci rifiutati',
       'acc-ann-no'  => 'Nessun annuncio rifiutato finora',
       'ann-rev-acc-ann' => 'Annulla revisione e accetta annuncio',
+      'title' => 'Titolo',
+      'contentcheck' => 'Controllo contenuti',
+      'adult' => 'Adulti',
+      'spoof' => 'Satira',
+      'medical' => 'Medicina',
+      'violence' => 'Violenza',
+      'racy' => 'Contenuti piccanti',
 
       //REVISOR FORM
       'add-req' => 'Compila la richiesta',
@@ -84,6 +91,7 @@ return [
       'profilo' =>'Profilo',
       'your-ann' =>'I tuoi annunci',
       'bec-rev' => 'Diventa revisore',
+      'lang' => 'IT',
 
       //WELCOME
       'home' => 'Homepage',
