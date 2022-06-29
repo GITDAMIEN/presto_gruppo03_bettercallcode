@@ -43,7 +43,7 @@ return [
 
       //INDEX
       'rev-zone' => 'Área de revisores',
-      'ann-rev'  => 'Anuncio a revisar:',
+      'ann-rev'  => 'ANUNCIO A REVISAR:',
       'ann-rev-no'  => 'No hay anuncios para revisar',
       'description'  => 'Descripción',
       'uploadBy'  => 'Cargado da',
