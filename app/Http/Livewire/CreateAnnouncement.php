@@ -12,6 +12,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Http\Livewire\CreateAnnouncement;
 use App\Jobs\GoogleVisionLabelImage;
 use App\Jobs\GoogleVisionSafeSearch;
+use App\Jobs\RemoveFaces;
 use Illuminate\Support\Facades\File as FacadesFile;
 
 class CreateAnnouncement extends Component
@@ -84,9 +85,13 @@ class CreateAnnouncement extends Component
                 $newFileName = "announcements/{$announcement->id}";
                 $newImage =  $announcement->images()->create(['path'=>$image->store($newFileName, 'public')]);
 
-                dispatch(new ResizeImage($newImage->path , 600, 450));
-                dispatch(new GoogleVisionSafeSearch($newImage->id));
-                dispatch(new GoogleVisionLabelImage($newImage->id));
+
+                RemoveFaces::withChain([
+                    new ResizeImage($newImage->path , 600, 450),
+                    new GoogleVisionSafeSearch($newImage->id),
+                    new GoogleVisionLabelImage($newImage->id)
+
+                ])->dispatch($newImage->id);
             }
 
             // File::deleteDirectory(storage_path('/app/livewire-tmp'));
