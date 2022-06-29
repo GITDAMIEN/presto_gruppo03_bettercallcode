@@ -107,6 +107,13 @@ return [
       'work-wu'=> 'Lavora con noi!',
       'bec-rev-g'=> 'DIVENTA REVISORE',
       'ratingsTitle'=> 'DICONO DI NOI',
+      'firstrevtitle' => 'Venditore su Presto.it',
+      'secondrevtitle' => 'Cliente su Presto.it',
+      'thirdrevtitle' => 'Revisore su Presto.it',
+      'firstrev' => 'Ho un sacco di cose di cui liberarmi e utilizzo sempre Presto.it per venderle. Il portale è fantstico, semplice ed intuitivo e mi permette di guadagnare qualche soldo con facilità. Ottimi affari e 5 stelle meritate!',
+      'secondrev' => 'Mi piace collezionare oggetti vintage e su Presto.it trovo sempre un sacco di occasioni che fanno per me. Nel passatempo apro il sito, scrollo tra gli annunci e mi diletto in acquisti per ampliare la mia collezione :)',
+      'thirdrev' => 'Sono registrato su Presto.it da un paio di anni e circa un anno fa ho fatto richiesta di diventare revisore. In questo modo guadagno qualche soldo extra come secondo lavoro e  posso permettermi un weekend fuori porta ogni tanto ',
+
 
       //  FOOTER
       'footer-explore' => 'ESPLORA',

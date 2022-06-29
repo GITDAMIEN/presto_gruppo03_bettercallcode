@@ -11967,7 +11967,6 @@ body {
 
     .boxTitle {
         padding-top: 0px;
-        padding-left: 200px;
         width: 580px;
         position: relative;
     }
@@ -12023,6 +12022,14 @@ body {
     .skill-card .skill-card__body .skill-card__duration__category:hover {
         color: var(--celesteChiaro);
         font-weight: bolder;
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+
+    .boxTitle {
+        padding-left: 200px;
     }
 }
 .presto-nav{
@@ -12325,6 +12332,18 @@ nav.presto-nav, nav.presto-nav2 {
     padding: 10px 20px;
     width: 230px;
     /* transform: translateY(26px); */
+}
+
+#cominciaAGuadagnareSection, #becomeRevisorDiv{
+    width: 90%!important;
+}
+
+#becomeRevisorDiv2{
+    border-radius: 15px;
+}
+
+.inserisci-annuncio-box{
+    padding-top: 8px;
 }
 
 .revisorBtns{

@@ -107,6 +107,12 @@ return [
       'work-wu'=> 'Trabaja con nosotros!',
       'bec-rev-g'=> 'CONVIÉRTETE EN REVISOR',
       'ratingsTitle'=> 'QUE DICEN DE NOSOTROS',
+      'firstrevtitle' => 'Vendedor en Presto.it',
+      'secondrevtitle' => 'Cliente en Presto.it',
+      'thirdrevtitle' => 'Revisor en Presto.it',
+      'firstrev' => 'Tengo muchas cosas de las que deshacerme y siempre uso Presto.it para venderlas. El portal es fantástico, simple e intuitivo y me permite ganar algo de dinero fácilmente. ¡Grandes ofertas y las 5 estrellas que te mereces!',
+      'secondrev' => 'Me gusta coleccionar artículos antiguos y en Presto.it siempre encuentro muchas oportunidades adecuadas para mí. En mi pasatiempo, abro el sitio, me desplazo por los anuncios y disfruto comprando para expandir mi colección :)',
+      'thirdrev' => 'He estado registrado en Presto.it durante un par de años y hace aproximadamente un año solicité convertirme en revisor. De esa manera gano algo de dinero extra como segundo trabajo y puedo permitirme un fin de semana fuera de vez en cuando.',
 
       //  FOOTER
       'footer-explore' => 'EXPLORA',

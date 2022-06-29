@@ -77,20 +77,20 @@
         </div>
     </section>
     
-    <section class="container test">
-        <div class="row">
+    <section id="cominciaAGuadagnareSection" class="container test">
+        <div class="row align-items-md-center">
             <div class="col-12 col-md-3">
                 <img class="img-fluid" src="media/donna.png" alt="">
             </div>
             <div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
-                <div class="inserisci-annuncio-box">
+                <div class="inserisci-annuncio-box text-center text-md-start py-md-4">
                     <p class="title-annuncio-box">{{__('ui.start-earn')}}</p>
                     <p class="subtitle-annuncio-box">{{__('ui.home-mess')}} !</p>
                 </div>
             </div>
-            <div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
+            <div class="col-12 col-md-5 d-flex justify-content-center align-items-center mt-4 mt-md-0">
                 <div>
-                    <a href="{{route('createAnnouncement')}}" class="btnP bouncy">{{__('ui.add-ann')}} </a>
+                    <a href="{{route('createAnnouncement')}}" class="btnP bouncy d-block">{{__('ui.add-ann')}} </a>
                 </div>
             </div>
         </div>
@@ -99,9 +99,9 @@
     
     @if(!Auth::check())
     <div id="becomeRevisorDiv" class="container">
-        <div class="row text-center my-5 card">
+        <div id="becomeRevisorDiv2" class="row text-center my-5 card shadow">
             <h4 class="my-4">{{__('ui.bec-rev-presto')}}</h4>
-            <a class="btn papayaBg panna col-4 offset-md-4 mb-4" href="register">{{__('ui.reg-bec-rev')}} </a>
+            <a class="btn papayaBg panna col-10 offset-1 col-md-4 offset-md-4 mb-4" href="register">{{__('ui.reg-bec-rev')}} </a>
         </div>
     </div>
     @endif
@@ -137,8 +137,8 @@
                     </div>
                     <div class="user-content">
                         <h5 class="mb-0">Luca Ferrero</h5>
-                        <span>Venditore su Presto.it</span>
-                        <p>Ho un sacco di cose di cui liberarmi e utilizzo sempre Presto.it per venderle. Il portale è fantstico, semplice ed intuitivo e mi permette di guadagnare qualche soldo con facilità. Ottimi affari e 5 stelle meritate!</p>
+                        <span>{{__('ui.firstrevtitle')}}</span>
+                        <p>{{__('ui.firstrev')}}</p>
                     </div>
                     <div class="ratings">
                         <i class="fa fa-star"></i>
@@ -156,8 +156,8 @@
                     </div>
                     <div class="user-content">
                         <h5 class="mb-0">Alessia Ambrosini</h5>
-                        <span>Cliente su Presto.it</span>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <span>{{__('ui.secondrevtitle')}}</span>
+                        <p>{{__('ui.secondrev')}}</p>
                     </div>
                     <div class="ratings">
                         <i class="fa fa-star"></i>
@@ -175,8 +175,8 @@
                     </div>
                     <div class="user-content">
                         <h5 class="mb-0">Matteo Spada</h5>
-                        <span>Revisore su Presto.it</span>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <span>{{__('ui.thirdrevtitle')}}</span>
+                        <p>{{__('ui.thirdrev')}}</p>
                     </div>
                     <div class="ratings">
                         <i class="fa fa-star"></i>
