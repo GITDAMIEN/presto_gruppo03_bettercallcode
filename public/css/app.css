@@ -11424,6 +11424,14 @@ body {
     font-family: 'Lato', sans-serif;
     font-size: 23px;
 }
+.categorydetailsc{
+    text-decoration: none;
+    color: #1b1b1b;
+}
+
+.categorydetailsc:hover{
+    color: var(--starry);
+}
 
 .ultimiAnnunci{
     padding-top: 5rem;
@@ -11584,8 +11592,8 @@ body {
 
 .skill-card .skill-card__body .skill-card__duration__category {
     font-family: 'Lato', sans-serif;
-    font-weight: 200;
-    color:rgba(0, 0, 0, 0.8);
+    font-weight: 400;
+    color:rgba(19, 19, 19, 0.8);
     transition: all 0.5s;
 }
 .description{
@@ -12041,8 +12049,7 @@ body {
     }
 
     .skill-card .skill-card__body .skill-card__duration__category:hover {
-        color: var(--celesteChiaro);
-        font-weight: bolder;
+        color: var(--starry);
     }
 }
 
