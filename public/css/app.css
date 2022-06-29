@@ -11296,6 +11296,7 @@ textarea.form-control-lg {
     --indigo : #30415D;
     --crimson : #CF6766;
     --starry : #0375B4;
+    --cblack : rgb(32, 32, 32);
     
 }
 *{
@@ -12920,7 +12921,7 @@ textarea{
 }
 
 .nav-link{
-    color: var(--panna);
+    color: var(--cblack);
 }
 
 .nav-link:hover{
@@ -12944,7 +12945,7 @@ textarea{
     color: var(--papaya);
 }
 .papayaBg:hover{
-    color: var(--panna);
+    color: var(--cblack);
 }
 
 #footerPrestoLogo{
@@ -12958,25 +12959,25 @@ textarea{
 }
 
 #footerContainer{
-    background-color: var(--starry);
+    background-color: rgb(236, 236, 236);
 }
 
 #footerInfoListAnchor, #footerCategoriesListAnchor, #footerAppsLinksAnchor, .socialsAnchors, #contactsP{
-    color: var(--panna);
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    color: var(--cblack);
+    /* text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); */
 }
 
 #footerCategoriesTitle, #footerInfoTitle, #footerAppsLinksTitle, #footerSocialsTitle{
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    /* text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); */
     font-weight: 900;
 }
 
 #footerLogoText{
-    color: var(--papaya);
+    color: var(--starry);
     font-size: 30px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    /* text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); */
 }
 
 #footerAppsSection, #footerSocialsSection{
@@ -12985,7 +12986,7 @@ textarea{
 
 #mottoPDiv > p{
     padding-left: 14px;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    /* text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); */
 }
 
 #footerPart1{
@@ -12993,7 +12994,7 @@ textarea{
 }
 
 .contactsIcons{
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    /* text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); */
 }
 
 @media screen and (min-width: 768px) {
