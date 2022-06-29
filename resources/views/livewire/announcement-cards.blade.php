@@ -1,4 +1,4 @@
-<div class="row min-vh-100">
+<div class="row min-vh-100 " id="cardsRow">
   <h1 class="text-center tuttigliannunci pt-5"> {{__('ui.all-navigate')}}</h1>
   {{-- <p class="text-center pb-1 counterannunci"> {{count($announces)}} {{__('ui.all-category-number')}}</p> --}}
   
@@ -70,7 +70,8 @@
           @endforeach
         </div>
     </div>
-
+        {{-- richiamo paginazione --}}
+        {{$announces->links()}}
 
 
     @else

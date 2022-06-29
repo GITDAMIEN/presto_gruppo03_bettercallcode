@@ -11930,6 +11930,26 @@ body {
     background-color:rgba(3, 117, 180, 0.2);
 }
 
+/* PAGINAZIONE */
+#cardsRow > nav{ 
+    display: flex;
+    justify-content: center;
+}
+.pagination{
+    margin: 50px  auto !important;
+}
+
+.page-link{
+    color: var(--starry);
+}
+.page-link:hover{
+    color: var(--starry);
+}
+
+.page-item.active .page-link{
+    background-color: var(--starry);
+    border-color: var(--starry);
+}
 
 
 @media screen and (min-width:410px) {
@@ -12033,6 +12053,10 @@ body {
         padding-left: 200px;
     }
 }
+
+
+
+
 .presto-nav{
     background-color:transparent;
     z-index: 2000;
