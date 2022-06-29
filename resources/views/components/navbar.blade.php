@@ -59,8 +59,7 @@
         </li>
         @endguest
         <li id="languageLiDropdown" class="dropdown me-md-3 me-lg-5 mx-auto">
-          <div class="d-none">{{$nation='it'}}</div>
-          <a id="dropdownMenuLanguages" class="nav-link dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><span class="fi-{{$nation}} fi"></span></a>
+          <a id="dropdownMenuLanguages" class="nav-link dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">{{__('ui.lang')}}</a>
           <ul id="languagesMenuUl" class="dropdown-menu shadow" aria-labelledby="dropdownMenuButton1">
             <li>
               <x-_locale class="dropdown-item" lang='it' nation='it'/>

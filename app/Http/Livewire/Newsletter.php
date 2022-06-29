@@ -12,7 +12,10 @@ class Newsletter extends Component
 
     public function __construct()
     {
-        $this->useremail = Auth::user()->email;
+        if(Auth::check())
+            $this->useremail = Auth::user()->email;
+        else
+            $this->useremail = 'email@mail.it';
     }
 
     public function newsletter(){

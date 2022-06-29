@@ -56,6 +56,13 @@ return [
      'last-ann-rif'  => 'Last announcement rejected',
      'acc-ann-no'  => 'No ads rejected so far',
      'ann-rev-acc-ann' => 'Cancel review and accept ad',
+     'title' => 'Title',
+     'contentcheck' => 'Content control',
+     'adult' => 'Adults',
+     'spoof' => 'Spoof',
+     'medical' => 'Medical',
+     'violence' => 'Violence',
+     'racy' => 'Hot',
 
      //REVISOR FORM
      'add-req' => 'Fill in the request',
@@ -84,6 +91,7 @@ return [
      'profilo' =>'Profile',
      'your-ann' =>'Your ads ',
      'bec-rev' => 'Become a revisor',
+     'lang' => 'EN',
 
      //WELCOME
      'home' => 'Homepage',
