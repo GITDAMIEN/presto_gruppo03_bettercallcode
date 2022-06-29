@@ -48,7 +48,7 @@
           <div class="col-12 col-md-6 mt-5">
               <h1 class="display-5 fw-bolder starry">{{$announce->title}}</h1>
               <div class="fs-5 mb-5">
-                <h5 class="ps-1"> {{$announce->category->name}}</h5>
+                <a href="{{route('categoryShow',$announce->category)}}" class="ps-1 categorydetailsc"> {{$announce->category->name}}</a>
               </div>
               <div class="fs-5 mb-5">
                   <span>{{$announce->price}} €</span>
