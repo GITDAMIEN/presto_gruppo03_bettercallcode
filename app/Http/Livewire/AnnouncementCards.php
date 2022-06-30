@@ -9,11 +9,13 @@ use App\Models\User;
 use App\Models\Category;
 use Faker\Core\Number;
 use Mockery\Undefined;
+use Livewire\WithPagination;
 
 use function PHPUnit\Framework\isInfinite;
 
 class AnnouncementCards extends Component
 {
+    use withPagination;
     public $sort='asc';
     public $user;
     public $announces;
@@ -55,12 +57,6 @@ class AnnouncementCards extends Component
         if(!empty($this->title)){
             $announce = $announce->where('title','like','%'.$this->title.'%')->orWhere('description', 'like', '%'.$this->title.'%') ;
         }
-        // RICERCA PER UTENTE
-        // if(!empty($this->user)){
-        //     $announce = $announce->when($this->user, function($query){
-        //         $query->where('user.user_id', $this->user);
-        //     });
-        // }
         
         if($this->sort=='AtoZ'){
             $announce = $announce->orderBy('title',"asc");

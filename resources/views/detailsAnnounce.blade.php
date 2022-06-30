@@ -80,7 +80,8 @@
                   <div class=" col-12 col-lg-4 mb-5">
                       <div class="card h-100">
                           <!-- Product image-->
-                          <img class="card-img-top" src="{{!$correlato->images()->get()->isEmpty() ? $correlato->images()->first()->getUrl(600,450) : 'https://source.unsplash.com/230x200'}}"" alt="...">
+                          <a href="{{route('detailsAnnounce',$correlato)}}"><img class="card-img-top" src="{{!$correlato->images()->get()->isEmpty() ? $correlato->images()->first()->getUrl(600,450) : 'https://source.unsplash.com/230x200'}}"" alt="..."></a>
+                          
                           <!-- Product details-->
                           <div class="card-body p-4">
                               <div class="text-center">
