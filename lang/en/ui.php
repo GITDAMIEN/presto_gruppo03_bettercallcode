@@ -40,6 +40,7 @@ return [
      'all-category-number' => 'announcements available',
      'all-ann' => 'All announcements',
      'all-ann-g' => 'ALL ANNOUNCEMENTS',
+     'annuci-correlati' => 'related ads',
 
      //INDEX
      'rev-zone' => 'Revisor area',

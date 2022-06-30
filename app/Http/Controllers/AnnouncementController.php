@@ -21,7 +21,7 @@ class AnnouncementController extends Controller
 
     public function deleteAnnounce(Announcement $announcement){
         $announcement->delete();
-        return redirect(route('yourAnnouncements', Auth::user()))->with('message', 'Hai eliminato l\'annuncio');
+        return redirect(route('yourAnnouncements'));
     }
 
 

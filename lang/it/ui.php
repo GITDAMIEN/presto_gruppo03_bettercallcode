@@ -19,6 +19,7 @@ return [
       'add-ann' => 'Inserisci annuncio',
       'add-title' => 'Titolo',
       'add-desc' => 'Descivi ciò che stai vendendo',
+      'placeholder-desc' => 'Descrizione',
       'cate' => 'Categoria',
       'price' => 'Prezzo',
       'add-btn' => 'Pubblica',
@@ -39,6 +40,7 @@ return [
       'all-category-number' => 'annunci disponibili',
       'all-ann' => 'Tutti gli annunci',
       'all-ann-g' => 'TUTTI GLI ANNUNCI',
+      'annuci-correlati' => 'Annunci correlati',
 
       //INDEX
       'rev-zone' => 'Zona revisore',

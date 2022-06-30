@@ -40,6 +40,7 @@ return [
       'all-category-number' => 'anuncios disponibles',
       'all-ann' => 'Todos los anuncios',
       'all-ann-g' => 'TODOS LOS ANUNCIOS',
+      'annuci-correlati' => 'anuncios relacionados',
 
       //INDEX
       'rev-zone' => 'Área de revisores',

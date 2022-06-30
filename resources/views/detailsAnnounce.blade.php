@@ -73,7 +73,7 @@
           <section class="py-5 mt-5">
           @if($announcements)
             <div class="container  bg-light px-4 px-lg-5">
-                <h2 class="fw-bolder mb-4 papaya text-center pt-5">Annunci correlati</h2>
+                <h2 class="fw-bolder mb-4 papaya text-center pt-5">{{__('ui.annuci-correlati')}}</h2>
                 <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-evenly">
                   @foreach ($announcements as $correlato)
                   @if($correlato->id != $announce->id)
