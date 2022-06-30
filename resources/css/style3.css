@@ -48,6 +48,15 @@
     width: 230px;
     /* transform: translateY(26px); */
 }
+/* 
+#imgMain{
+    box-shadow: 0px 0px 0px 3px var(--starry);
+    border-radius: 10px!important;
+} */
+/* 
+#imgThumbnail{
+    box-shadow: 0px 0px 0px 2px var(--starry);
+} */
 
 #cominciaAGuadagnareSection, #becomeRevisorDiv{
     width: 90%!important;
@@ -173,13 +182,9 @@
     width: 100%;
 }
 
-.carousel-indicators{
-    margin-bottom: -30px;
-}
-
 #thumbnailsBtns{
     background-color: transparent;
-    border: none;
+    border: var(--papaya);
 }
 
 /* Work with us */

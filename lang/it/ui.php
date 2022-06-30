@@ -129,7 +129,9 @@ return [
 
       // YOUR PROFILE
       'yourAnnouncements' => 'I tuoi annunci',
-      'annunciCaricati' => 'Annunci creati da'
+      'annunciCaricati' => 'Annunci creati da',
+      'add-your-first-ann' => 'Crea il tuo primo annuncio',
+      'deteleYourAnn' => 'Elimina'
 ];
 
 

@@ -27,7 +27,7 @@
             <div id="carouselTest" class="carousel slide carousel-fade" data-mdb-ride="carousel">
                 <!-- Slides -->
                 
-                <div class="carousel-inner shadow-1-strong rounded-3 my-auto">
+                <div id="imgMain" class="carousel-inner shadow-1-strong rounded-3 my-auto">
                     @foreach ($announcement_to_check->images as $image)
                     <div class="carousel-item @if($loop->first)active @endif">
                         <img src="{{!$announcement_to_check->images()->get()->isEmpty() ? $image->getUrl(600,450) : 'https://source.unsplash.com/230x200'}}" alt="Immagine bella" class="d-block w-100">
@@ -48,24 +48,24 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             
-                <div class="carousel-indicators gap-1">
+                <div class="carousel-indicators gap-2" style="margin-bottom: -80px">
                     @foreach ($announcement_to_check->images as $image)
                     <button id="thumbnailsBtns" type="button" data-mdb-target="#carouselTest" data-mdb-slide-to="{{$loop->index}}" class="@if($loop->first)active @endif" aria-current="true" aria-label="Slide 1" style="width: 100px;">
-                        <img class="d-block w-100 shadow-1-strong rounded"
+                        <img id="imgThumbnail" class="d-block w-100 shadow-1-strong rounded"
                         src="{{!$announcement_to_check->images()->get()->isEmpty() ? $image->getUrl(600,450) : 'https://source.unsplash.com/230x200'}}" class="img-fluid" />
                     </button>
                     @endforeach
                 </div>
             </div>
         </div>
-        <div class="col-md-6 mt-5 mt-lg-3">
+        <div class="col-md-6 mt-5 pt-5 mt-lg-3 text-center text-md-start">
             <h1 class="display-5 fw-bolder starry">{{$announcement_to_check->title}}</h1>
             <h5 class="fs-5"><a href="{{route('categoryShow',$announcement_to_check->category)}}">{{$announcement_to_check->category->name}}</a></h5>
             <div class="fs-5 mb-5">
                 <span>{{$announcement_to_check->price}} €</span>
             </div>
             <p class="descrizioneTest">{{$announcement_to_check->description}}</p>
-            <div class="d-flex">
+            <div class="d-md-flex">
                 <div class="">
                     <p class="mb-0 mt-5 created">{{__('ui.uploadBy')}} {{$announcement_to_check->user->name}} {{__('ui.at')}} {{$announcement_to_check->created_at->format('d/m/Y')}}</p>
                 </div>
@@ -88,14 +88,14 @@
             </div>
         </div>
     </div>
-    <div class="row justify-content-center text-center mt-5 mx-auto px-auto">
-        <div class="card-body">
-            <h5 class="tc-accent d-inline">{{__('ui.contentcheck')}}:</h5>
-            <span class="ms-3">{{__('ui.adult')}}:<span class="{{$image->adult}} ms-2"></span></span>
-            <span class="ms-3">{{__('ui.spoof')}}:<span class="{{$image->spoof}} ms-2"></span></span>
-            <span class="ms-3">{{__('ui.medical')}}:<span class="{{$image->medical}} ms-2"></span></span>
-            <span class="ms-3">{{__('ui.violence')}}:<span class="{{$image->violence}} ms-2"></span></span>
-            <span class="ms-3">{{__('ui.racy')}}:<span class="{{$image->racy}} ms-2"></span></span>
+    <div class="row justify-content-center text-center mt-3 mx-auto px-auto">
+        <div class="card-body col-lg-6 offset-lg-6">
+            <h5 class="tc-accent d-block">{{__('ui.contentcheck')}}:</h5>
+            <span class="mx-2">{{__('ui.adult')}}:<span class="{{$image->adult}} ms-2"></span></span>
+            <span class="mx-2">{{__('ui.spoof')}}:<span class="{{$image->spoof}} ms-2"></span></span>
+            <span class="mx-2">{{__('ui.medical')}}:<span class="{{$image->medical}} ms-2"></span></span>
+            <span class="mx-2">{{__('ui.violence')}}:<span class="{{$image->violence}} ms-2"></span></span>
+            <span class="mx-2">{{__('ui.racy')}}:<span class="{{$image->racy}} ms-2"></span></span>
         </div>
     </div>
     <div class="d-lg-none d-md-flex gap-3 justify-content-center text-center mx-auto mt-3 px-auto">
