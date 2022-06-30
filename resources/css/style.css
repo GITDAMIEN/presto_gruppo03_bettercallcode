@@ -635,6 +635,23 @@ body {
     color: var(--panna);
 }
 
+.custombtnBg2{
+    /* background-color: rgba(3, 117, 180); */
+    border-radius: 10px;
+    background-color: red;
+    color: var(--panna);
+    transition: all 0.5s;
+}
+
+.custombtnBg2:hover{
+    transform: scale(1.1);
+    /* background-color: rgba(3, 117, 180); */
+    background-color: red;
+    color: var(--panna);
+}
+
+
+
 .card-body{
     flex: none;
     padding: 0px;

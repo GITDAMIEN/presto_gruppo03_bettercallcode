@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Announcement;
 use App\Models\Category;
+use App\Models\Announcement;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class AnnouncementController extends Controller
 {
@@ -16,6 +17,11 @@ class AnnouncementController extends Controller
 
     public function createAnnouncement() {
         return view('createAnnouncement');
+    }
+
+    public function deleteAnnounce(Announcement $announcement){
+        $announcement->delete();
+        return redirect(route('yourAnnouncements', Auth::user()))->with('message', 'Hai eliminato l\'annuncio');
     }
 
 

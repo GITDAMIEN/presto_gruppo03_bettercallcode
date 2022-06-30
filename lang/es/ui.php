@@ -126,9 +126,11 @@ return [
       'footer-privacy' => 'Política de privacidad',
       'footer-terms' => 'Términos y condiciones',
 
-      // YOUR PROFILE
+      // YOUR ANNOUNCEMENTS
       'yourAnnouncements' => 'Tus anuncios',
-      'annunciCaricati' => 'Anuncios creados por'
+      'annunciCaricati' => 'Anuncios creados por',
+      'add-your-first-ann' => 'Crea tu primer anuncio',
+      'deteleYourAnn' => 'Eliminar'
 ];
 
 

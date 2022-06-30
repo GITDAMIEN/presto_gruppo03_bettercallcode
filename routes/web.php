@@ -25,6 +25,7 @@ Route::get('/details/announce/{announce}',[PublicController::class,"detailsAnnou
 // AnnouncementController routes
 Route::get('/createAnnouncement', [AnnouncementController::class,"createAnnouncement"])->middleware('auth')->name('createAnnouncement');
 Route::get('/allAnnouncements',[AnnouncementController::class,"allAnnouncements"])->name('allAnnouncements');
+Route::delete('/deleteAnnounce',[AnnouncementController::class,"deleteAnnounce"])->name('deleteAnnounce');
 
 // RevisorController routes
 Route::get('/revisore/home', [RevisorController::class, "index"])->middleware('isRevisorMiddleware')->name('revisor.index');

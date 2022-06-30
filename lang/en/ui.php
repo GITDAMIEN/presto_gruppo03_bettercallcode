@@ -126,7 +126,9 @@ return [
     'footer-privacy' => 'Privacy policy',
     'footer-terms' => 'Terms and conditions',
 
-    // YOUR PROFILE
+    // YOUR ANNOUNCEMENTS
     'yourAnnouncements' => 'Your announcements',
-    'annunciCaricati' => 'Announcements created by'
+    'annunciCaricati' => 'Announcements created by',
+    'add-your-first-ann' => 'Create your first announcement',
+    'deteleYourAnn' => 'Delete'
 ];
